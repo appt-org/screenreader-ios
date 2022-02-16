@@ -18,10 +18,14 @@
 		28F09DC127BD39E200C46249 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28F09DBE27BD39E200C46249 /* OpenSans-SemiBold.ttf */; };
 		28F09DC227BD39E200C46249 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28F09DBF27BD39E200C46249 /* OpenSans-Bold.ttf */; };
 		28F09DC427BD39F400C46249 /* _UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DC327BD39F400C46249 /* _UIFont.swift */; };
+		28F09DC827BD414100C46249 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DC727BD414100C46249 /* HomeViewController.swift */; };
+		28F09DCB27BD414F00C46249 /* GesturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DCA27BD414F00C46249 /* GesturesViewController.swift */; };
+		28F09DCF27BD416A00C46249 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DCE27BD416A00C46249 /* TasksViewController.swift */; };
+		28F09DD127BD417000C46249 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DD027BD417000C46249 /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28D1431327BD287D0000BF92 /* Screenreader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screenreader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D1431327BD287D0000BF92 /* ScreenReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D1431627BD287D0000BF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28D1431827BD287D0000BF92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		28D1431A27BD287D0000BF92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +38,10 @@
 		28F09DBE27BD39E200C46249 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiBold.ttf"; path = "../../../Downloads/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		28F09DBF27BD39E200C46249 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "../../../Downloads/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		28F09DC327BD39F400C46249 /* _UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIFont.swift; sourceTree = "<group>"; };
+		28F09DC727BD414100C46249 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		28F09DCA27BD414F00C46249 /* GesturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesViewController.swift; sourceTree = "<group>"; };
+		28F09DCE27BD416A00C46249 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		28F09DD027BD417000C46249 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +58,7 @@
 		28D1430A27BD287D0000BF92 = {
 			isa = PBXGroup;
 			children = (
-				28D1431527BD287D0000BF92 /* Screenreader */,
+				28D1431527BD287D0000BF92 /* ScreenReader */,
 				28D1431427BD287D0000BF92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,21 +66,22 @@
 		28D1431427BD287D0000BF92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28D1431327BD287D0000BF92 /* Screenreader.app */,
+				28D1431327BD287D0000BF92 /* ScreenReader.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28D1431527BD287D0000BF92 /* Screenreader */ = {
+		28D1431527BD287D0000BF92 /* ScreenReader */ = {
 			isa = PBXGroup;
 			children = (
-				28F09DBC27BD39A000C46249 /* Resources */,
-				28F09DB927BD38C800C46249 /* Extensions */,
 				28D1431627BD287D0000BF92 /* AppDelegate.swift */,
 				28D1431827BD287D0000BF92 /* SceneDelegate.swift */,
 				28D1431A27BD287D0000BF92 /* ViewController.swift */,
+				28F09DB927BD38C800C46249 /* Extensions */,
+				28F09DBC27BD39A000C46249 /* Resources */,
+				28F09DC527BD412F00C46249 /* View Controllers */,
 			);
-			path = Screenreader;
+			path = ScreenReader;
 			sourceTree = "<group>";
 		};
 		28F09DB927BD38C800C46249 /* Extensions */ = {
@@ -98,12 +107,55 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		28F09DC527BD412F00C46249 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28F09DC627BD413800C46249 /* Home */,
+				28F09DC927BD414500C46249 /* Gestures */,
+				28F09DCC27BD415400C46249 /* Tasks */,
+				28F09DCD27BD415900C46249 /* More */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		28F09DC627BD413800C46249 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				28F09DC727BD414100C46249 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		28F09DC927BD414500C46249 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				28F09DCA27BD414F00C46249 /* GesturesViewController.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		28F09DCC27BD415400C46249 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				28F09DCE27BD416A00C46249 /* TasksViewController.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		28F09DCD27BD415900C46249 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				28F09DD027BD417000C46249 /* MoreViewController.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28D1431227BD287D0000BF92 /* Screenreader */ = {
+		28D1431227BD287D0000BF92 /* ScreenReader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28D1432727BD287E0000BF92 /* Build configuration list for PBXNativeTarget "Screenreader" */;
+			buildConfigurationList = 28D1432727BD287E0000BF92 /* Build configuration list for PBXNativeTarget "ScreenReader" */;
 			buildPhases = (
 				28D1430F27BD287D0000BF92 /* Sources */,
 				28D1431027BD287D0000BF92 /* Frameworks */,
@@ -113,9 +165,9 @@
 			);
 			dependencies = (
 			);
-			name = Screenreader;
+			name = ScreenReader;
 			productName = Screenreader;
-			productReference = 28D1431327BD287D0000BF92 /* Screenreader.app */;
+			productReference = 28D1431327BD287D0000BF92 /* ScreenReader.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28D1430E27BD287D0000BF92 /* Build configuration list for PBXProject "Screenreader" */;
+			buildConfigurationList = 28D1430E27BD287D0000BF92 /* Build configuration list for PBXProject "ScreenReader" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,7 +199,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28D1431227BD287D0000BF92 /* Screenreader */,
+				28D1431227BD287D0000BF92 /* ScreenReader */,
 			);
 		};
 /* End PBXProject section */
@@ -173,11 +225,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F09DD127BD417000C46249 /* MoreViewController.swift in Sources */,
 				28F09DBB27BD38E100C46249 /* _UIColor.swift in Sources */,
+				28F09DCF27BD416A00C46249 /* TasksViewController.swift in Sources */,
 				28D1431B27BD287D0000BF92 /* ViewController.swift in Sources */,
 				28D1431727BD287D0000BF92 /* AppDelegate.swift in Sources */,
 				28D1431927BD287D0000BF92 /* SceneDelegate.swift in Sources */,
+				28F09DCB27BD414F00C46249 /* GesturesViewController.swift in Sources */,
 				28F09DC427BD39F400C46249 /* _UIFont.swift in Sources */,
+				28F09DC827BD414100C46249 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +436,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28D1430E27BD287D0000BF92 /* Build configuration list for PBXProject "Screenreader" */ = {
+		28D1430E27BD287D0000BF92 /* Build configuration list for PBXProject "ScreenReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28D1432527BD287E0000BF92 /* Debug */,
@@ -389,7 +445,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28D1432727BD287E0000BF92 /* Build configuration list for PBXNativeTarget "Screenreader" */ = {
+		28D1432727BD287E0000BF92 /* Build configuration list for PBXNativeTarget "ScreenReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28D1432827BD287E0000BF92 /* Debug */,
