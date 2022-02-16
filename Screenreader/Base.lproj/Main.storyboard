@@ -90,7 +90,7 @@
             </objects>
             <point key="canvasLocation" x="1471" y="976"/>
         </scene>
-        <!--Actions-->
+        <!--Tasks-->
         <scene sceneID="t1l-ys-ruh">
             <objects>
                 <viewController id="uQX-1v-g1V" sceneMemberID="viewController">
@@ -98,8 +98,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh9-uX-D4C">
-                                <rect key="frame" x="178.5" y="437.5" width="57" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh9-uX-D4C">
+                                <rect key="frame" x="185.5" y="437.5" width="43" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -112,7 +112,7 @@
                             <constraint firstItem="fh9-uX-D4C" firstAttribute="centerY" secondItem="Ew8-h5-kuA" secondAttribute="centerY" id="uql-kP-WiS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Actions" id="IjQ-ch-l4F"/>
+                    <navigationItem key="navigationItem" title="Tasks" id="IjQ-ch-l4F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGE-Om-RQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

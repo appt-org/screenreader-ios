@@ -10,10 +10,58 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // States
+        let states: [UIControl.State] = [.disabled, .focused, .highlighted, .normal, .selected]
+        
+        // UINavigationBar
+        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().barTintColor = .background
+        UINavigationBar.appearance().backgroundColor = .background
+        UINavigationBar.appearance().tintColor = .foreground
+        UINavigationBar.appearance().titleTextAttributes = [
+            .font: UIFont.openSans(weight: .bold, size: 18, scaled: false),
+            .foregroundColor: UIColor.foreground
+        ]
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .font: UIFont.openSans(weight: .bold, size: 27, scaled: false),
+            .foregroundColor: UIColor.foreground
+        ]
+        
+        // UIBarButtonItem
+        UIBarButtonItem.appearance().tintColor = .foreground
+        states.forEach { (state) in
+            UIBarButtonItem.appearance().setTitleTextAttributes([
+                .font: UIFont.openSans(weight: .semibold, size: 16, scaled: false)
+            ], for: state)
+        }
+        
+        // UITabBar
+        UITabBar.appearance().isTranslucent = true
+        UITabBar.appearance().barTintColor = .background
+        UITabBar.appearance().tintColor = .primary
+        UITabBar.appearance().unselectedItemTintColor = .disabled
+        
+        // UITabBarItem
+        states.forEach { (state) in
+            UITabBarItem.appearance().setTitleTextAttributes([
+                .font: UIFont.openSans(weight: .semibold, size: 14, scaled: false)
+            ], for: state)
+        }
+        
+        // UISegmentedControl
+        UISegmentedControl.appearance().backgroundColor = .background
+        UISegmentedControl.appearance().tintColor = .primary
+        states.forEach { (state) in
+            UISegmentedControl.appearance().setTitleTextAttributes([
+                .font: UIFont.openSans(weight: .regular, size: 18, scaled: false)
+            ], for: state)
+        }
+        UISegmentedControl.appearance().setTitleTextAttributes([
+            .font: UIFont.openSans(weight: .bold, size: 18, scaled: false),
+            .foregroundColor: UIColor.white
+        ], for: .selected)
+        
         return true
     }
 
