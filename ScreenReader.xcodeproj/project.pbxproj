@@ -32,6 +32,11 @@
 		28F09DE627BD44F800C46249 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DE527BD44F800C46249 /* Header.swift */; };
 		28F09DE827BD451A00C46249 /* _UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DE727BD451A00C46249 /* _UITableView.swift */; };
 		28F09DEA27BD456C00C46249 /* _UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DE927BD456C00C46249 /* _UIView.swift */; };
+		28F09DED27BD649500C46249 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F09DEB27BD649500C46249 /* TitleTableViewCell.xib */; };
+		28F09DEE27BD649500C46249 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DEC27BD649500C46249 /* TitleTableViewCell.swift */; };
+		28F09DF027BD64A200C46249 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DEF27BD64A200C46249 /* Topic.swift */; };
+		28F09DF227BD64CA00C46249 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DF127BD64CA00C46249 /* Item.swift */; };
+		28F09DF627BD686400C46249 /* _UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DF527BD686400C46249 /* _UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,11 @@
 		28F09DE527BD44F800C46249 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		28F09DE727BD451A00C46249 /* _UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UITableView.swift; sourceTree = "<group>"; };
 		28F09DE927BD456C00C46249 /* _UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIView.swift; sourceTree = "<group>"; };
+		28F09DEB27BD649500C46249 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		28F09DEC27BD649500C46249 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		28F09DEF27BD64A200C46249 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		28F09DF127BD64CA00C46249 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		28F09DF527BD686400C46249 /* _UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +123,7 @@
 				28F09DE027BD437700C46249 /* _DispatchQueue.swift */,
 				28F09DE727BD451A00C46249 /* _UITableView.swift */,
 				28F09DE927BD456C00C46249 /* _UIView.swift */,
+				28F09DF527BD686400C46249 /* _UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -192,6 +203,8 @@
 				28F09DD427BD427200C46249 /* HeaderTableViewCell.xib */,
 				28F09DD627BD427200C46249 /* TextTableViewCell.swift */,
 				28F09DD527BD427200C46249 /* TextTableViewCell.xib */,
+				28F09DEC27BD649500C46249 /* TitleTableViewCell.swift */,
+				28F09DEB27BD649500C46249 /* TitleTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -200,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				28F09DE527BD44F800C46249 /* Header.swift */,
+				28F09DF127BD64CA00C46249 /* Item.swift */,
+				28F09DEF27BD64A200C46249 /* Topic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,6 +284,7 @@
 				28F09DC227BD39E200C46249 /* OpenSans-Bold.ttf in Resources */,
 				28F09DC127BD39E200C46249 /* OpenSans-SemiBold.ttf in Resources */,
 				28F09DC027BD39E200C46249 /* OpenSans-Regular.ttf in Resources */,
+				28F09DED27BD649500C46249 /* TitleTableViewCell.xib in Resources */,
 				28F09DD927BD427200C46249 /* TextTableViewCell.xib in Resources */,
 				28D1431E27BD287D0000BF92 /* Main.storyboard in Resources */,
 			);
@@ -281,9 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F09DF227BD64CA00C46249 /* Item.swift in Sources */,
+				28F09DF627BD686400C46249 /* _UIViewController.swift in Sources */,
 				28F09DD127BD417000C46249 /* MoreViewController.swift in Sources */,
 				28F09DEA27BD456C00C46249 /* _UIView.swift in Sources */,
 				28F09DE127BD437700C46249 /* _DispatchQueue.swift in Sources */,
+				28F09DF027BD64A200C46249 /* Topic.swift in Sources */,
 				28F09DBB27BD38E100C46249 /* _UIColor.swift in Sources */,
 				28F09DCF27BD416A00C46249 /* ActionsViewController.swift in Sources */,
 				28F09DDA27BD427200C46249 /* TextTableViewCell.swift in Sources */,
@@ -297,6 +316,7 @@
 				28F09DCB27BD414F00C46249 /* GesturesViewController.swift in Sources */,
 				28F09DE827BD451A00C46249 /* _UITableView.swift in Sources */,
 				28F09DC427BD39F400C46249 /* _UIFont.swift in Sources */,
+				28F09DEE27BD649500C46249 /* TitleTableViewCell.swift in Sources */,
 				28F09DC827BD414100C46249 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
