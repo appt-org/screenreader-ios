@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GesturesViewController: UIViewController {
+class GesturesViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

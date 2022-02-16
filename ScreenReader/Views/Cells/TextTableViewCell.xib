@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oZk-0U-97Y" customClass="TextTableViewCell" customModule="Ontoegankelijk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oZk-0U-97Y" id="DUO-cT-FwN">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRd-cP-iuA" customClass="Label" customModule="Ontoegankelijk" customModuleProvider="target">
+                        <rect key="frame" x="16" y="16" width="343" height="24"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lRd-cP-iuA" secondAttribute="bottom" constant="16" id="ZW7-dH-sgr"/>
+                    <constraint firstItem="lRd-cP-iuA" firstAttribute="top" secondItem="DUO-cT-FwN" secondAttribute="top" constant="16" id="c41-3j-dRj"/>
+                    <constraint firstAttribute="trailing" secondItem="lRd-cP-iuA" secondAttribute="trailing" constant="16" id="pIz-db-Sr0"/>
+                    <constraint firstItem="lRd-cP-iuA" firstAttribute="leading" secondItem="DUO-cT-FwN" secondAttribute="leading" constant="16" id="t99-tD-BHn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="Background"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="ZW7-dH-sgr" id="Y0r-Nl-tSt"/>
+                <outlet property="label" destination="lRd-cP-iuA" id="fmn-5i-eFs"/>
+                <outlet property="leftConstraint" destination="t99-tD-BHn" id="ghe-7G-6nE"/>
+                <outlet property="rightConstraint" destination="pIz-db-Sr0" id="xT7-x2-lwi"/>
+                <outlet property="topConstraint" destination="c41-3j-dRj" id="Q7R-q4-t8Y"/>
+            </connections>
+            <point key="canvasLocation" x="139.85507246376812" y="18.75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

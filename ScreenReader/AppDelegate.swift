@@ -11,20 +11,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        application.accessibilityLanguage = "en-US"
+        
         // States
         let states: [UIControl.State] = [.disabled, .focused, .highlighted, .normal, .selected]
         
         // UINavigationBar
-        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().isOpaque = false
+        UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().barTintColor = .background
-        UINavigationBar.appearance().backgroundColor = .background
         UINavigationBar.appearance().tintColor = .foreground
         UINavigationBar.appearance().titleTextAttributes = [
-            .font: UIFont.openSans(weight: .bold, size: 18, scaled: false),
+            .font: UIFont.openSans(weight: .bold, size: 20, scaled: false),
             .foregroundColor: UIColor.foreground
         ]
         UINavigationBar.appearance().largeTitleTextAttributes = [
-            .font: UIFont.openSans(weight: .bold, size: 27, scaled: false),
+            .font: UIFont.openSans(weight: .bold, size: 40, scaled: false),
             .foregroundColor: UIColor.foreground
         ]
         
@@ -37,6 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // UITabBar
+        UITabBar.appearance().isOpaque = true
         UITabBar.appearance().isTranslucent = true
         UITabBar.appearance().barTintColor = .background
         UITabBar.appearance().tintColor = .primary

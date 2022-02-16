@@ -25,4 +25,5 @@ extension UIColor {
     static let background = UIColor(named: "Background")!
     static let foreground = UIColor(named: "Foreground")!
     static let disabled = UIColor(named: "Disabled")!
+    
 }

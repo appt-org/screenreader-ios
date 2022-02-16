@@ -1,5 +1,5 @@
 //
-//  TasksViewController.swift
+//  ActionsViewController.swift
 //  ScreenReader
 //
 //  Created by Jan Jaap de Groot on 16/02/2022.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TasksViewController: UIViewController {
+class ActionsViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
