@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ActionsViewController: ViewController {
+class ActionsViewController: TableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

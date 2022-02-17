@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		287D440027BE9F7000B9B997 /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D43FF27BE9F7000B9B997 /* Gesture.swift */; };
+		287D440527BE9FE400B9B997 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D440427BE9FE400B9B997 /* Alert.swift */; };
+		287D440727BEA00B00B9B997 /* _String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D440627BEA00B00B9B997 /* _String.swift */; };
+		287D441627BEA11F00B9B997 /* VoiceOverPasteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287D440B27BEA11F00B9B997 /* VoiceOverPasteView.xib */; };
+		287D441727BEA11F00B9B997 /* VoiceOverLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D440C27BEA11F00B9B997 /* VoiceOverLinksView.swift */; };
+		287D441827BEA11F00B9B997 /* VoiceOverHeadingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287D440D27BEA11F00B9B997 /* VoiceOverHeadingsView.xib */; };
+		287D441927BEA11F00B9B997 /* VoiceOverSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D440E27BEA11F00B9B997 /* VoiceOverSelectionView.swift */; };
+		287D441A27BEA11F00B9B997 /* VoiceOverPasteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D440F27BEA11F00B9B997 /* VoiceOverPasteView.swift */; };
+		287D441B27BEA11F00B9B997 /* VoiceOverHeadingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D441027BEA11F00B9B997 /* VoiceOverHeadingsView.swift */; };
+		287D441C27BEA11F00B9B997 /* VoiceOverLinksView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287D441127BEA11F00B9B997 /* VoiceOverLinksView.xib */; };
+		287D441D27BEA11F00B9B997 /* VoiceOverCopyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287D441227BEA11F00B9B997 /* VoiceOverCopyView.xib */; };
+		287D441E27BEA11F00B9B997 /* VoiceOverCopyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D441327BEA11F00B9B997 /* VoiceOverCopyView.swift */; };
+		287D441F27BEA11F00B9B997 /* VoiceOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D441427BEA11F00B9B997 /* VoiceOverView.swift */; };
+		287D442027BEA11F00B9B997 /* VoiceOverSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287D441527BEA11F00B9B997 /* VoiceOverSelectionView.xib */; };
+		287D442927BEA12E00B9B997 /* LongPressGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D442127BEA12E00B9B997 /* LongPressGestureView.swift */; };
+		287D442A27BEA12E00B9B997 /* TapGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D442227BEA12E00B9B997 /* TapGestureView.swift */; };
+		287D442B27BEA12E00B9B997 /* SwipeGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D442327BEA12E00B9B997 /* SwipeGestureView.swift */; };
+		287D442C27BEA12E00B9B997 /* RotationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D442427BEA12E00B9B997 /* RotationGestureView.swift */; };
+		287D442D27BEA12E00B9B997 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D442527BEA12E00B9B997 /* GestureView.swift */; };
+		287D442E27BEA12E00B9B997 /* DirectGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D442627BEA12E00B9B997 /* DirectGestureView.swift */; };
+		287D442F27BEA12E00B9B997 /* TouchGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D442727BEA12E00B9B997 /* TouchGestureView.swift */; };
+		287D443027BEA12E00B9B997 /* EscapeGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D442827BEA12E00B9B997 /* EscapeGestureView.swift */; };
+		287D443227BEA14400B9B997 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443127BEA14400B9B997 /* Position.swift */; };
+		287D443427BEA15600B9B997 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443327BEA15600B9B997 /* Action.swift */; };
+		287D443727BEA16700B9B997 /* _CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443527BEA16700B9B997 /* _CGPoint.swift */; };
+		287D443827BEA16700B9B997 /* _CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443627BEA16700B9B997 /* _CGFloat.swift */; };
+		287D443A27BEA17500B9B997 /* _Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443927BEA17500B9B997 /* _Direction.swift */; };
+		287D443C27BEA18C00B9B997 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443B27BEA18C00B9B997 /* TextField.swift */; };
+		287D443E27BEA1A200B9B997 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443D27BEA1A200B9B997 /* Direction.swift */; };
 		28D1431727BD287D0000BF92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1431627BD287D0000BF92 /* AppDelegate.swift */; };
 		28D1431927BD287D0000BF92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1431827BD287D0000BF92 /* SceneDelegate.swift */; };
 		28D1431E27BD287D0000BF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D1431C27BD287D0000BF92 /* Main.storyboard */; };
@@ -40,6 +69,35 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		287D43FF27BE9F7000B9B997 /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
+		287D440427BE9FE400B9B997 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		287D440627BEA00B00B9B997 /* _String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _String.swift; sourceTree = "<group>"; };
+		287D440B27BEA11F00B9B997 /* VoiceOverPasteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceOverPasteView.xib; sourceTree = "<group>"; };
+		287D440C27BEA11F00B9B997 /* VoiceOverLinksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverLinksView.swift; sourceTree = "<group>"; };
+		287D440D27BEA11F00B9B997 /* VoiceOverHeadingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceOverHeadingsView.xib; sourceTree = "<group>"; };
+		287D440E27BEA11F00B9B997 /* VoiceOverSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverSelectionView.swift; sourceTree = "<group>"; };
+		287D440F27BEA11F00B9B997 /* VoiceOverPasteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverPasteView.swift; sourceTree = "<group>"; };
+		287D441027BEA11F00B9B997 /* VoiceOverHeadingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverHeadingsView.swift; sourceTree = "<group>"; };
+		287D441127BEA11F00B9B997 /* VoiceOverLinksView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceOverLinksView.xib; sourceTree = "<group>"; };
+		287D441227BEA11F00B9B997 /* VoiceOverCopyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceOverCopyView.xib; sourceTree = "<group>"; };
+		287D441327BEA11F00B9B997 /* VoiceOverCopyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverCopyView.swift; sourceTree = "<group>"; };
+		287D441427BEA11F00B9B997 /* VoiceOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverView.swift; sourceTree = "<group>"; };
+		287D441527BEA11F00B9B997 /* VoiceOverSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceOverSelectionView.xib; sourceTree = "<group>"; };
+		287D442127BEA12E00B9B997 /* LongPressGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressGestureView.swift; sourceTree = "<group>"; };
+		287D442227BEA12E00B9B997 /* TapGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapGestureView.swift; sourceTree = "<group>"; };
+		287D442327BEA12E00B9B997 /* SwipeGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeGestureView.swift; sourceTree = "<group>"; };
+		287D442427BEA12E00B9B997 /* RotationGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationGestureView.swift; sourceTree = "<group>"; };
+		287D442527BEA12E00B9B997 /* GestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
+		287D442627BEA12E00B9B997 /* DirectGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectGestureView.swift; sourceTree = "<group>"; };
+		287D442727BEA12E00B9B997 /* TouchGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchGestureView.swift; sourceTree = "<group>"; };
+		287D442827BEA12E00B9B997 /* EscapeGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscapeGestureView.swift; sourceTree = "<group>"; };
+		287D443127BEA14400B9B997 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		287D443327BEA15600B9B997 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		287D443527BEA16700B9B997 /* _CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _CGPoint.swift; sourceTree = "<group>"; };
+		287D443627BEA16700B9B997 /* _CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _CGFloat.swift; sourceTree = "<group>"; };
+		287D443927BEA17500B9B997 /* _Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Direction.swift; sourceTree = "<group>"; };
+		287D443B27BEA18C00B9B997 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		287D443D27BEA1A200B9B997 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		28D1431327BD287D0000BF92 /* ScreenReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D1431627BD287D0000BF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28D1431827BD287D0000BF92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +143,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		287D440327BE9FDD00B9B997 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				287D440427BE9FE400B9B997 /* Alert.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		287D440927BEA0FC00B9B997 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				287D441427BEA11F00B9B997 /* VoiceOverView.swift */,
+				287D441327BEA11F00B9B997 /* VoiceOverCopyView.swift */,
+				287D441227BEA11F00B9B997 /* VoiceOverCopyView.xib */,
+				287D441027BEA11F00B9B997 /* VoiceOverHeadingsView.swift */,
+				287D440D27BEA11F00B9B997 /* VoiceOverHeadingsView.xib */,
+				287D440C27BEA11F00B9B997 /* VoiceOverLinksView.swift */,
+				287D441127BEA11F00B9B997 /* VoiceOverLinksView.xib */,
+				287D440F27BEA11F00B9B997 /* VoiceOverPasteView.swift */,
+				287D440B27BEA11F00B9B997 /* VoiceOverPasteView.xib */,
+				287D440E27BEA11F00B9B997 /* VoiceOverSelectionView.swift */,
+				287D441527BEA11F00B9B997 /* VoiceOverSelectionView.xib */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		287D440A27BEA10000B9B997 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				287D442527BEA12E00B9B997 /* GestureView.swift */,
+				287D442627BEA12E00B9B997 /* DirectGestureView.swift */,
+				287D442827BEA12E00B9B997 /* EscapeGestureView.swift */,
+				287D442127BEA12E00B9B997 /* LongPressGestureView.swift */,
+				287D442427BEA12E00B9B997 /* RotationGestureView.swift */,
+				287D442327BEA12E00B9B997 /* SwipeGestureView.swift */,
+				287D442227BEA12E00B9B997 /* TapGestureView.swift */,
+				287D442727BEA12E00B9B997 /* TouchGestureView.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
 		28D1430A27BD287D0000BF92 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +206,7 @@
 				28D1431627BD287D0000BF92 /* AppDelegate.swift */,
 				28D1431827BD287D0000BF92 /* SceneDelegate.swift */,
 				28F09DB927BD38C800C46249 /* Extensions */,
+				287D440327BE9FDD00B9B997 /* Helpers */,
 				28F09DE427BD44E800C46249 /* Model */,
 				28F09DBC27BD39A000C46249 /* Resources */,
 				28F09DC527BD412F00C46249 /* View Controllers */,
@@ -118,12 +218,16 @@
 		28F09DB927BD38C800C46249 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				287D443627BEA16700B9B997 /* _CGFloat.swift */,
+				287D443527BEA16700B9B997 /* _CGPoint.swift */,
 				28F09DBA27BD38E100C46249 /* _UIColor.swift */,
+				287D443927BEA17500B9B997 /* _Direction.swift */,
 				28F09DC327BD39F400C46249 /* _UIFont.swift */,
 				28F09DE027BD437700C46249 /* _DispatchQueue.swift */,
 				28F09DE727BD451A00C46249 /* _UITableView.swift */,
 				28F09DE927BD456C00C46249 /* _UIView.swift */,
 				28F09DF527BD686400C46249 /* _UIViewController.swift */,
+				287D440627BEA00B00B9B997 /* _String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,6 +295,9 @@
 		28F09DD227BD422100C46249 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				287D443B27BEA18C00B9B997 /* TextField.swift */,
+				287D440927BEA0FC00B9B997 /* Actions */,
+				287D440A27BEA10000B9B997 /* Gestures */,
 				28F09DD327BD422900C46249 /* Cells */,
 			);
 			path = Views;
@@ -212,8 +319,12 @@
 		28F09DE427BD44E800C46249 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				287D443327BEA15600B9B997 /* Action.swift */,
+				287D443D27BEA1A200B9B997 /* Direction.swift */,
+				287D43FF27BE9F7000B9B997 /* Gesture.swift */,
 				28F09DE527BD44F800C46249 /* Header.swift */,
 				28F09DF127BD64CA00C46249 /* Item.swift */,
+				287D443127BEA14400B9B997 /* Position.swift */,
 				28F09DEF27BD64A200C46249 /* Topic.swift */,
 			);
 			path = Model;
@@ -283,10 +394,15 @@
 				28D1432027BD287E0000BF92 /* Assets.xcassets in Resources */,
 				28F09DC227BD39E200C46249 /* OpenSans-Bold.ttf in Resources */,
 				28F09DC127BD39E200C46249 /* OpenSans-SemiBold.ttf in Resources */,
+				287D441C27BEA11F00B9B997 /* VoiceOverLinksView.xib in Resources */,
+				287D441D27BEA11F00B9B997 /* VoiceOverCopyView.xib in Resources */,
+				287D441827BEA11F00B9B997 /* VoiceOverHeadingsView.xib in Resources */,
 				28F09DC027BD39E200C46249 /* OpenSans-Regular.ttf in Resources */,
 				28F09DED27BD649500C46249 /* TitleTableViewCell.xib in Resources */,
+				287D442027BEA11F00B9B997 /* VoiceOverSelectionView.xib in Resources */,
 				28F09DD927BD427200C46249 /* TextTableViewCell.xib in Resources */,
 				28D1431E27BD287D0000BF92 /* Main.storyboard in Resources */,
+				287D441627BEA11F00B9B997 /* VoiceOverPasteView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,25 +413,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287D441A27BEA11F00B9B997 /* VoiceOverPasteView.swift in Sources */,
 				28F09DF227BD64CA00C46249 /* Item.swift in Sources */,
 				28F09DF627BD686400C46249 /* _UIViewController.swift in Sources */,
 				28F09DD127BD417000C46249 /* MoreViewController.swift in Sources */,
+				287D440527BE9FE400B9B997 /* Alert.swift in Sources */,
+				287D441F27BEA11F00B9B997 /* VoiceOverView.swift in Sources */,
 				28F09DEA27BD456C00C46249 /* _UIView.swift in Sources */,
 				28F09DE127BD437700C46249 /* _DispatchQueue.swift in Sources */,
+				287D443E27BEA1A200B9B997 /* Direction.swift in Sources */,
+				287D442B27BEA12E00B9B997 /* SwipeGestureView.swift in Sources */,
+				287D441727BEA11F00B9B997 /* VoiceOverLinksView.swift in Sources */,
 				28F09DF027BD64A200C46249 /* Topic.swift in Sources */,
+				287D443727BEA16700B9B997 /* _CGPoint.swift in Sources */,
 				28F09DBB27BD38E100C46249 /* _UIColor.swift in Sources */,
 				28F09DCF27BD416A00C46249 /* ActionsViewController.swift in Sources */,
+				287D443427BEA15600B9B997 /* Action.swift in Sources */,
 				28F09DDA27BD427200C46249 /* TextTableViewCell.swift in Sources */,
+				287D440027BE9F7000B9B997 /* Gesture.swift in Sources */,
+				287D442A27BEA12E00B9B997 /* TapGestureView.swift in Sources */,
+				287D443A27BEA17500B9B997 /* _Direction.swift in Sources */,
 				28F09DE327BD44CD00C46249 /* TextViewController.swift in Sources */,
+				287D441B27BEA11F00B9B997 /* VoiceOverHeadingsView.swift in Sources */,
 				28F09DDB27BD427200C46249 /* HeaderTableViewCell.swift in Sources */,
 				28D1431727BD287D0000BF92 /* AppDelegate.swift in Sources */,
+				287D443C27BEA18C00B9B997 /* TextField.swift in Sources */,
+				287D443227BEA14400B9B997 /* Position.swift in Sources */,
+				287D440727BEA00B00B9B997 /* _String.swift in Sources */,
+				287D443027BEA12E00B9B997 /* EscapeGestureView.swift in Sources */,
 				28F09DDD27BD432700C46249 /* TableViewController.swift in Sources */,
+				287D441E27BEA11F00B9B997 /* VoiceOverCopyView.swift in Sources */,
+				287D442E27BEA12E00B9B997 /* DirectGestureView.swift in Sources */,
 				28F09DDF27BD435900C46249 /* ViewController.swift in Sources */,
+				287D442D27BEA12E00B9B997 /* GestureView.swift in Sources */,
+				287D441927BEA11F00B9B997 /* VoiceOverSelectionView.swift in Sources */,
 				28F09DE627BD44F800C46249 /* Header.swift in Sources */,
 				28D1431927BD287D0000BF92 /* SceneDelegate.swift in Sources */,
 				28F09DCB27BD414F00C46249 /* GesturesViewController.swift in Sources */,
+				287D442927BEA12E00B9B997 /* LongPressGestureView.swift in Sources */,
 				28F09DE827BD451A00C46249 /* _UITableView.swift in Sources */,
+				287D443827BEA16700B9B997 /* _CGFloat.swift in Sources */,
+				287D442C27BEA12E00B9B997 /* RotationGestureView.swift in Sources */,
 				28F09DC427BD39F400C46249 /* _UIFont.swift in Sources */,
+				287D442F27BEA12E00B9B997 /* TouchGestureView.swift in Sources */,
 				28F09DEE27BD649500C46249 /* TitleTableViewCell.swift in Sources */,
 				28F09DC827BD414100C46249 /* HomeViewController.swift in Sources */,
 			);

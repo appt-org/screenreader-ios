@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28D1431227BD287D0000BF92"
-               BuildableName = "Screenreader.app"
+               BuildableName = "ScreenReader.app"
                BlueprintName = "ScreenReader"
-               ReferencedContainer = "container:Screenreader.xcodeproj">
+               ReferencedContainer = "container:ScreenReader.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28D1431227BD287D0000BF92"
-            BuildableName = "Screenreader.app"
+            BuildableName = "ScreenReader.app"
             BlueprintName = "ScreenReader"
-            ReferencedContainer = "container:Screenreader.xcodeproj">
+            ReferencedContainer = "container:ScreenReader.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28D1431227BD287D0000BF92"
-            BuildableName = "Screenreader.app"
+            BuildableName = "ScreenReader.app"
             BlueprintName = "ScreenReader"
-            ReferencedContainer = "container:Screenreader.xcodeproj">
+            ReferencedContainer = "container:ScreenReader.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

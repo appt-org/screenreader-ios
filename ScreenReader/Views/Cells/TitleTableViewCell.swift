@@ -27,4 +27,14 @@ class TitleTableViewCell: UITableViewCell {
     func setup(_ item: Item) {
         setup(item.title)
     }
+    
+    func setup(_ gesture: Gesture) {
+        titleLabel.font = .openSans(weight: .regular, size: 17, style: .body)
+        titleLabel.text = gesture.title
+        
+        accessibilityLabel = gesture.title
+        accessibilityValue = gesture.completed ? "Afgerond" : nil
+        accessoryType = gesture.completed ? .checkmark : .disclosureIndicator
+        accessibilityHint = "Dubbeltik met twee vingers om dit gebaar te oefenen"
+    }
 }

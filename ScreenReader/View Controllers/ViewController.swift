@@ -21,7 +21,7 @@ class ViewController: UIViewController {
                     }
                     
                     let message = NSAttributedString(
-                        string: "Loading",
+                        string: "loading".localized,
                         attributes: [.accessibilitySpeechQueueAnnouncement: true]
                     )
                     UIAccessibility.post(notification: .announcement, argument: message)
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
                     }
 
                     indicator.accessibilityTraits = [.image, .staticText]
-                    indicator.accessibilityLabel = "Loading"
+                    indicator.accessibilityLabel = "loading".localized
 
                     indicator.backgroundColor = .background
                     indicator.color = .primary
