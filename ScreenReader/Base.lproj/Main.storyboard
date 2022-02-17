@@ -76,7 +76,13 @@
                             <constraint firstItem="oNL-xE-UeK" firstAttribute="top" secondItem="raR-1f-G34" secondAttribute="top" id="NFe-Rr-3vo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="More" id="rsK-9h-Df5"/>
+                    <navigationItem key="navigationItem" title="More" id="rsK-9h-Df5">
+                        <barButtonItem key="rightBarButtonItem" title="Share" image="Share" id="4RP-1A-NIC">
+                            <connections>
+                                <action selector="onShareTapped:" destination="uJE-AL-778" id="lya-9K-kyq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="oNL-xE-UeK" id="xB4-ip-8zJ"/>
                     </connections>
@@ -110,9 +116,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qBr-4R-xza">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qBr-4R-xza">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lq0-UO-YAi"/>
@@ -158,9 +163,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="i82-gO-KwS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="i82-gO-KwS">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gu3-jk-NMh"/>
@@ -172,7 +176,13 @@
                             <constraint firstItem="Gu3-jk-NMh" firstAttribute="bottom" secondItem="i82-gO-KwS" secondAttribute="bottom" id="zFq-h6-vso"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Gestures" id="ggn-QW-JUN"/>
+                    <navigationItem key="navigationItem" title="Gestures" id="ggn-QW-JUN">
+                        <barButtonItem key="rightBarButtonItem" title="Practice" image="Shuffle" id="wFh-8n-XWc">
+                            <connections>
+                                <action selector="onPracticeTapped:" destination="9BD-cw-d7v" id="atX-yG-6Om"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="i82-gO-KwS" id="VZD-Fy-0Lb"/>
                     </connections>
@@ -221,7 +231,13 @@
                             <constraint firstItem="gmL-FQ-hXk" firstAttribute="trailing" secondItem="o5g-lU-7ed" secondAttribute="trailing" id="f48-8n-nXt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="Vfm-Ly-dtn"/>
+                    <navigationItem key="navigationItem" title="Home" id="Vfm-Ly-dtn">
+                        <barButtonItem key="rightBarButtonItem" title="Share" image="Share" id="6ZS-ec-JuI">
+                            <connections>
+                                <action selector="onShareTapped:" destination="EYh-CV-eeI" id="vP3-0p-V4x"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="o5g-lU-7ed" id="hgH-5I-pGS"/>
                     </connections>
@@ -290,12 +306,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ddc-hw-7Id">
-                        <barButtonItem key="rightBarButtonItem" title="Uitleg" id="XWr-qN-ubl">
+                        <barButtonItem key="rightBarButtonItem" title="Help" image="Help" id="XWr-qN-ubl">
                             <connections>
                                 <action selector="onExplanationTapped:" destination="fc3-Jd-Fto" id="7eP-5g-Mzb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="YBQ-mg-ciF" id="lSX-NN-cYP"/>
                         <outlet property="explanationItem" destination="XWr-qN-ubl" id="XMB-ti-r8e"/>
@@ -315,8 +332,11 @@
     <resources>
         <image name="Actions" width="24" height="24"/>
         <image name="Gestures" width="24" height="24"/>
+        <image name="Help" width="24" height="24"/>
         <image name="Home" width="24" height="24"/>
         <image name="More" width="24" height="24"/>
+        <image name="Share" width="24" height="24"/>
+        <image name="Shuffle" width="24" height="24"/>
         <image name="gesture_escape" width="154" height="154"/>
         <namedColor name="Background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -29,7 +29,7 @@ class TitleTableViewCell: UITableViewCell {
     }
     
     func setup(_ gesture: Gesture) {
-        titleLabel.font = .openSans(weight: .regular, size: 17, style: .body)
+        titleLabel.font = .openSans(weight: .regular, size: 18, style: .body)
         titleLabel.text = gesture.title
         
         accessibilityLabel = gesture.title

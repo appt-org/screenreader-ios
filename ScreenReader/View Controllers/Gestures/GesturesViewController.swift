@@ -10,52 +10,43 @@ import UIKit
 
 class GesturesViewController: TableViewController {
 
-    private var gestures: KeyValuePairs<String, [Gesture]> {
-        return [
-            "gestures_one_finger_swipe".localized: [
-                .oneFingerTouch,
-                .oneFingerSwipeRight,
-                .oneFingerSwipeLeft,
-                .oneFingerSwipeUp,
-                .oneFingerSwipeDown
-            ],
-            "gestures_two_finger_swipe".localized: [
-                .twoFingerSwipeUp,
-                .twoFingerSwipeDown,
-            ],
-            "gestures_three_finger_swipe".localized: [
-                .threeFingerSwipeUp,
-                .threeFingerSwipeDown,
-                .threeFingerSwipeRight,
-                .threeFingerSwipeLeft
-            ],
-            "gestures_one_finger_tap".localized: [
-                .oneFingerDoubleTap,
-                .oneFingerDoubleTapHold,
-                .oneFingerTripleTap
-            ],
-            "gestures_two_finger_tap".localized: [
-                .twoFingerTap,
-                .twoFingerDoubleTap,
-                .twoFingerDoubleTapHold,
-                .twoFingerTripleTap,
-            ],
-            "gestures_three_finger_tap".localized: [
-                .threeFingerTap,
-                .threeFingerDoubleTap,
-                .threeFingerTripleTap,
-            ],
-            "gestures_four_finger_tap".localized: [
-                .fourFingerTapTop,
-                .fourFingerTapBottom
-            ],
-            "gestures_shortcuts".localized: [
-                .twoFingerRotate,
-                .twoFingerZShape,
-                .oneFingerInteraction,
-            ]
-        ]
-    }
+    private let items: [Any] = [
+        "Op dit scherm kun je alle VoiceOver gebaren leren, van makkelijk tot moeilijk. Via de knop rechtsbovenaan kun je de gebaren door elkaar oefenen.",
+        Header("gestures_one_finger_swipe".localized),
+        Gesture.oneFingerTouch,
+        Gesture.oneFingerSwipeRight,
+        Gesture.oneFingerSwipeLeft,
+        Gesture.oneFingerSwipeUp,
+        Gesture.oneFingerSwipeDown,
+        Header("gestures_two_finger_swipe".localized),
+        Gesture.twoFingerSwipeUp,
+        Gesture.twoFingerSwipeDown,
+        Header("gestures_three_finger_swipe".localized),
+        Gesture.threeFingerSwipeUp,
+        Gesture.threeFingerSwipeDown,
+        Gesture.threeFingerSwipeRight,
+        Gesture.threeFingerSwipeLeft,
+        Header("gestures_one_finger_tap".localized),
+        Gesture.oneFingerDoubleTap,
+        Gesture.oneFingerDoubleTapHold,
+        Gesture.oneFingerTripleTap,
+        Header("gestures_two_finger_tap".localized),
+        Gesture.twoFingerTap,
+        Gesture.twoFingerDoubleTap,
+        Gesture.twoFingerDoubleTapHold,
+        Gesture.twoFingerTripleTap,
+        Header("gestures_three_finger_tap".localized),
+        Gesture.threeFingerTap,
+        Gesture.threeFingerDoubleTap,
+        Gesture.threeFingerTripleTap,
+        Header("gestures_four_finger_tap".localized),
+        Gesture.fourFingerTapTop,
+        Gesture.fourFingerTapBottom,
+        Header("gestures_shortcuts".localized),
+        Gesture.twoFingerRotate,
+        Gesture.twoFingerZShape,
+        Gesture.oneFingerInteraction
+    ]
     
     private var lastSelectedRow: IndexPath?
 
@@ -63,6 +54,8 @@ class GesturesViewController: TableViewController {
         super.viewDidLoad()
         
         // Set-up UITableView
+        tableView.registerNib(HeaderTableViewCell.self)
+        tableView.registerNib(TextTableViewCell.self)
         tableView.registerNib(TitleTableViewCell.self)
     }
     
@@ -101,25 +94,28 @@ class GesturesViewController: TableViewController {
 
 extension GesturesViewController {
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return gestures.count
-    }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return gestures[section].key
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return gestures[section].value.count
+        return items.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.cell(TitleTableViewCell.self, at: indexPath)
+        let item = items[indexPath.row]
         
-        let gesture = gestures[indexPath.section].value[indexPath.row]
-        cell.setup(gesture)
+        if let string = item as? String {
+            let cell = tableView.cell(TextTableViewCell.self, at: indexPath)
+            cell.setup(string)
+            return cell
+        } else if let header = item as? Header {
+            let cell = tableView.cell(HeaderTableViewCell.self, at: indexPath)
+            cell.setup(header.text)
+            return cell
+        } else if let gesture = item as? Gesture {
+            let cell = tableView.cell(TitleTableViewCell.self, at: indexPath)
+            cell.setup(gesture)
+            return cell
+        }
         
-        return cell
+        fatalError("Cell for object \(item) not implemented")
     }
 }
 
@@ -131,7 +127,10 @@ extension GesturesViewController {
         lastSelectedRow = indexPath
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let gesture = gestures[indexPath.section].value[indexPath.row]
+        guard let gesture = items[indexPath.row] as? Gesture else {
+            return
+        }
+        
         let vc = UIStoryboard.voiceOverGesture(gesture: gesture)
         navigationController?.pushViewController(vc, animated: true)
     }

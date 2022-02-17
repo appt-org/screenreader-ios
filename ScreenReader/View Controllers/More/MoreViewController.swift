@@ -29,6 +29,10 @@ class MoreViewController: TableViewController {
         
         tableView.reloadData()
     }
+    
+    @IBAction private func onShareTapped(_ sender: Any) {
+        shareApp()
+    }
 }
 
 // MARK: - UITableView
@@ -46,13 +50,13 @@ extension MoreViewController {
             let cell = tableView.cell(TextTableViewCell.self, at: indexPath)
             cell.setup(string)
             return cell
-        } else if let topic = item as? Topic {
-            let cell = tableView.cell(TitleTableViewCell.self, at: indexPath)
-            cell.setup(topic)
-            return cell
         } else if let header = item as? Header {
             let cell = tableView.cell(HeaderTableViewCell.self, at: indexPath)
             cell.setup(header.text)
+            return cell
+        } else if let topic = item as? Topic {
+            let cell = tableView.cell(TitleTableViewCell.self, at: indexPath)
+            cell.setup(topic)
             return cell
         }
         
@@ -67,8 +71,7 @@ extension MoreViewController {
                 UIApplication.shared.open(url, options: [:])
                 return
             } else if topic == .share {
-                let shareViewController = UIActivityViewController(activityItems: [topic.website], applicationActivities: [])
-                present(shareViewController, animated: true)
+                shareApp()
             }
             
             openWebsite(topic.website)

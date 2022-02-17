@@ -80,8 +80,8 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.isOpaque = true
         navigationController?.navigationBar.isTranslucent = false
         
-        let backButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        backButton.accessibilityLabel = "Back"
+        let backButton = UIBarButtonItem(title: "back".localized, style: .plain, target: nil, action: nil)
+        backButton.accessibilityLabel = "back".localized
         navigationItem.backBarButtonItem = backButton
         
         if #available(iOS 13.0, *) {
@@ -133,5 +133,10 @@ class ViewController: UIViewController {
                 tabBar.standardAppearance = appearance
             }
         }
+    }
+    
+    func shareApp() {
+        let shareViewController = UIActivityViewController(activityItems: [Topic.share.website], applicationActivities: [])
+        present(shareViewController, animated: true)
     }
 }

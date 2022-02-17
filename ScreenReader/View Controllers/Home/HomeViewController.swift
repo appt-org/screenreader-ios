@@ -34,4 +34,8 @@ class HomeViewController: TextViewController {
             ]
         }
     }
+    
+    @IBAction private func onShareTapped(_ sender: Any) {
+        shareApp()
+    }
 }
