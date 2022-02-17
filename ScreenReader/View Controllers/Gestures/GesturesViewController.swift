@@ -92,8 +92,8 @@ class GesturesViewController: TableViewController {
             UserDefaults.standard.setValue(false, forKey: gesture.id)
         }
         
-        //let vc = UIStoryboard.voiceOverGesture(gestures: gestures, instructions: instructions)
-        //navigationController?.pushViewController(vc, animated: true)
+        let vc = UIStoryboard.voiceOverGesture(gestures: gestures, instructions: instructions)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -132,7 +132,7 @@ extension GesturesViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let gesture = gestures[indexPath.section].value[indexPath.row]
-        // let vc = UIStoryboard.voiceOverGesture(gesture: gesture)
-        //navigationController?.pushViewController(vc, animated: true)
+        let vc = UIStoryboard.voiceOverGesture(gesture: gesture)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

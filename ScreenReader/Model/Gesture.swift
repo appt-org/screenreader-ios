@@ -78,7 +78,7 @@ enum Gesture: String, CaseIterable {
     }
     
     /** View */
-    var view: UIView {
+    var view: GestureView {
         switch self {
         case .oneFingerTouch:
             return TouchGestureView(gesture: self, taps: 1, fingers: 1)

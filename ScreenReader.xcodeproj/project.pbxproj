@@ -36,6 +36,8 @@
 		287D443A27BEA17500B9B997 /* _Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443927BEA17500B9B997 /* _Direction.swift */; };
 		287D443C27BEA18C00B9B997 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443B27BEA18C00B9B997 /* TextField.swift */; };
 		287D443E27BEA1A200B9B997 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443D27BEA1A200B9B997 /* Direction.swift */; };
+		287D444027BEA29D00B9B997 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443F27BEA29D00B9B997 /* GestureViewController.swift */; };
+		287D444227BEA36600B9B997 /* _UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D444127BEA36600B9B997 /* _UIStoryboard.swift */; };
 		28D1431727BD287D0000BF92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1431627BD287D0000BF92 /* AppDelegate.swift */; };
 		28D1431927BD287D0000BF92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1431827BD287D0000BF92 /* SceneDelegate.swift */; };
 		28D1431E27BD287D0000BF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D1431C27BD287D0000BF92 /* Main.storyboard */; };
@@ -98,6 +100,8 @@
 		287D443927BEA17500B9B997 /* _Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Direction.swift; sourceTree = "<group>"; };
 		287D443B27BEA18C00B9B997 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		287D443D27BEA1A200B9B997 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		287D443F27BEA29D00B9B997 /* GestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
+		287D444127BEA36600B9B997 /* _UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIStoryboard.swift; sourceTree = "<group>"; };
 		28D1431327BD287D0000BF92 /* ScreenReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D1431627BD287D0000BF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28D1431827BD287D0000BF92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 				287D443927BEA17500B9B997 /* _Direction.swift */,
 				28F09DC327BD39F400C46249 /* _UIFont.swift */,
 				28F09DE027BD437700C46249 /* _DispatchQueue.swift */,
+				287D444127BEA36600B9B997 /* _UIStoryboard.swift */,
 				28F09DE727BD451A00C46249 /* _UITableView.swift */,
 				28F09DE927BD456C00C46249 /* _UIView.swift */,
 				28F09DF527BD686400C46249 /* _UIViewController.swift */,
@@ -272,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				28F09DCA27BD414F00C46249 /* GesturesViewController.swift */,
+				287D443F27BEA29D00B9B997 /* GestureViewController.swift */,
 			);
 			path = Gestures;
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 				287D443E27BEA1A200B9B997 /* Direction.swift in Sources */,
 				287D442B27BEA12E00B9B997 /* SwipeGestureView.swift in Sources */,
 				287D441727BEA11F00B9B997 /* VoiceOverLinksView.swift in Sources */,
+				287D444027BEA29D00B9B997 /* GestureViewController.swift in Sources */,
 				28F09DF027BD64A200C46249 /* Topic.swift in Sources */,
 				287D443727BEA16700B9B997 /* _CGPoint.swift in Sources */,
 				28F09DBB27BD38E100C46249 /* _UIColor.swift in Sources */,
@@ -434,6 +441,7 @@
 				287D442A27BEA12E00B9B997 /* TapGestureView.swift in Sources */,
 				287D443A27BEA17500B9B997 /* _Direction.swift in Sources */,
 				28F09DE327BD44CD00C46249 /* TextViewController.swift in Sources */,
+				287D444227BEA36600B9B997 /* _UIStoryboard.swift in Sources */,
 				287D441B27BEA11F00B9B997 /* VoiceOverHeadingsView.swift in Sources */,
 				28F09DDB27BD427200C46249 /* HeaderTableViewCell.swift in Sources */,
 				28D1431727BD287D0000BF92 /* AppDelegate.swift in Sources */,

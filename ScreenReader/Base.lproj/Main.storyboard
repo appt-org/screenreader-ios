@@ -8,6 +8,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-SemiBold.ttf">
+            <string>SourceSansPro-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="t1c-1A-Fuq">
@@ -49,7 +57,7 @@
         <!--More-->
         <scene sceneID="Drp-dn-vAR">
             <objects>
-                <viewController id="uJE-AL-778" customClass="MoreViewController" customModule="ScreenReader" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoreViewController" id="uJE-AL-778" customClass="MoreViewController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BVO-oU-yzT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +105,7 @@
         <!--Actions-->
         <scene sceneID="t1l-ys-ruh">
             <objects>
-                <viewController id="uQX-1v-g1V" customClass="ActionsViewController" customModule="ScreenReader" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActionsViewController" id="uQX-1v-g1V" customClass="ActionsViewController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ew8-h5-kuA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +153,7 @@
         <!--Gestures-->
         <scene sceneID="mSb-RA-5ay">
             <objects>
-                <viewController id="9BD-cw-d7v" customClass="GesturesViewController" customModule="ScreenReader" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GesturesViewController" id="9BD-cw-d7v" customClass="GesturesViewController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eSF-vv-6Vl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,7 +201,7 @@
         <!--Home-->
         <scene sceneID="0XT-1w-8Hj">
             <objects>
-                <viewController id="EYh-CV-eeI" customClass="HomeViewController" customModule="ScreenReader" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="EYh-CV-eeI" customClass="HomeViewController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QIC-s3-StI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,17 +230,108 @@
             </objects>
             <point key="canvasLocation" x="2296" y="-552"/>
         </scene>
+        <!--Gesture View Controller-->
+        <scene sceneID="eK5-qh-QYF">
+            <objects>
+                <viewController storyboardIdentifier="GestureViewController" hidesBottomBarWhenPushed="YES" id="fc3-Jd-Fto" customClass="GestureViewController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="24f-dI-LBg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="v6p-iH-iw2">
+                                <rect key="frame" x="16" y="108.5" width="382" height="679.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TitleTitleTitleTitleTitle TitleTitleTitleTitleTitle TitleTitleTitleTitleTitle TitleTitleTitleTitleTitle " textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWr-XU-Odu">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="47"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="20"/>
+                                        <color key="textColor" name="Foreground"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YBQ-mg-ciF">
+                                        <rect key="frame" x="0.0" y="63" width="382" height="163.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <string key="text">Description Description Description Description Description Description Description Description Description Description Description Description DescriptionDescription Description Description Description Description Description Description Description</string>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="20"/>
+                                        <color key="textColor" name="Foreground"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1W3-Cm-AHi">
+                                        <rect key="frame" x="0.0" y="242.5" width="382" height="21"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="18"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gesture_escape" translatesAutoresizingMaskIntoConstraints="NO" id="6Hh-1c-fEr">
+                                        <rect key="frame" x="0.0" y="279.5" width="382" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="JS7-K6-4N0"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="alignBottom" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c5b-f9-Eg2"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="v6p-iH-iw2" secondAttribute="trailing" constant="16" id="L2f-XQ-igk"/>
+                            <constraint firstItem="v6p-iH-iw2" firstAttribute="leading" secondItem="24f-dI-LBg" secondAttribute="leading" constant="16" id="QtG-bS-zc3"/>
+                            <constraint firstItem="v6p-iH-iw2" firstAttribute="centerY" secondItem="24f-dI-LBg" secondAttribute="centerY" id="pue-ZN-8x5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ddc-hw-7Id">
+                        <barButtonItem key="rightBarButtonItem" title="Uitleg" id="XWr-qN-ubl">
+                            <connections>
+                                <action selector="onExplanationTapped:" destination="fc3-Jd-Fto" id="7eP-5g-Mzb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="YBQ-mg-ciF" id="lSX-NN-cYP"/>
+                        <outlet property="explanationItem" destination="XWr-qN-ubl" id="XMB-ti-r8e"/>
+                        <outlet property="feedbackLabel" destination="1W3-Cm-AHi" id="MRA-Lw-1h0"/>
+                        <outlet property="imageHeightConstraint" destination="JS7-K6-4N0" id="Az7-gh-19u"/>
+                        <outlet property="imageView" destination="6Hh-1c-fEr" id="ifW-dJ-A6W"/>
+                        <outlet property="titleLabel" destination="eWr-XU-Odu" id="6pI-md-K4Q"/>
+                        <segue destination="Qz4-wG-Z7o" kind="unwind" identifier="gestureCompleted" unwindAction="gestureCompleted:" id="LlX-aI-k5D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITT-DX-baW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Qz4-wG-Z7o" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3059" y="222"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Actions" width="24" height="24"/>
         <image name="Gestures" width="24" height="24"/>
         <image name="Home" width="24" height="24"/>
         <image name="More" width="24" height="24"/>
+        <image name="gesture_escape" width="154" height="154"/>
         <namedColor name="Background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Foreground">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
