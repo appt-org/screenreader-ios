@@ -122,19 +122,46 @@ class Alert {
 
         func build() -> UIAlertController {
             let alert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
+            
+            // Larger title
+            if let title = title {
+                let attributedTitle = NSAttributedString(string: title, attributes: [
+                    .font: UIFont.openSans(weight: .bold, size: 20, style: .title1),
+                    .foregroundColor : UIColor.foreground
+                ])
+                
+                alert.setValue(attributedTitle, forKey: "attributedTitle")
+            }
+            
+            // Larger message
+            if let message = message {
+                let attributedMessage = NSMutableAttributedString(string: message, attributes: [
+                    .font: UIFont.openSans(weight: .regular, size: 18, style: .body),
+                    .foregroundColor : UIColor.foreground
+                ])
+                
+                if title != nil {
+                    attributedMessage.mutableString.setString("\n" + message)
+                }
+                
+                alert.setValue(attributedMessage, forKey: "attributedMessage")
+            }
+            
+            // Styles
             alert.view.tintColor = tintColor
             alert.view.backgroundColor = backgroundColor
             alert.view.alpha = alpha
             alert.view.layer.cornerRadius = cornerRadius
             
+            // Popover
             if let sourceView = sourceView {
                 alert.popoverPresentationController?.sourceView = sourceView
             }
-            
             if let sourceRect = self.sourceRect {
                 alert.popoverPresentationController?.sourceRect = sourceRect
             }
             
+            // Actions
             actions.forEach { (action) in
                 alert.addAction(action)
             }

@@ -65,6 +65,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .foregroundColor: UIColor.white
         ], for: .selected)
         
+        // UIAlertController style
+        UIView.appearance(whenContainedInInstancesOf: [UIAlertController.self]).tintColor = .foreground
+        UILabel.appearance(whenContainedInInstancesOf: [UIAlertController.self]).textColor = .foreground
+        
+        // UIActivityIndicatorView
+        UIActivityIndicatorView.appearance().tintColor = .primary
+        
         return true
     }
 
