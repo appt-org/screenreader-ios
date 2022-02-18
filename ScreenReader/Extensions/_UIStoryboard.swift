@@ -23,21 +23,31 @@ extension UIStoryboard {
         }
     }
     
-    static func voiceOverGestures() -> GesturesViewController {
+    static func gestures() -> GesturesViewController {
         return viewController(.main, identifier: GesturesViewController.self)
     }
     
-    static func voiceOverGesture(gesture: Gesture) -> GestureViewController {
+    static func gesture(_ gesture: Gesture) -> GestureViewController {
         let vc = viewController(.main, identifier: GestureViewController.self)
         vc.gesture = gesture
         return vc
     }
     
-    static func voiceOverGesture(gestures: [Gesture], instructions: Bool = true) -> GestureViewController {
+    static func gestures(_ gestures: [Gesture], instructions: Bool = true) -> GestureViewController {
         let vc = viewController(.main, identifier: GestureViewController.self)
         vc.gesture = gestures[0]
         vc.gestures = gestures
         vc.instructions = instructions
+        return vc
+    }
+    
+    static func actions() -> ActionsViewController {
+        return viewController(.main, identifier: ActionsViewController.self)
+    }
+    
+    static func action(_ action: Action) -> ActionViewController {
+        let vc = viewController(.main, identifier: ActionViewController.self)
+        vc.action = action
         return vc
     }
 }

@@ -97,7 +97,7 @@ class GestureViewController: ViewController {
         Alert.Builder()
             .title(gesture.title)
             .message(gesture.explanation)
-            .action("continue".localized)
+            .okAction()
             .present(in: self)
     }
     
@@ -108,7 +108,7 @@ class GestureViewController: ViewController {
         }
         gestures.removeFirst()
         
-        viewControllers[viewControllers.count-1] = UIStoryboard.voiceOverGesture(gestures: gestures, instructions: self.instructions)
+        viewControllers[viewControllers.count-1] = UIStoryboard.gestures(gestures, instructions: self.instructions)
         self.navigationController?.setViewControllers(viewControllers, animated: true)
     }
     
@@ -189,10 +189,10 @@ extension GestureViewController: GestureViewDelegate {
                 .action("stop".localized, style: .destructive) {
                     self.finish()
                 }
-                .action("skip".localized) {
+                .action("skip".localized, style: .cancel) {
                     self.next()
                 }
-                .action("continue".localized, style: .cancel) {
+                .action("continue".localized, style: .default) {
                     self.errorLimit = self.errorLimit * 2
                     UIAccessibility.post(notification: .screenChanged, argument: self.gestureView)
                 }.present(in: self)

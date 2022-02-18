@@ -140,3 +140,134 @@ class ViewController: UIViewController {
         present(shareViewController, animated: true)
     }
 }
+
+// MARK: - State notifications
+
+extension ViewController {
+    
+    // State: register notifications
+    private func registerStateNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(onStateForeground(_:)), name: UIApplication.willEnterForegroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onStateActive(_:)), name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onStateBackground(_:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onStateResign(_:)), name: UIApplication.willResignActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onStateTerminate(_:)), name: UIApplication.willTerminateNotification, object: nil)
+    }
+    
+    // State: entered foreground
+    @objc private func onStateForeground(_ notification: Notification) {
+        onStateForeground()
+    }
+    
+    @objc func onStateForeground() {
+        // Can be overridden
+    }
+    
+    // State: became active
+    @objc private func onStateActive(_ notification: Notification) {
+        onStateActive()
+    }
+    
+    @objc func onStateActive() {
+        // Can be overridden
+    }
+    
+    // State: entered background
+    @objc private func onStateBackground(_ notification: Notification) {
+        onStateBackground()
+    }
+    
+    @objc func onStateBackground() {
+        // Can be overridden
+    }
+    
+    // State: will resign
+    @objc private func onStateResign(_ notification: Notification) {
+        onStateResign()
+    }
+    
+    @objc func onStateResign() {
+        // Can be overridden
+    }
+    
+    // State: will terminate
+    @objc private func onStateTerminate(_ notification: Notification) {
+        onStateTerminate()
+    }
+    
+    @objc func onStateTerminate() {
+        // Can be overridden
+    }
+}
+
+// MARK: - Keyboard notifications
+
+extension ViewController {
+    
+    // Keyboard: register notifications
+    private func registerKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    // Keyboard: will show
+    @objc private func keyboardWillShow(_ notification: Notification) {
+        guard let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
+        keyboardWillShow(frame: keyboardFrame.cgRectValue, notification: notification)
+    }
+    
+    @objc func keyboardWillShow(frame: CGRect, notification: Notification) {
+        // Can be overridden
+    }
+    
+    // Keyboard: will hide
+    @objc private func keyboardWillHide(_ notification: Notification) {
+        keyboardWillHide(notification: notification)
+    }
+
+    @objc func keyboardWillHide(notification: Notification) {
+        // Can be overridden
+    }
+}
+
+// MARK: - Accessibility notifications
+
+extension ViewController {
+    
+    // Accessibility: register notifications
+    private func registerAccessibilityNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(announcementFinished(_:)),name: UIAccessibility.announcementDidFinishNotification, object: nil)
+
+        NotificationCenter.default.addObserver(self, selector:#selector(contentSizeCategoryDidChange(notification:)), name: UIContentSizeCategory.didChangeNotification, object: nil)
+    }
+    
+    @objc private func announcementFinished(_ notification: Notification) {
+        guard let info = notification.userInfo else { return }
+        guard let announcement = info[UIAccessibility.announcementStringValueUserInfoKey] as? String else { return }
+        guard let success = info[UIAccessibility.announcementWasSuccessfulUserInfoKey] as? Bool else { return }
+        
+        announcementFinished(success: success, announcement: announcement)
+    }
+
+    @objc func contentSizeCategoryDidChange(notification: Notification) {
+        // Can be overridden
+    }
+    
+    
+    @objc func announcementFinished(success: Bool, announcement: String) {
+        // Can be overridden
+    }
+}
+
+// MARK: - Alerts
+
+extension ViewController {
+    
+    func showError(_ error: Error, callback: (() -> Void)? = nil) {
+        showError(error.localizedDescription, callback: callback)
+    }
+    
+    func showError(_ error: String, callback: (() -> Void)? = nil) {
+        Alert.error(error, viewController: self, callback: callback)
+    }
+}

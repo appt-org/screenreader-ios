@@ -37,4 +37,14 @@ class TitleTableViewCell: UITableViewCell {
         accessoryType = gesture.completed ? .checkmark : .disclosureIndicator
         accessibilityHint = "Dubbeltik met twee vingers om dit gebaar te oefenen"
     }
+    
+    func setup(_ action: Action) {
+        titleLabel.font = .openSans(weight: .regular, size: 18, style: .body)
+        titleLabel.text = action.title
+        
+        accessibilityLabel = action.title
+        accessibilityValue = action.completed ? "Afgerond" : nil
+        accessoryType = action.completed ? .checkmark : .disclosureIndicator
+        accessibilityHint = "Dubbeltik met twee vingers om deze actie te oefenen"
+    }
 }

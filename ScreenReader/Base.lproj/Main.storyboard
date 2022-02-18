@@ -40,7 +40,7 @@
         <!--More-->
         <scene sceneID="cpw-kV-mfa">
             <objects>
-                <navigationController id="s8L-bn-Gwq" sceneMemberID="viewController">
+                <navigationController id="s8L-bn-Gwq" customClass="NavigationController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="More" image="More" id="F79-6A-eYl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3RB-oB-Kx7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -94,7 +94,7 @@
         <!--Actions-->
         <scene sceneID="R71-ZA-o7z">
             <objects>
-                <navigationController id="3YL-Z2-pf3" sceneMemberID="viewController">
+                <navigationController id="3YL-Z2-pf3" customClass="NavigationController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Actions" image="Actions" id="rFF-8B-4Lx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pIS-Vo-z6e">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -141,7 +141,7 @@
         <!--Gestures-->
         <scene sceneID="MsI-qF-q8e">
             <objects>
-                <navigationController id="3v8-FN-HSf" sceneMemberID="viewController">
+                <navigationController id="3v8-FN-HSf" customClass="NavigationController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Gestures" image="Gestures" id="amS-P7-OdT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6L7-Aw-aJ6">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -194,7 +194,7 @@
         <!--Home-->
         <scene sceneID="8qJ-XT-RGG">
             <objects>
-                <navigationController id="bDw-Up-HCM" sceneMemberID="viewController">
+                <navigationController id="bDw-Up-HCM" customClass="NavigationController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="Home" id="S4N-w0-uQh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CYI-lb-mvV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -327,6 +327,38 @@
                 <exit id="Qz4-wG-Z7o" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3059" y="222"/>
+        </scene>
+        <!--VoiceOver actie-->
+        <scene sceneID="aF8-48-nQ9">
+            <objects>
+                <viewController storyboardIdentifier="ActionViewController" hidesBottomBarWhenPushed="YES" id="WGY-2n-Trg" customClass="ActionViewController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="riA-jY-VnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="r2r-GA-xKd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="egK-e9-7tx"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="YIS-Av-M1s"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4eh-PG-uzD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r2r-GA-xKd" firstAttribute="trailing" secondItem="4eh-PG-uzD" secondAttribute="trailing" id="9fd-KF-grJ"/>
+                            <constraint firstItem="r2r-GA-xKd" firstAttribute="top" secondItem="4eh-PG-uzD" secondAttribute="top" id="U6S-uO-Ifu"/>
+                            <constraint firstAttribute="bottom" secondItem="r2r-GA-xKd" secondAttribute="bottom" id="lM0-83-ljd"/>
+                            <constraint firstItem="r2r-GA-xKd" firstAttribute="leading" secondItem="4eh-PG-uzD" secondAttribute="leading" id="tP5-w4-Myf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="VoiceOver actie" id="0Y9-hD-skq"/>
+                    <connections>
+                        <outlet property="scrollView" destination="r2r-GA-xKd" id="D5S-Sf-3ty"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjD-ub-cgs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3058" y="976"/>
         </scene>
     </scenes>
     <resources>

@@ -66,7 +66,7 @@ class GesturesViewController: TableViewController {
         
     @IBAction private func onPracticeTapped(_ sender: Any) {
         Alert.Builder()
-            .message("gestures_practice_message".localized)
+            .title("gestures_practice_message".localized)
             .action("gestures_practice_positive".localized) {
                 self.practice(true)
             }
@@ -85,7 +85,7 @@ class GesturesViewController: TableViewController {
             UserDefaults.standard.setValue(false, forKey: gesture.id)
         }
         
-        let vc = UIStoryboard.voiceOverGesture(gestures: gestures, instructions: instructions)
+        let vc = UIStoryboard.gestures(gestures, instructions: instructions)
         navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -131,7 +131,7 @@ extension GesturesViewController {
             return
         }
         
-        let vc = UIStoryboard.voiceOverGesture(gesture: gesture)
+        let vc = UIStoryboard.gesture(gesture)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

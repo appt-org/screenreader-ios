@@ -40,6 +40,9 @@
 		287D444227BEA36600B9B997 /* _UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D444127BEA36600B9B997 /* _UIStoryboard.swift */; };
 		287D444427BEA47D00B9B997 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 287D444327BEA47D00B9B997 /* Localizable.strings */; };
 		287D444827BEA4E700B9B997 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 287D444727BEA4E700B9B997 /* Localizable.stringsdict */; };
+		28815FA927BFF369002CC12A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28815FA827BFF369002CC12A /* ActionViewController.swift */; };
+		28815FAB27BFF3EB002CC12A /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28815FAA27BFF3EB002CC12A /* ScrollViewController.swift */; };
+		28815FAD27BFF3FB002CC12A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28815FAC27BFF3FB002CC12A /* NavigationController.swift */; };
 		28D1431727BD287D0000BF92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1431627BD287D0000BF92 /* AppDelegate.swift */; };
 		28D1431927BD287D0000BF92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1431827BD287D0000BF92 /* SceneDelegate.swift */; };
 		28D1431E27BD287D0000BF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D1431C27BD287D0000BF92 /* Main.storyboard */; };
@@ -106,6 +109,9 @@
 		287D444127BEA36600B9B997 /* _UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIStoryboard.swift; sourceTree = "<group>"; };
 		287D444327BEA47D00B9B997 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		287D444727BEA4E700B9B997 /* Localizable.stringsdict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		28815FA827BFF369002CC12A /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		28815FAA27BFF3EB002CC12A /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		28815FAC27BFF3FB002CC12A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		28D1431327BD287D0000BF92 /* ScreenReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D1431627BD287D0000BF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28D1431827BD287D0000BF92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -261,6 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				28F09DDE27BD435900C46249 /* ViewController.swift */,
+				28815FAC27BFF3FB002CC12A /* NavigationController.swift */,
+				28815FAA27BFF3EB002CC12A /* ScrollViewController.swift */,
 				28F09DDC27BD432700C46249 /* TableViewController.swift */,
 				28F09DE227BD44CD00C46249 /* TextViewController.swift */,
 				28F09DC627BD413800C46249 /* Home */,
@@ -292,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				28F09DCE27BD416A00C46249 /* ActionsViewController.swift */,
+				28815FA827BFF369002CC12A /* ActionViewController.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -434,6 +443,7 @@
 				287D440527BE9FE400B9B997 /* Alert.swift in Sources */,
 				287D441F27BEA11F00B9B997 /* VoiceOverView.swift in Sources */,
 				28F09DEA27BD456C00C46249 /* _UIView.swift in Sources */,
+				28815FAD27BFF3FB002CC12A /* NavigationController.swift in Sources */,
 				28F09DE127BD437700C46249 /* _DispatchQueue.swift in Sources */,
 				287D443E27BEA1A200B9B997 /* Direction.swift in Sources */,
 				287D442B27BEA12E00B9B997 /* SwipeGestureView.swift in Sources */,
@@ -448,6 +458,7 @@
 				287D440027BE9F7000B9B997 /* Gesture.swift in Sources */,
 				287D442A27BEA12E00B9B997 /* TapGestureView.swift in Sources */,
 				287D443A27BEA17500B9B997 /* _Direction.swift in Sources */,
+				28815FA927BFF369002CC12A /* ActionViewController.swift in Sources */,
 				28F09DE327BD44CD00C46249 /* TextViewController.swift in Sources */,
 				287D444227BEA36600B9B997 /* _UIStoryboard.swift in Sources */,
 				287D441B27BEA11F00B9B997 /* VoiceOverHeadingsView.swift in Sources */,
@@ -464,6 +475,7 @@
 				287D442D27BEA12E00B9B997 /* GestureView.swift in Sources */,
 				287D441927BEA11F00B9B997 /* VoiceOverSelectionView.swift in Sources */,
 				28F09DE627BD44F800C46249 /* Header.swift in Sources */,
+				28815FAB27BFF3EB002CC12A /* ScrollViewController.swift in Sources */,
 				28D1431927BD287D0000BF92 /* SceneDelegate.swift in Sources */,
 				28F09DCB27BD414F00C46249 /* GesturesViewController.swift in Sources */,
 				287D442927BEA12E00B9B997 /* LongPressGestureView.swift in Sources */,
@@ -631,6 +643,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,6 +673,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
