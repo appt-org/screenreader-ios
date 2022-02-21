@@ -21,38 +21,38 @@
 "back" = "Terug";
 
 /* Home */
-"home_description" = "This ScreenReader app helps you to learn VoiceOver.";
-"home_section_1" = "What is VoiceOver?";
-"home_section_1_paragraph_1" = "VoiceOver is an accessibility feature which gives you audible screen descriptions. By using gestures you can navigate between elements on the screen. Each element is announced as it is selected. This allows you to control your device even if you can't see the screen.";
-"home_section_2" = "Learning VoiceOver";
-"home_section_2_paragraph_1" = "VoiceOver is a crucial aid for visually impaired people to use their device. This app helps you to learn all gestures and common actions. If you are dependent on VoiceOver, use this app to improve your skills. If you are a professional, use the learnings to improve the accessibility of your apps.";
-"home_section_3" = "Learning gestures";
-"home_section_3_paragraph_1" = "Open the Gestures tab to learn gestures. There are three simple gestures to control your device.";
-"home_section_3_paragraph_2" = "1. Swipe left to go to the previous item.";
-"home_section_3_paragraph_3" = "2. Swipe right to go to the next item.";
-"home_section_3_paragraph_4" = "3. Double tap to activate the selected item.";
-"home_section_4" = "Learning actions";
-"home_section_4_paragraph_1" = "Once you have mastered the gestures, open the Actions tab to learn actions. You can learn how to navigate more effectively and how to edit text.";
-"home_section_5" = "Turning on VoiceOver";
-"home_section_5_paragraph_1" = "If you are ready to turn on VoiceOver, ask Siri to \"Turn VoiceOver on\". Or open the Settings app, select Accessibility, select VoiceOver and toggle the switch on.";
-"home_section_6" = "Turning off VoiceOver";
-"home_section_6_paragraph_1" = "You can turn off VoiceOver by asking Siri to \"Turn VoiceOver off\". Or open the Settings app, select Accessibility, select VoiceOver and toggle the switch off. Remember that you need to swipe to navigate and double tap to activate.";
-"home_section_7" = "VoiceOver shortcut";
-"home_section_7_paragraph_1" = "It's possible add a shortcut to toggle VoiceOver on or off. Open the Settings app, select Accessibility, scroll down and select Accessibility Shortcut and finally select VoiceOver in the list. Triple tap the home button or side button to toggle VoiceOver on or off.";
+"home_description" = "De ScreenReader app helpt je om VoiceOver te leren.";
+"home_section_1" = "Wat is VoiceOver?";
+"home_section_1_paragraph_1" = "VoiceOver is een toegankelijkheidsfunctie waardoor het scherm wordt voorgelezen. Door middel van gebaren kun je navigeren tussen elementen op het scherm. Elk element wordt aangekondigd zodra het is geselecteerd. Hiermee kun je je toestel bedienen, zelfs als je het scherm niet kunt zien.";
+"home_section_2" = "VoiceOver leren";
+"home_section_2_paragraph_1" = "VoiceOver is een essentieel hulpmiddel voor slechtzienden en blinden om hun toestel te bedienen. Deze app helpt je om alle gebaren en veelvoorkomende acties te leren. Indien je afhankelijk bent van VoiceOver, dan is deze app erg handig om je vaardigheden te verbeteren. Indien je een ontwikkelaar bent, gebruik de kennis die je opdoet dan om de toegankelijkheid van jouw apps te verbeteren.";
+"home_section_3" = "Gebaren leren";
+"home_section_3_paragraph_1" = "Open het tabblad Gebaren om gebaren te leren. Er zijn drie simpele gebaren om je apparaat te besturen.";
+"home_section_3_paragraph_2" = "1. Veeg naar links om naar het vorige element te gaan.";
+"home_section_3_paragraph_3" = "2. Veeg naar rechts om naar het volgende element te gaan.";
+"home_section_3_paragraph_4" = "3. Dubbeltik om het geselecteerde item te activeren.";
+"home_section_4" = "Acties leren";
+"home_section_4_paragraph_1" = "Zodra je de gebaren onder de knie hebt, kun je het tabblad Acties openen om acties te leren. Je kunt leren hoe je beter kunt navigeren en hoe je tekst kunt bewerken.";
+"home_section_5" = "VoiceOver uitzetten";
+"home_section_5_paragraph_1" = "Als je VoiceOver wilt inschakelen, zeg je tegen Siri: \"Zet VoiceOver aan\". Of open de Instellingen app, selecteer Toegankelijkheid, selecteer VoiceOver en zet de schakelaar aan.";
+"home_section_6" = "VoiceOver uitzetten";
+"home_section_6_paragraph_1" = "Je kunt VoiceOver uitschakelen door tegen Siri te zeggen: \"Zet VoiceOver uit\". Of open de Instellingen-app, selecteer Toegankelijkheid, selecteer VoiceOver en zet de schakelaar aan. Vergeet niet dat je vanaf dit moment moet vegen om te navigeren en moet dubbeltikken om te activeren.";
+"home_section_7" = "VoiceOver snelkoppeling";
+"home_section_7_paragraph_1" = "Het is mogelijk een snelkoppeling toe te voegen om VoiceOver in- of uitschakelen. Open de Instellingen app, selecteer Toegankelijkheid, scroll naar beneden en selecteer Activeringsknop en selecteer vervolgens VoiceOver in de lijst. Tik driedubbel op de thuisknop of zijknop om Voiceover in- of uit te schakelen.";
 
 /* More */
-"more_description" = "The ScreenReader app is an initiative of the Appt Foundation. The app has been developed by Abra and was financed by the SIDN fund.";
+"more_description" = "De ScreenReader app is een initiatief van Stichting Appt. De app is ontwikkeld door Abra en gefinancierd door het SIDN fonds.";
 "more_partners" = "Partners";
 
 /* Topic */
-"topic_rating_title" = "Rate the app";
-"topic_share_title" = "Share the app";
-"topic_appt_title" = "Appt Foundation";
+"topic_rating_title" = "Beoordeel de app";
+"topic_share_title" = "Deel de app";
+"topic_appt_title" = "Stichting Appt";
 "topic_abra_title" = "Abra";
-"topic_sidn_fonds_title" = "SIDN fund";
+"topic_sidn_fonds_title" = "SIDN fonds";
 
 "topic_rating_website" = "https://apps.apple.com/us/app/screenreader/id1610318073"; // TODO: Double check id
-"topic_share_website" = "Download the free ScreenReader app at https://screenreader.app and learn how to use the screen reader!";
+"topic_share_website" = "Download de gratis ScreenReader app op https://screenreader.app om te leren hoe je de schermlezer gebruikt!";
 "topic_appt_website" = "https://appt.org";
 "topic_abra_website" = "https://abra.nl";
 "topic_sidn_fonds_website" = "https://sidnfonds.nl";
@@ -185,7 +185,7 @@
 
 "gesture_two_finger_z_shape_title" = "Een melding sluiten of teruggaan naar het vorige scherm";
 "gesture_two_finger_z_shape_description" = "Maak met 2 vingers een zigzaggende beweging in de vorm van de letter Z";
-"gesture_two_finger_z_shape_explanation" =  "Dit gebaar is superhandig. Je kunt namelijk vanaf elke plek in een app terug navigeren. Daarnaast kun je meldingen sluiten.\n\nHet is vaak even wennen hoe je dit gebaar precies uitvoert. Je moet met twee vingers zigzaggen in de vorm van een Z.";
+"gesture_two_finger_z_shape_explanation" = "Dit gebaar is superhandig. Je kunt namelijk vanaf elke plek in een app terug navigeren. Daarnaast kun je meldingen sluiten.\n\nHet is vaak even wennen hoe je dit gebaar precies uitvoert. Je moet met twee vingers zigzaggen in de vorm van een Z.";
 
 "gesture_one_finger_interaction_title" = "Directe aanraking maken";
 "gesture_one_finger_interaction_description" = "Tik met 1 vinger 2 keer op het scherm en houd vast totdat je drie opgaande tonen hoort. Beweeg je vinger daarna over het scherm.";
@@ -229,4 +229,3 @@
 "feedback_distance" = "Beweeg je vinger verder.";
 "feedback_position" = "Tik %@ het scherm in plaats van %@.";
 "feedback_gesture" = "Beweeg je vinger om een gebaar te maken.";
-

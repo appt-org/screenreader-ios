@@ -6,19 +6,19 @@
   Copyright © 2022 Stichting Appt & Abra B.V. All rights reserved.
 */
 
-"language" = "nl-NL";
+"language" = "en-US";
 
 /* General */
-"loading" = "Aan het laden";
-"error" = "Foutmelding";
-"ok" = "Oké";
-"continue" = "Doorgaan";
-"finish" = "Afronden";
-"stop" = "Stoppen";
-"cancel" = "Annuleren";
-"next" = "Volgende";
-"skip" = "Overslaan";
-"back" = "Terug";
+"loading" = "Loading, please wait";
+"error" = "Error";
+"ok" = "Ok";
+"continue" = "Continue";
+"finish" = "Finish";
+"stop" = "Stop";
+"cancel" = "Cancel";
+"next" = "Next";
+"skip" = "Skip";
+"back" = "Back";
 
 /* Home */
 "home_description" = "This ScreenReader app helps you to learn VoiceOver.";
@@ -185,7 +185,7 @@
 
 "gesture_two_finger_z_shape_title" = "Een melding sluiten of teruggaan naar het vorige scherm";
 "gesture_two_finger_z_shape_description" = "Maak met 2 vingers een zigzaggende beweging in de vorm van de letter Z";
-"gesture_two_finger_z_shape_explanation" =  "Dit gebaar is superhandig. Je kunt namelijk vanaf elke plek in een app terug navigeren. Daarnaast kun je meldingen sluiten.\n\nHet is vaak even wennen hoe je dit gebaar precies uitvoert. Je moet met twee vingers zigzaggen in de vorm van een Z.";
+"gesture_two_finger_z_shape_explanation" = "Dit gebaar is superhandig. Je kunt namelijk vanaf elke plek in een app terug navigeren. Daarnaast kun je meldingen sluiten.\n\nHet is vaak even wennen hoe je dit gebaar precies uitvoert. Je moet met twee vingers zigzaggen in de vorm van een Z.";
 
 "gesture_one_finger_interaction_title" = "Directe aanraking maken";
 "gesture_one_finger_interaction_description" = "Tik met 1 vinger 2 keer op het scherm en houd vast totdat je drie opgaande tonen hoort. Beweeg je vinger daarna over het scherm.";
@@ -229,4 +229,3 @@
 "feedback_distance" = "Beweeg je vinger verder.";
 "feedback_position" = "Tik %@ het scherm in plaats van %@.";
 "feedback_gesture" = "Beweeg je vinger om een gebaar te maken.";
-

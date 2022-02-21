@@ -1,118 +1,118 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>feedback_fingers</key>
-	<dict>
-		<key>NSStringLocalizedFormatKey</key>
-		<string>Gebruik %#@fingers@ in plaats van %#@fingers@.</string>
-		<key>fingers</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>d</string>
-			<key>one</key>
-			<string>1 vinger</string>
-			<key>other</key>
-			<string>%d vingers</string>
-		</dict>
-	</dict>
-	<key>feedback_taps_fingers</key>
-	<dict>
-		<key>NSStringLocalizedFormatKey</key>
-		<string>Tik met %#@fingers@ in plaats van %#@fingers@.</string>
-		<key>fingers</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>d</string>
-			<key>one</key>
-			<string>1 vinger</string>
-			<key>other</key>
-			<string>%d vingers</string>
-		</dict>
-	</dict>
-	<key>feedback_taps_amount</key>
-	<dict>
-		<key>NSStringLocalizedFormatKey</key>
-		<string>Tik %#@taps@ in plaats van %#@taps@.</string>
-		<key>taps</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>d</string>
-			<key>one</key>
-			<string>1 keer</string>
-			<key>other</key>
-			<string>%d keer</string>
-		</dict>
-	</dict>
-	<key>feedback_swipe_fingers</key>
-	<dict>
-		<key>NSStringLocalizedFormatKey</key>
-		<string>Veeg met %#@fingers@ in plaats van %#@fingers@.</string>
-		<key>fingers</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>d</string>
-			<key>one</key>
-			<string>1 vinger</string>
-			<key>other</key>
-			<string>%d vingers</string>
-		</dict>
-	</dict>
-	<key>feedback_longpress</key>
-	<dict>
-		<key>NSStringLocalizedFormatKey</key>
-		<string>Houd je %#@fingers@ langer op het scherm.</string>
-		<key>fingers</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>d</string>
-			<key>one</key>
-			<string>vinger</string>
-			<key>other</key>
-			<string>vingers</string>
-		</dict>
-	</dict>
-	<key>feedback_distance</key>
-	<dict>
-		<key>NSStringLocalizedFormatKey</key>
-		<string>Beweeg je %#@fingers@ op het scherm.</string>
-		<key>fingers</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>d</string>
-			<key>one</key>
-			<string>vinger</string>
-			<key>other</key>
-			<string>vingers</string>
-		</dict>
-	</dict>
-	<key>feedback_degrees</key>
-	<dict>
-		<key>NSStringLocalizedFormatKey</key>
-		<string>Draai meer dan %#@degrees@, je draaide %#@degrees@.</string>
-		<key>degrees</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>d</string>
-			<key>one</key>
-			<string>%d graad</string>
-			<key>other</key>
-			<string>%d graden</string>
-		</dict>
-	</dict>
-</dict>
+  <dict>
+    <key>feedback_fingers</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>Use %#@fingers@ instead of %#@fingers@.</string>
+      <key>fingers</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>%d finger</string>
+        <key>other</key>
+        <string>%d fingers</string>
+      </dict>
+    </dict>
+    <key>feedback_taps_fingers</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>Tap with %#@fingers@ instead of %#@fingers@.</string>
+      <key>fingers</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>%d finger</string>
+        <key>other</key>
+        <string>%d fingers</string>
+      </dict>
+    </dict>
+    <key>feedback_taps_amount</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>Tap %#@taps@ instead of %#@taps@.</string>
+      <key>taps</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>%d time</string>
+        <key>other</key>
+        <string>%d times</string>
+      </dict>
+    </dict>
+    <key>feedback_swipe_fingers</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>Swipe with %#@fingers@ instead of %#@fingers@.</string>
+      <key>fingers</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>%d finger</string>
+        <key>other</key>
+        <string>%d fingers</string>
+      </dict>
+    </dict>
+    <key>feedback_longpress</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>Keep your %#@fingers@ on the screen longer.</string>
+      <key>fingers</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>finger</string>
+        <key>other</key>
+        <string>fingers</string>
+      </dict>
+    </dict>
+    <key>feedback_distance</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>Move your %#@fingers@ on the screen.</string>
+      <key>fingers</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>finger</string>
+        <key>other</key>
+        <string>fingers</string>
+      </dict>
+    </dict>
+    <key>feedback_degrees</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>Rotate more than %#@degrees@, you rotated %#@degrees@.</string>
+      <key>degrees</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>%d degree</string>
+        <key>other</key>
+        <string>%d degrees</string>
+      </dict>
+    </dict>
+  </dict>
 </plist>
