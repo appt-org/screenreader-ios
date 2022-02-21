@@ -1,0 +1,232 @@
+/* 
+  Localizable.strings
+  ScreenReader
+
+  Created by Jan Jaap de Groot on 17/02/2022.
+  Copyright © 2022 Stichting Appt & Abra B.V. All rights reserved.
+*/
+
+"language" = "nl-NL";
+
+/* General */
+"loading" = "Aan het laden";
+"error" = "Foutmelding";
+"ok" = "Oké";
+"continue" = "Doorgaan";
+"finish" = "Afronden";
+"stop" = "Stoppen";
+"cancel" = "Annuleren";
+"next" = "Volgende";
+"skip" = "Overslaan";
+"back" = "Terug";
+
+/* Home */
+"home_description" = "This ScreenReader app helps you to learn VoiceOver.";
+"home_section_1" = "What is VoiceOver?";
+"home_section_1_paragraph_1" = "VoiceOver is an accessibility feature which gives you audible screen descriptions. By using gestures you can navigate between elements on the screen. Each element is announced as it is selected. This allows you to control your device even if you can't see the screen.";
+"home_section_2" = "Learning VoiceOver";
+"home_section_2_paragraph_1" = "VoiceOver is a crucial aid for visually impaired people to use their device. This app helps you to learn all gestures and common actions. If you are dependent on VoiceOver, use this app to improve your skills. If you are a professional, use the learnings to improve the accessibility of your apps.";
+"home_section_3" = "Learning gestures";
+"home_section_3_paragraph_1" = "Open the Gestures tab to learn gestures. There are three simple gestures to control your device.";
+"home_section_3_paragraph_2" = "1. Swipe left to go to the previous item.";
+"home_section_3_paragraph_3" = "2. Swipe right to go to the next item.";
+"home_section_3_paragraph_4" = "3. Double tap to activate the selected item.";
+"home_section_4" = "Learning actions";
+"home_section_4_paragraph_1" = "Once you have mastered the gestures, open the Actions tab to learn actions. You can learn how to navigate more effectively and how to edit text.";
+"home_section_5" = "Turning on VoiceOver";
+"home_section_5_paragraph_1" = "If you are ready to turn on VoiceOver, ask Siri to \"Turn VoiceOver on\". Or open the Settings app, select Accessibility, select VoiceOver and toggle the switch on.";
+"home_section_6" = "Turning off VoiceOver";
+"home_section_6_paragraph_1" = "You can turn off VoiceOver by asking Siri to \"Turn VoiceOver off\". Or open the Settings app, select Accessibility, select VoiceOver and toggle the switch off. Remember that you need to swipe to navigate and double tap to activate.";
+"home_section_7" = "VoiceOver shortcut";
+"home_section_7_paragraph_1" = "It's possible add a shortcut to toggle VoiceOver on or off. Open the Settings app, select Accessibility, scroll down and select Accessibility Shortcut and finally select VoiceOver in the list. Triple tap the home button or side button to toggle VoiceOver on or off.";
+
+/* More */
+"more_description" = "The ScreenReader app is an initiative of the Appt Foundation. The app has been developed by Abra and was financed by the SIDN fund.";
+"more_partners" = "Partners";
+
+/* Topic */
+"topic_rating_title" = "Rate the app";
+"topic_share_title" = "Share the app";
+"topic_appt_title" = "Appt Foundation";
+"topic_abra_title" = "Abra";
+"topic_sidn_fonds_title" = "SIDN fund";
+
+"topic_rating_website" = "https://apps.apple.com/us/app/screenreader/id1610318073"; // TODO: Double check id
+"topic_share_website" = "Download the free ScreenReader app at https://screenreader.app and learn how to use the screen reader!";
+"topic_appt_website" = "https://appt.org";
+"topic_abra_website" = "https://abra.nl";
+"topic_sidn_fonds_website" = "https://sidnfonds.nl";
+
+/* Gestures */
+"gestures_description" = "Op dit scherm kun je VoiceOver gebaren één voor één leren. Je kunt de gebaren oefenen via de knop rechtsbovenaan.";
+
+"gestures_practice_title" = "Gebaren oefenen";
+"gestures_practice_message" = "Wil je oefenen met of zonder instructies?";
+"gestures_practice_positive" = "Met instructies";
+"gestures_practice_negative" = "Zonder instructies";
+
+"gestures_one_finger_swipe" = "Vegen met 1 vinger";
+"gestures_two_finger_swipe" = "Vegen met 2 vingers";
+"gestures_three_finger_swipe" = "Vegen met 3 vingers";
+"gestures_one_finger_tap" = "Tikken met 1 vinger";
+"gestures_two_finger_tap" = "Tikken met 2 vingers";
+"gestures_three_finger_tap" = "Tikken met 3 vingers";
+"gestures_four_finger_tap" = "Tikken met 4 vingers";
+"gestures_shortcuts" = "Snelkoppelingen";
+
+/* Gesture */
+"gesture_correct" = "Gebaar correct uitgevoerd!";
+"gesture_incorrect" = "Je hebt het gebaar %d keer fout uitgevoerd. Wil je stoppen, overslaan of doorgaan?";
+"gesture_completed" = "Je hebt alle gebaren succesvol uitgevoerd!";
+
+/* One finger swipe */
+"gesture_one_finger_touch_title" = "Een onderdeel selecteren en uitspreken";
+"gesture_one_finger_touch_description" = "Veeg met 1 vinger over het scherm";
+"gesture_one_finger_touch_explanation" = "Wanneer je het scherm aanraakt wordt de inhoud onder je vinger voorgelezen.\n\nTip: als je vervolgens met een andere vinger op het scherm tikt, voer je direct een dubbeltik uit.";
+
+"gesture_one_finger_swipe_right_title" = "Naar het volgende onderdeel navigeren";
+"gesture_one_finger_swipe_right_description" = "Veeg met 1 vinger naar rechts";
+"gesture_one_finger_swipe_right_explanation" = "Door naar rechts te vegen verken je het scherm van links naar rechts en van boven naar beneden.";
+
+"gesture_one_finger_swipe_left_title" = "Naar het vorige onderdeel navigeren";
+"gesture_one_finger_swipe_left_description" = "Veeg met 1 vinger naar links";
+"gesture_one_finger_swipe_left_explanation" = "Door naar links te vegen verken je het scherm van rechts naar links en van beneden naar boven.";
+
+"gesture_one_finger_swipe_up_title" = "Instelling omhoog aanpassen";
+"gesture_one_finger_swipe_up_description" = "Veeg met 1 vinger omhoog";
+"gesture_one_finger_swipe_up_explanation" = "Afhankelijk van het type onderdeel wordt de waarde omhoog aangepast, of ga je naar het volgende onderdeel.";
+
+"gesture_one_finger_swipe_down_title" = "Instelling omlaag aanpassen";
+"gesture_one_finger_swipe_down_description" = "Veeg met 1 vinger omlaag";
+"gesture_one_finger_swipe_down_explanation" = "Afhankelijk van het type onderdeel wordt de waarde omlaag aangepast, of ga je naar het vorige onderdeel.";
+
+/* Two finger swipe */
+"gesture_two_finger_swipe_up_title" = "Het volledige scherm laten voorlezen";
+"gesture_two_finger_swipe_up_description" = "Veeg met 2 vingers omhoog";
+"gesture_two_finger_swipe_up_explanation" = "Dit gebaar kan van pas komen als je bijvoorbeeld een webpagina in zijn geheel laten voorlezen. Tik met twee vingers om te scherm om het voorlezen te stoppen.";
+
+"gesture_two_finger_swipe_down_title" = "Het scherm laten voorlezen vanaf het huidige onderdeel";
+"gesture_two_finger_swipe_down_description" = "Veeg met 2 vingers omlaag";
+"gesture_two_finger_swipe_down_explanation" = "Dit gebaar kan van pas komen als je de rest van de inhoud wilt laten voorlezen. Tik met 2 vingers op het scherm om het voorlezen te stoppen.";
+
+/* Three finger swipe */
+"gesture_three_finger_swipe_up_title" = "Omhoog scrollen";
+"gesture_three_finger_swipe_up_description" = "Veeg met 3 vingers omhoog";
+"gesture_three_finger_swipe_up_explanation" = "Gebruik dit gebaar wanneer je omlaag wilt scrollen.";
+
+"gesture_three_finger_swipe_down_title" = "Omlaag scrollen";
+"gesture_three_finger_swipe_down_description" = "Veeg met 3 vingers omlaag";
+"gesture_three_finger_swipe_down_explanation" = "Gebruik dit gebaar wanneer je omhoog wilt scrollen.";
+
+"gesture_three_finger_swipe_right_title" = "Naar rechts scrollen";
+"gesture_three_finger_swipe_right_description" = "Veeg met 3 vingers naar rechts";
+"gesture_three_finger_swipe_right_explanation" = "Gebruik dit gebaar wanneer je naar rechts wilt scrollen.";
+
+"gesture_three_finger_swipe_left_title" = "Naar links scrollen";
+"gesture_three_finger_swipe_left_description" = "Veeg met 3 vingers naar links";
+"gesture_three_finger_swipe_left_explanation" = "Gebruik dit gebaar wanneer je naar links wilt scrollen.";
+
+/* One finger tap */
+"gesture_one_finger_double_tap_title" = "Het geselecteerde onderdeel activeren";
+"gesture_one_finger_double_tap_description" = "Tik met 1 vinger 2 keer op het scherm";
+"gesture_one_finger_double_tap_explanation" = "Dit gebaar gebruik je om bijvoorbeeld een knop te activeren.";
+
+"gesture_one_finger_double_tap_hold_title" = "Het geselecteerde onderdeel lang indrukken";
+"gesture_one_finger_double_tap_hold_description" = "Tik met 1 vinger 2 keer op het scherm en houd vast";
+"gesture_one_finger_double_tap_hold_explanation" = "Dit gebaar wordt door sommige apps gebruikt om een menu te tonen.";
+
+"gesture_one_finger_triple_tap_title" = "Dubbeltikken op het geselecteerde onderdeel";
+"gesture_one_finger_triple_tap_description" = "Tik met 1 vinger 3 keer op het scherm";
+"gesture_one_finger_triple_tap_explanation" = "Bij sommige apps moet je dubbeltikken om bepaalde handelingen uit te voeren, dat kan met dit gebaar.";
+
+/* Two finger tap */
+"gesture_two_finger_tap_title" = "Het voorlezen pauzeren of hervatten";
+"gesture_two_finger_tap_description" = "Tik met 2 vingers 1 keer op het scherm";
+"gesture_two_finger_tap_explanation" = "Dit gebaar is belangrijk om te onthouden, zodat je VoiceOver kan pauzeren wanneer je wilt.";
+
+"gesture_two_finger_double_tap_title" = "De actuele handeling starten of stoppen";
+"gesture_two_finger_double_tap_description" = "Tik met 2 vingers 2 keer op het scherm";
+"gesture_two_finger_double_tap_explanation" = "Dit gebaar is ook bekend als Magic Tap. Hiermee kun je bijvoorbeeld muziek op de achtergrond starten of stoppen. Sommige apps gebruiken dit ook gebaar om de belangrijkste actie op het scherm uit te voeren.";
+
+"gesture_two_finger_double_tap_hold_title" = "Het label van een onderdeel wijzigen";
+"gesture_two_finger_double_tap_hold_description" = "Tik met 2 vingers 2 keer op het scherm en houd vast";
+"gesture_two_finger_double_tap_hold_explanation" = "Helaas zijn niet alle apps toegankelijk. Dankzij dit gebaar kun je je eigen labels toevoegen. Handig om bijvoorbeeld knoppen aan te geven.\n\nLet op: na elke app update zijn al je labels weg. De ontwikkelaar van de app kan hier niks aan doen.";
+
+"gesture_two_finger_triple_tap_title" = "De onderdeelkiezer openen";
+"gesture_two_finger_triple_tap_description" = "Tik met 2 vingers 3 keer op het scherm";
+"gesture_two_finger_triple_tap_explanation" = "De onderdeelkiezer kan het navigeren binnen een app makkelijker maken.\n\nTip: je kunt de onderdeelkiezer sluiten door met twee vingers te zigzaggen.";
+
+/* Three finger tap */
+"gesture_three_finger_tap_title" = "Extra informatie laten uitspreken";
+"gesture_three_finger_tap_description" = "Tik met 3 vingers 1 keer op het scherm";
+"gesture_three_finger_tap_explanation" = "Dit gebaar kan handig zijn ter oriëntatie waar je op het scherm bent.";
+
+"gesture_three_finger_double_tap_title" = "Het geluid van VoiceOver in- of uitschakelen";
+"gesture_three_finger_double_tap_description" = "Tik met 3 vingers 2 keer op het scherm";
+"gesture_three_finger_double_tap_explanation" = "Dit gebaar is belangrijk om te onthouden. Vaak wordt dit gebaar namelijk perongeluk gebruikt. Hoor je geen geluid meer? Tik dan met 3 vingers 2 keer op het scherm om het geluid van VoiceOver weer aan te zetten!\n\nLet op: als de VoiceOver zoomfunctie is ingeschakeld is het voor de app niet mogelijk om dit gebaar te herkennen.";
+
+"gesture_three_finger_triple_tap_title" = "Het schermgordijn in- of uitschakelen";
+"gesture_three_finger_triple_tap_description" = "Tik met 3 vingers 3 keer op het scherm";
+"gesture_three_finger_triple_tap_explanation" = "Indien je geen zicht meer hebt, kun je het schermgordijn inschakelen. Hierdoor verbruikt je telefoon minder stroom en kan er niemand op je scherm meekijken.!\n\nLet op: als de VoiceOver zoomfunctie is ingeschakeld is het voor de app niet mogelijk om dit gebaar te herkennen.";
+
+/* Four finger tap */
+"gesture_four_finger_tap_top_title" = "Naar het eerste onderdeel gaan";
+"gesture_four_finger_tap_top_description" = "Tik met 4 vingers bovenaan het scherm";
+"gesture_four_finger_tap_top_explanation" = "Het kan handig zijn om naar de bovenkant van het scherm te verspringen. Meestal zit hier de terugknop.\n\nDit gebaar is lastig om uit te voeren op kleine schermen. Je hoeft niet de vingers van dezelfde hand te gebruiken. Je kunt ookt twee vingers van je linkerhand en twee vingers van je rechterhand gebruiken.";
+
+"gesture_four_finger_tap_bottom_title" = "Naar het laatste onderdeel gaan";
+"gesture_four_finger_tap_bottom_description" = "Tik met 4 vingers onderaan het scherm";
+"gesture_four_finger_tap_bottom_explanation" = "Het kan handig zijn om naar de onderkant van het scherm te verspringen. Meestal zit hier een manier om te navigeren.\n\nDit gebaar is lastig om uit te voeren op kleine schermen. Je hoeft niet de vingers van dezelfde hand te gebruiken. Je kunt ookt twee vingers van je linkerhand en twee vingers van je rechterhand gebruiken.";
+
+/* Shortcuts */
+"gesture_two_finger_rotate_title" = "Een rotorinstelling kiezen";
+"gesture_two_finger_rotate_description" = "Maak met 2 vingers een draaiende beweging";
+"gesture_two_finger_rotate_explanation" = "Het kan lastig zijn om dit gebaar onder de knie te krijgen. De rotor is heel uitgebreid, dus onthoud dit gebaar goed! Tip: je kunt de andere kant opdraaien om naar de vorige instelling te gaan.";
+
+"gesture_two_finger_z_shape_title" = "Een melding sluiten of teruggaan naar het vorige scherm";
+"gesture_two_finger_z_shape_description" = "Maak met 2 vingers een zigzaggende beweging in de vorm van de letter Z";
+"gesture_two_finger_z_shape_explanation" =  "Dit gebaar is superhandig. Je kunt namelijk vanaf elke plek in een app terug navigeren. Daarnaast kun je meldingen sluiten.\n\nHet is vaak even wennen hoe je dit gebaar precies uitvoert. Je moet met twee vingers zigzaggen in de vorm van een Z.";
+
+"gesture_one_finger_interaction_title" = "Directe aanraking maken";
+"gesture_one_finger_interaction_description" = "Tik met 1 vinger 2 keer op het scherm en houd vast totdat je drie opgaande tonen hoort. Beweeg je vinger daarna over het scherm.";
+"gesture_one_finger_interaction_explanation" = "Soms is het nodig om aanrakingen buiten VoiceOver om te maken. Door dit gebaar te maken gaat je aanraking direct naar de app en niet naar VoiceOver. Hierdoor is het bijvoorbeeld mogelijk om een handtekening te zetten. Dit gebaar kan ook handig zijn om elementen opnieuw te rangschikken (drag and drop).";
+
+/* Actions */
+"actions_description" = "Op dit scherm kun je een aantal VoiceOver acties leren. Door deze acties te leren kun je apps beter bedienen.";
+
+"actions_navigate" = "Navigeren";
+"actions_edit" = "Bewerken";
+
+/* Action */
+"action_headings_title" = "Navigeren via koppen";
+"action_links_title" = "Navigeren via links";
+"action_selection_title" = "Tekst selecteren";
+"action_copy_title" = "Kopiëren";
+"action_paste_title" = "Plakken";
+
+"action_voiceover_disabled" = "VoiceOver staat uit";
+"action_voiceover_enable" = "Je moet VoiceOver aanzetten voordat je deze training kunt volgen.";
+"action_interaction_disabled" = "Interactie is uitgeschakeld";
+"action_completed" = "Training succesvol afgerond!";
+
+/* Directions */
+"direction_up" = "omhoog";
+"direction_right" = "naar rechts";
+"direction_down" = "omlaag";
+"direction_left" = "naar links";
+
+/* Positions */
+"position_top" = "bovenaan";
+"position_bottom" = "onderaan";
+
+/* Feedback */
+"feedback_touch" = "Tik op het scherm met één vinger.";
+"feedback_swipe" = "Maak een veegbeweging in plaats van een aanraking.";
+"feedback_rotate" = "Maak een draaibeweging in plaats van een aanraking";
+"feedback_zigzag" = "Maak een zigzaggende beweging.";
+"feedback_direction" = "Veeg %@ in plaats van %@.";
+"feedback_tap" = "Tik op het scherm in plaats van te vegen.";
+"feedback_distance" = "Beweeg je vinger verder.";
+"feedback_position" = "Tik %@ het scherm in plaats van %@.";
+"feedback_gesture" = "Beweeg je vinger om een gebaar te maken.";
+

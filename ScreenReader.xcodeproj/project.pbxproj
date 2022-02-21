@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		285345F327C3F38B0030DC10 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 285345F527C3F38B0030DC10 /* Localizable.strings */; };
+		285345F627C3F3920030DC10 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 285345F827C3F3920030DC10 /* Localizable.stringsdict */; };
 		287D440027BE9F7000B9B997 /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D43FF27BE9F7000B9B997 /* Gesture.swift */; };
 		287D440527BE9FE400B9B997 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D440427BE9FE400B9B997 /* Alert.swift */; };
 		287D440727BEA00B00B9B997 /* _String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D440627BEA00B00B9B997 /* _String.swift */; };
@@ -38,8 +40,6 @@
 		287D443E27BEA1A200B9B997 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443D27BEA1A200B9B997 /* Direction.swift */; };
 		287D444027BEA29D00B9B997 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D443F27BEA29D00B9B997 /* GestureViewController.swift */; };
 		287D444227BEA36600B9B997 /* _UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D444127BEA36600B9B997 /* _UIStoryboard.swift */; };
-		287D444427BEA47D00B9B997 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 287D444327BEA47D00B9B997 /* Localizable.strings */; };
-		287D444827BEA4E700B9B997 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 287D444727BEA4E700B9B997 /* Localizable.stringsdict */; };
 		28815FA927BFF369002CC12A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28815FA827BFF369002CC12A /* ActionViewController.swift */; };
 		28815FAB27BFF3EB002CC12A /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28815FAA27BFF3EB002CC12A /* ScrollViewController.swift */; };
 		28815FAD27BFF3FB002CC12A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28815FAC27BFF3FB002CC12A /* NavigationController.swift */; };
@@ -76,6 +76,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		285345F427C3F38B0030DC10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		285345F727C3F3920030DC10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		285345F927C3F3F00030DC10 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		285345FA27C3F3F00030DC10 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = nl; path = nl.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		287D43FF27BE9F7000B9B997 /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
 		287D440427BE9FE400B9B997 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		287D440627BEA00B00B9B997 /* _String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _String.swift; sourceTree = "<group>"; };
@@ -107,8 +111,6 @@
 		287D443D27BEA1A200B9B997 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		287D443F27BEA29D00B9B997 /* GestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 		287D444127BEA36600B9B997 /* _UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIStoryboard.swift; sourceTree = "<group>"; };
-		287D444327BEA47D00B9B997 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		287D444727BEA4E700B9B997 /* Localizable.stringsdict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		28815FA827BFF369002CC12A /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		28815FAA27BFF3EB002CC12A /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		28815FAC27BFF3FB002CC12A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -257,8 +259,8 @@
 				28F09DBD27BD39E200C46249 /* OpenSans-Regular.ttf */,
 				28F09DBE27BD39E200C46249 /* OpenSans-SemiBold.ttf */,
 				28F09DBF27BD39E200C46249 /* OpenSans-Bold.ttf */,
-				287D444327BEA47D00B9B997 /* Localizable.strings */,
-				287D444727BEA4E700B9B997 /* Localizable.stringsdict */,
+				285345F527C3F38B0030DC10 /* Localizable.strings */,
+				285345F827C3F3920030DC10 /* Localizable.stringsdict */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -394,6 +396,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = 28D1430A27BD287D0000BF92;
 			productRefGroup = 28D1431427BD287D0000BF92 /* Products */;
@@ -415,13 +418,13 @@
 				28D1432027BD287E0000BF92 /* Assets.xcassets in Resources */,
 				28F09DC227BD39E200C46249 /* OpenSans-Bold.ttf in Resources */,
 				28F09DC127BD39E200C46249 /* OpenSans-SemiBold.ttf in Resources */,
-				287D444827BEA4E700B9B997 /* Localizable.stringsdict in Resources */,
+				285345F627C3F3920030DC10 /* Localizable.stringsdict in Resources */,
 				287D441C27BEA11F00B9B997 /* VoiceOverLinksView.xib in Resources */,
 				287D441D27BEA11F00B9B997 /* VoiceOverCopyView.xib in Resources */,
 				287D441827BEA11F00B9B997 /* VoiceOverHeadingsView.xib in Resources */,
 				28F09DC027BD39E200C46249 /* OpenSans-Regular.ttf in Resources */,
 				28F09DED27BD649500C46249 /* TitleTableViewCell.xib in Resources */,
-				287D444427BEA47D00B9B997 /* Localizable.strings in Resources */,
+				285345F327C3F38B0030DC10 /* Localizable.strings in Resources */,
 				287D442027BEA11F00B9B997 /* VoiceOverSelectionView.xib in Resources */,
 				28F09DD927BD427200C46249 /* TextTableViewCell.xib in Resources */,
 				28D1431E27BD287D0000BF92 /* Main.storyboard in Resources */,
@@ -492,6 +495,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		285345F527C3F38B0030DC10 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				285345F427C3F38B0030DC10 /* en */,
+				285345F927C3F3F00030DC10 /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		285345F827C3F3920030DC10 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				285345F727C3F3920030DC10 /* en */,
+				285345FA27C3F3F00030DC10 /* nl */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
 		28D1431C27BD287D0000BF92 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -515,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -576,6 +598,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
