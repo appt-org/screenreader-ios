@@ -11,10 +11,10 @@ import UIKit
 class MoreViewController: TableViewController {
     
     private let items: [Any] = [
-        "The ScreenReader app is an initiative of the Appt Foundation. The app has been developed by Abra and was financed by the SIDN fund.",
+        "more_description".localized,
         Topic.rating,
         Topic.share,
-        Header("Partners"),
+        Header("more_partners".localized),
         Topic.appt,
         Topic.abra,
         Topic.sidnFonds

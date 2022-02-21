@@ -8,43 +8,21 @@
 
 import Foundation
 
-enum Topic: Item {
+enum Topic: String, Item {
 
     case rating
     case share
     case appt
     case abra
-    case sidnFonds
+    case sidnFonds = "sidn_fonds"
     
     /** Title */
     var title: String {
-        switch self {
-        case .rating:
-            return "Rate the app"
-        case .share:
-            return "Share the app"
-        case .appt:
-            return "Appt Foundation"
-        case .abra:
-            return "Abra"
-        case .sidnFonds:
-            return "SIDN fund"
-        }
+        return NSLocalizedString("topic_"+rawValue+"_title", comment: "")
     }
 
     /** Website */
     var website: String {
-        switch self {
-        case .rating:
-            return "https://apps.apple.com/us/app/screenreader/id1610318073" // TODO: Double check id
-        case .share:
-            return "Download the free ScreenReader app at https://screenreader.app and learn how to use the screen reader!"
-        case .appt:
-            return "https://appt.org"
-        case .abra:
-            return "https://abra.nl"
-        case .sidnFonds:
-            return "https://sidnfonds.nl"
-        }
+        return NSLocalizedString("topic_"+rawValue+"_website", comment: "")
     }
 }

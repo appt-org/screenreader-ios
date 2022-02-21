@@ -11,7 +11,7 @@ import UIKit
 class ActionsViewController: TableViewController {
  
     private let items: [Any] = [
-        "Op dit scherm kun je VoiceOver acties leren.",
+        "Op dit scherm kun je een aantal VoiceOver acties leren. Door deze acties te leren kun je apps beter bedienen.",
         Header("actions_navigate".localized),
         Action.headings,
         Action.links,

@@ -11,7 +11,7 @@ import UIKit
 class GesturesViewController: TableViewController {
 
     private let items: [Any] = [
-        "Op dit scherm kun je alle VoiceOver gebaren leren, van makkelijk tot moeilijk. Via de knop rechtsbovenaan kun je de gebaren door elkaar oefenen.",
+        "gestures_description".localized,
         Header("gestures_one_finger_swipe".localized),
         Gesture.oneFingerTouch,
         Gesture.oneFingerSwipeRight,
