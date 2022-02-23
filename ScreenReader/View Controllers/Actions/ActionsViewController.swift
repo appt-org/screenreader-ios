@@ -90,6 +90,15 @@ extension ActionsViewController {
             return
         }
         
+        guard UIAccessibility.isVoiceOverRunning else {
+            Alert.Builder()
+                .title("action_voiceover_disabled".localized)
+                .message("action_voiceover_enable".localized)
+                .okAction()
+                .present(in: self)
+            return
+        }
+        
         let vc = UIStoryboard.action(action)
         navigationController?.pushViewController(vc, animated: true)
     }

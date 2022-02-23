@@ -199,17 +199,17 @@
 "actions_description" = "On this screen you can learn a number of VoiceOver actions. Learning these actions will help you to better operate apps.";
 
 "actions_navigate" = "Navigate";
-"actions_edit" = "Edit";
+"actions_edit" = "Edit text";
 
 /* Action */
 "action_headings_title" = "Navigate by headings";
 "action_links_title" = "Navigate by links";
 "action_selection_title" = "Select text";
-"action_copy_title" = "Copy";
-"action_paste_title" = "Paste";
+"action_copy_title" = "Copy text";
+"action_paste_title" = "Paste text";
 
-"action_voiceover_disabled" = "VoiceOver is off";
-"action_voiceover_enable" = "You must enable VoiceOver before you can start this training.";
+"action_voiceover_disabled" = "VoiceOver is turned off";
+"action_voiceover_enable" = "VoiceOver must be enabled for this training.";
 "action_interaction_disabled" = "Interaction is disabled";
 "action_completed" = "Training completed successfully!";
 

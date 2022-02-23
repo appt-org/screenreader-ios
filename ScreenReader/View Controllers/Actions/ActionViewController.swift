@@ -34,6 +34,12 @@ class ActionViewController: ScrollViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        NotificationCenter.default.addObserver(self, selector: #selector(voiceOverStatusNotification), name: UIAccessibility.voiceOverStatusDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(elementFocusedNotification), name: UIAccessibility.elementFocusedNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(pasteboardChangedNotification), name: UIPasteboard.changedNotification, object: nil)
+    }
+    
+    @objc private func voiceOverStatusNotification(_ notification: Notification) {
         guard UIAccessibility.isVoiceOverRunning else {
             Alert.Builder()
                 .title("action_voiceover_disabled".localized)
@@ -43,17 +49,14 @@ class ActionViewController: ScrollViewController {
                 }.present(in: self)
             return
         }
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(elementFocusedNotification), name: UIAccessibility.elementFocusedNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(pasteboardChangedNotification), name: UIPasteboard.changedNotification, object: nil)
     }
     
-    @objc func elementFocusedNotification(_ notification: Notification) {
+    @objc private func elementFocusedNotification(_ notification: Notification) {
         focusedElements += 1
         actionView.elementFocusedNotification(notification)
     }
     
-    @objc func pasteboardChangedNotification(_ notification: Notification){
+    @objc private func pasteboardChangedNotification(_ notification: Notification){
         actionView.pasteboardChangedNotification(notification)
     }
 }

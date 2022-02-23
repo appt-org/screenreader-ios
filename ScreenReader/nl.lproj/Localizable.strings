@@ -199,17 +199,17 @@
 "actions_description" = "Op dit scherm kun je een aantal VoiceOver acties leren. Door deze acties te leren kun je apps beter bedienen.";
 
 "actions_navigate" = "Navigeren";
-"actions_edit" = "Bewerken";
+"actions_edit" = "Tekst bewerken";
 
 /* Action */
 "action_headings_title" = "Navigeren via koppen";
 "action_links_title" = "Navigeren via links";
 "action_selection_title" = "Tekst selecteren";
-"action_copy_title" = "Kopiëren";
-"action_paste_title" = "Plakken";
+"action_copy_title" = "Tekst kopiëren";
+"action_paste_title" = "Tekst plakken";
 
-"action_voiceover_disabled" = "VoiceOver staat uit";
-"action_voiceover_enable" = "Je moet VoiceOver aanzetten voordat je deze training kunt volgen.";
+"action_voiceover_disabled" = "VoiceOver is uitgeschakeld";
+"action_voiceover_enable" = "VoiceOver moet ingeschakeld zijn voor deze training.";
 "action_interaction_disabled" = "Interactie is uitgeschakeld";
 "action_completed" = "Training succesvol afgerond!";
 
