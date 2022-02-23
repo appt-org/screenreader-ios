@@ -45,7 +45,7 @@ enum Action: String, Learning {
             return VoiceOverPasteView.create(self)
         }
     }
-    
+        
     /** Completed? */
     var completed: Bool {
        set {

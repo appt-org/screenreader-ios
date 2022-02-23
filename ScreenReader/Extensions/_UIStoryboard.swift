@@ -50,4 +50,10 @@ extension UIStoryboard {
         vc.action = action
         return vc
     }
+    
+    static func action2(_ action: Action) -> ActionViewController2 {
+        let vc = viewController(.main, identifier: ActionViewController2.self)
+        vc.action = action
+        return vc
+    }
 }

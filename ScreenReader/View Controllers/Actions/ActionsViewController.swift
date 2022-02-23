@@ -99,7 +99,7 @@ extension ActionsViewController {
             return
         }
         
-        let vc = UIStoryboard.action(action)
+        let vc = UIStoryboard.action2(action)
         navigationController?.pushViewController(vc, animated: true)
     }
 }
