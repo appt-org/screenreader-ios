@@ -50,8 +50,9 @@
 "topic_appt_title" = "Stichting Appt";
 "topic_abra_title" = "Abra";
 "topic_sidn_fonds_title" = "SIDN fonds";
+/* topic_rating_website */
 
-"topic_rating_website" = "https://apps.apple.com/us/app/screenreader/id1610318073"; // TODO: Double check id
+"topic_rating_website" = "https://apps.apple.com/nl/app/screenreader/id1610318073"; // TODO: Double check id
 "topic_share_website" = "Download de gratis ScreenReader app op https://screenreader.app om te leren hoe je de schermlezer gebruikt!";
 "topic_appt_website" = "https://appt.org";
 "topic_abra_website" = "https://abra.nl";
@@ -181,7 +182,7 @@
 /* Shortcuts */
 "gesture_two_finger_rotate_title" = "Een rotorinstelling kiezen";
 "gesture_two_finger_rotate_description" = "Maak met 2 vingers een draaiende beweging";
-"gesture_two_finger_rotate_explanation" = "Het kan lastig zijn om dit gebaar onder de knie te krijgen. De rotor is heel uitgebreid, dus onthoud dit gebaar goed! Tip: je kunt de andere kant opdraaien om naar de vorige instelling te gaan.";
+"gesture_two_finger_rotate_explanation" = "Het kan lastig zijn om dit gebaar onder de knie te krijgen. De rotor is heel uitgebreid, dus onthoud dit gebaar goed!\n\nTip: je kunt de andere kant opdraaien om naar de vorige instelling te gaan.";
 
 "gesture_two_finger_z_shape_title" = "Een melding sluiten of teruggaan naar het vorige scherm";
 "gesture_two_finger_z_shape_description" = "Maak met 2 vingers een zigzaggende beweging in de vorm van de letter Z";
