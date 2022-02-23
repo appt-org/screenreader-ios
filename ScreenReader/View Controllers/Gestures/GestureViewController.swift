@@ -22,7 +22,7 @@ class GestureViewController: ViewController {
     var gestures: [Gesture]?
     var instructions: Bool = true
     
-    private var errorLimit = 5
+    private var errorLimit = 10
     private var errorCount = 0
     
     private var finished = false

@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum Gesture: String, CaseIterable {
+enum Gesture: String, Learning, CaseIterable {
     
     // One finger swipe
     case oneFingerTouch         = "one_finger_touch"

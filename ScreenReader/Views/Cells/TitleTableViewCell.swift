@@ -10,6 +10,14 @@ import UIKit
 
 class TitleTableViewCell: UITableViewCell {
     
+    override var accessibilityTraits: UIAccessibilityTraits {
+        get {
+            return .button
+        } set {
+            // Ignored to maintain `button` trait at all times.
+        }
+    }
+    
     @IBOutlet private var titleLabel: UILabel!
         
     func setup(_ title: String) {
@@ -19,7 +27,6 @@ class TitleTableViewCell: UITableViewCell {
         
         accessoryType = .disclosureIndicator
         
-        accessibilityTraits = .button
         shouldGroupAccessibilityChildren = true
         accessibilityLabel = title
     }
@@ -28,23 +35,10 @@ class TitleTableViewCell: UITableViewCell {
         setup(item.title)
     }
     
-    func setup(_ gesture: Gesture) {
-        titleLabel.font = .openSans(weight: .regular, size: 18, style: .body)
-        titleLabel.text = gesture.title
+    func setup(_ learning: Learning) {
+        setup(learning.title)
         
-        accessibilityLabel = gesture.title
-        accessibilityValue = gesture.completed ? "Afgerond" : nil
-        accessoryType = gesture.completed ? .checkmark : .disclosureIndicator
-        accessibilityHint = "Dubbeltik met twee vingers om dit gebaar te oefenen"
-    }
-    
-    func setup(_ action: Action) {
-        titleLabel.font = .openSans(weight: .regular, size: 18, style: .body)
-        titleLabel.text = action.title
-        
-        accessibilityLabel = action.title
-        accessibilityValue = action.completed ? "Afgerond" : nil
-        accessoryType = action.completed ? .checkmark : .disclosureIndicator
-        accessibilityHint = "Dubbeltik met twee vingers om deze actie te oefenen"
+        accessibilityValue = learning.completed ? "completed".localized : nil
+        accessoryType = learning.completed ? .checkmark : .disclosureIndicator
     }
 }

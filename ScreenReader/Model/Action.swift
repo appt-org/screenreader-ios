@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum Action: String {
+enum Action: String, Learning {
 
     // Navigation
     case headings

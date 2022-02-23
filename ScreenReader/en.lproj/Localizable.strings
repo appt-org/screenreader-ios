@@ -19,6 +19,7 @@
 "next" = "Next";
 "skip" = "Skip";
 "back" = "Back";
+"completed" = "Completed";
 
 /* Home */
 "home_description" = "This ScreenReader app helps you to learn VoiceOver.";
@@ -81,7 +82,7 @@
 "gesture_completed" = "You have successfully performed all gestures!";
 
 /* One finger swipe */
-"gesture_one_finger_touch_title" = "Select and speak an item";
+"gesture_one_finger_touch_title" = "Select and speak item";
 "gesture_one_finger_touch_description" = "Swipe on the screen with 1 finger";
 "gesture_one_finger_touch_explanation" = "When you touch the screen, the content below your finger is read out.\n\nTip: If you tap the screen with another finger, you immediately double-tap.";
 
@@ -97,16 +98,16 @@
 "gesture_one_finger_swipe_up_description" = "Swipe up with 1 finger";
 "gesture_one_finger_swipe_up_explanation" = "Depending on the type of item, the value is adjusted upwards, or you move to the next item.";
 
-"gesture_one_finger_swipe_down_title" = "Adjust setting downwards";
+"gesture_one_finger_swipe_down_title" = "Adjust setting down";
 "gesture_one_finger_swipe_down_description" = "Swipe down with 1 finger";
 "gesture_one_finger_swipe_down_explanation" = "Depending on the type of item, the value is adjusted downwards, or you move to the next item.";
 
 /* Two finger swipe */
-"gesture_two_finger_swipe_up_title" = "Have the entire screen read aloud";
+"gesture_two_finger_swipe_up_title" = "Read the entire screen aloud";
 "gesture_two_finger_swipe_up_description" = "Swipe up with 2 fingers";
 "gesture_two_finger_swipe_up_explanation" = "This gesture can come in handy if you want to read a page in its entirety, such as an article. Tap the screen with 2 fingers to stop reading.";
 
-"gesture_two_finger_swipe_down_title" = "Have the screen read aloud from the current item";
+"gesture_two_finger_swipe_down_title" = "Read the screen aloud from the current item";
 "gesture_two_finger_swipe_down_description" = "Swipe down with 2 fingers";
 "gesture_two_finger_swipe_down_explanation" = "This gesture can come in handy if you want to have the remaining content read aloud. Tap the screen with 2 fingers to stop reading.";
 
@@ -115,16 +116,16 @@
 "gesture_three_finger_swipe_up_description" = "Swipe up with 3 fingers";
 "gesture_three_finger_swipe_up_explanation" = "Use this gesture when you want to scroll down.";
 
-"gesture_three_finger_swipe_down_title" = "Scroll up";
+"gesture_three_finger_swipe_down_title" = "Scroll down";
 "gesture_three_finger_swipe_down_description" = "Swipe down with 3 fingers";
 "gesture_three_finger_swipe_down_explanation" = "Use this gesture to scroll up.";
 
-"gesture_three_finger_swipe_right_title" = "Scroll to the right";
-"gesture_three_finger_swipe_right_description" = "Swipe to the right with 3 fingers";
+"gesture_three_finger_swipe_right_title" = "Scroll right";
+"gesture_three_finger_swipe_right_description" = "Swipe right with 3 fingers";
 "gesture_three_finger_swipe_right_explanation" = "Use this gesture to scroll to the right.";
 
-"gesture_three_finger_swipe_left_title" = "Scroll to the left";
-"gesture_three_finger_swipe_left_description" = "Swipe to the left with 3 fingers";
+"gesture_three_finger_swipe_left_title" = "Scroll left";
+"gesture_three_finger_swipe_left_description" = "Swipe left with 3 fingers";
 "gesture_three_finger_swipe_left_explanation" = "Use this gesture to scroll to the left.";
 
 /* One finger tap */
@@ -133,10 +134,10 @@
 "gesture_one_finger_double_tap_explanation" = "You use this gesture to activate items, such as a button.";
 
 "gesture_one_finger_double_tap_hold_title" = "Long press the selected item";
-"gesture_one_finger_double_tap_hold_description" = "Tap the screen 2 times with 1 finger, and hold";
+"gesture_one_finger_double_tap_hold_description" = "Tap the screen 2 times with 1 finger, and hold for 3 seconds";
 "gesture_one_finger_double_tap_hold_explanation" = "Some apps use this gesture to display a menu.";
 
-"gesture_one_finger_triple_tap_title" = "Double tap on the selected item";
+"gesture_one_finger_triple_tap_title" = "Double tap the selected item";
 "gesture_one_finger_triple_tap_description" = "Tap the screen 3 times with 1 finger";
 "gesture_one_finger_triple_tap_explanation" = "With some apps you have to double tap to perform certain actions, you can do that with this gesture.";
 
@@ -150,7 +151,7 @@
 "gesture_two_finger_double_tap_explanation" = "This gesture is also known as Magic Tap. This gesture allows you to, for example, start or stop music in the background. Some apps also use this gesture to perform the main action on the screen.";
 
 "gesture_two_finger_double_tap_hold_title" = "Change the label of an item";
-"gesture_two_finger_double_tap_hold_description" = "Tap the screen 2 times with 2 fingers and hold";
+"gesture_two_finger_double_tap_hold_description" = "Tap the screen 2 times with 2 fingers and hold for 3 seconds";
 "gesture_two_finger_double_tap_hold_explanation" = "Unfortunately, not all apps are accessible. This gesture allows you to add your own labels. This is handy to indicate buttons, for example.\n\nNote: after every app update, all your labels are gone. The developer of the app cannot do anything about this.";
 
 "gesture_two_finger_triple_tap_title" = "Open the app chooser";
@@ -221,12 +222,12 @@
 "position_bottom" = "at the bottom";
 
 /* Feedback */
-"feedback_touch" = "Tap the screen with 1 finger.";
-"feedback_swipe" = "Make a swipe gesture instead of touching.";
+"feedback_touch" = "Tap the screen with 1 finger";
+"feedback_swipe" = "Make a swipe gesture instead of touching";
 "feedback_rotate" = "Make a twist instead of a touch";
-"feedback_zigzag" = "Make a zigzagging motion.";
-"feedback_direction" = "Swipe %@ instead of %@.";
-"feedback_tap" = "Tap the screen instead of swiping.";
-"feedback_distance" = "Move your finger further away.";
-"feedback_position" = "Tap %@ the screen instead of %@.";
-"feedback_gesture" = "Move your finger to perform a gesture.";
+"feedback_zigzag" = "Make a zigzagging motion";
+"feedback_direction" = "Swipe %@ instead of %@";
+"feedback_tap" = "Tap the screen instead of swiping";
+"feedback_distance" = "Move your finger further away";
+"feedback_position" = "Tap %@ the screen instead of %@";
+"feedback_gesture" = "Move your finger to perform a gesture";

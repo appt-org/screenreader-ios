@@ -19,6 +19,7 @@
 "next" = "Volgende";
 "skip" = "Overslaan";
 "back" = "Terug";
+"completed" = "Afgerond";
 
 /* Home */
 "home_description" = "De ScreenReader app helpt je om VoiceOver te leren.";
@@ -133,7 +134,7 @@
 "gesture_one_finger_double_tap_explanation" = "Dit gebaar gebruik je om bijvoorbeeld een knop te activeren.";
 
 "gesture_one_finger_double_tap_hold_title" = "Het geselecteerde onderdeel lang indrukken";
-"gesture_one_finger_double_tap_hold_description" = "Tik met 1 vinger 2 keer op het scherm en houd vast";
+"gesture_one_finger_double_tap_hold_description" = "Tik met 1 vinger 2 keer op het scherm en hou je vinger 3 seconden vast";
 "gesture_one_finger_double_tap_hold_explanation" = "Dit gebaar wordt door sommige apps gebruikt om een menu te tonen.";
 
 "gesture_one_finger_triple_tap_title" = "Dubbeltikken op het geselecteerde onderdeel";
@@ -150,7 +151,7 @@
 "gesture_two_finger_double_tap_explanation" = "Dit gebaar is ook bekend als Magic Tap. Hiermee kun je bijvoorbeeld muziek op de achtergrond starten of stoppen. Sommige apps gebruiken dit ook gebaar om de belangrijkste actie op het scherm uit te voeren.";
 
 "gesture_two_finger_double_tap_hold_title" = "Het label van een onderdeel wijzigen";
-"gesture_two_finger_double_tap_hold_description" = "Tik met 2 vingers 2 keer op het scherm en houd vast";
+"gesture_two_finger_double_tap_hold_description" = "Tik met 2 vingers 2 keer op het scherm en hou je vinger 3 seconden vast";
 "gesture_two_finger_double_tap_hold_explanation" = "Helaas zijn niet alle apps toegankelijk. Dankzij dit gebaar kun je je eigen labels toevoegen. Handig om bijvoorbeeld knoppen aan te geven.\n\nLet op: na elke app update zijn al je labels weg. De ontwikkelaar van de app kan hier niks aan doen.";
 
 "gesture_two_finger_triple_tap_title" = "De onderdeelkiezer openen";
@@ -221,12 +222,12 @@
 "position_bottom" = "onderaan";
 
 /* Feedback */
-"feedback_touch" = "Tik op het scherm met één vinger.";
-"feedback_swipe" = "Maak een veegbeweging in plaats van een aanraking.";
+"feedback_touch" = "Tik op het scherm met één vinger";
+"feedback_swipe" = "Maak een veegbeweging in plaats van een aanraking";
 "feedback_rotate" = "Maak een draaibeweging in plaats van een aanraking";
-"feedback_zigzag" = "Maak een zigzaggende beweging.";
-"feedback_direction" = "Veeg %@ in plaats van %@.";
-"feedback_tap" = "Tik op het scherm in plaats van te vegen.";
-"feedback_distance" = "Beweeg je vinger verder.";
-"feedback_position" = "Tik %@ het scherm in plaats van %@.";
-"feedback_gesture" = "Beweeg je vinger om een gebaar te maken.";
+"feedback_zigzag" = "Maak een zigzaggende beweging";
+"feedback_direction" = "Veeg %@ in plaats van %@";
+"feedback_tap" = "Tik op het scherm in plaats van te vegen";
+"feedback_distance" = "Beweeg je vinger verder";
+"feedback_position" = "Tik %@ het scherm in plaats van %@";
+"feedback_gesture" = "Beweeg je vinger om een gebaar te maken";
