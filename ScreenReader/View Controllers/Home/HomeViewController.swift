@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: TextViewController {
+class HomeViewController: TextTableViewController {
     
     override var items: [Any] {
         get {
@@ -34,7 +34,7 @@ class HomeViewController: TextViewController {
             ]
         }
     }
-    
+
     @IBAction private func onShareTapped(_ sender: Any) {
         shareApp()
     }

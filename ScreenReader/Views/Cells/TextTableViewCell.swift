@@ -12,15 +12,21 @@ class TextTableViewCell: UITableViewCell {
     
     @IBOutlet private var label: UILabel!
         
-    @IBOutlet private var topConstraint: NSLayoutConstraint!
-    @IBOutlet private var rightConstraint: NSLayoutConstraint!
-    @IBOutlet private var bottomConstraint: NSLayoutConstraint!
-    @IBOutlet private var leftConstraint: NSLayoutConstraint!
+    @IBOutlet var topConstraint: NSLayoutConstraint!
+    @IBOutlet var rightConstraint: NSLayoutConstraint!
+    @IBOutlet var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet var leftConstraint: NSLayoutConstraint!
     
     func setup(_ text: String, top: CGFloat? = nil, right: CGFloat? = nil, bottom: CGFloat? = nil, left: CGFloat? = nil) {
         label.font = .openSans(weight: .regular, size: 18, style: .body)
         label.text = text
         
+        constraint(top: top, right: right, bottom: bottom, left: left)
+        
+        selectionStyle = .none
+    }
+    
+    func constraint(top: CGFloat? = nil, right: CGFloat? = nil, bottom: CGFloat? = nil, left: CGFloat? = nil) {
         if let top = top {
             topConstraint.constant = top
         }
@@ -33,7 +39,5 @@ class TextTableViewCell: UITableViewCell {
         if let left = left {
             leftConstraint.constant = left
         }
-        
-        selectionStyle = .none
     }
 }

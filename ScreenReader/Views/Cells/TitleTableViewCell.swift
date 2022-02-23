@@ -33,12 +33,10 @@ class TitleTableViewCell: UITableViewCell {
     
     func setup(_ item: Item) {
         setup(item.title)
-    }
-    
-    func setup(_ learning: Learning) {
-        setup(learning.title)
         
-        accessibilityValue = learning.completed ? "completed".localized : nil
-        accessoryType = learning.completed ? .checkmark : .disclosureIndicator
+        if let learning = item as? Learning {
+            accessibilityValue = learning.completed ? "completed".localized : nil
+            accessoryType = learning.completed ? .checkmark : .disclosureIndicator
+        }
     }
 }

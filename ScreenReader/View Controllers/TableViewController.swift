@@ -11,7 +11,10 @@ import UIKit
 class TableViewController: ViewController {
     
     @IBOutlet var tableView: UITableView!
+    var lastSelectedRow: IndexPath?
     
+    private(set) var items: [Any] = []
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +24,19 @@ class TableViewController: ViewController {
         tableView.keyboardDismissMode = .onDrag
         tableView.tableFooterView = UIView(frame: .zero)
         tableView.rowHeight = UITableView.automaticDimension
+        
+        // Register cells
+        tableView.registerNib(HeaderTableViewCell.self)
+        tableView.registerNib(TextTableViewCell.self)
+        tableView.registerNib(TitleTableViewCell.self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        if lastSelectedRow != nil {
+            tableView.reloadData()
+        }
     }
     
     lazy var refreshControl: UIRefreshControl = {
@@ -30,12 +46,40 @@ class TableViewController: ViewController {
         return refreshControl
     }()
     
-    @objc func refresh(_ refreshControl: UIRefreshControl) {
+    @objc private func refresh(_ refreshControl: UIRefreshControl) {
+        refreshItems()
+    }
+    
+    func refreshItems() {
         // Should be overridden to handle refresh logic
     }
     
-    func loadMore() {
+    func loadMoreItems() {
         // Can be overridden to implement 'infinite scrolling'
+    }
+    
+    func didSelectItem(_ item: Any, indexPath: IndexPath) {
+        // Can be overridden to implement selection
+    }
+    
+    // MARK: - Cells
+    
+    func textTableViewCell(_ text: String, indexPath: IndexPath) -> TextTableViewCell {
+        let cell = tableView.cell(TextTableViewCell.self, at: indexPath)
+        cell.setup(text)
+        return cell
+    }
+    
+    func headerTableViewCell(_ header: Header, indexPath: IndexPath) -> HeaderTableViewCell {
+        let cell = tableView.cell(HeaderTableViewCell.self, at: indexPath)
+        cell.setup(header.text)
+        return cell
+    }
+    
+    func itemTableViewCell(_ item: Item, indexPath: IndexPath) -> TitleTableViewCell {
+        let cell = tableView.cell(TitleTableViewCell.self, at: indexPath)
+        cell.setup(item)
+        return cell
     }
 }
 
@@ -48,11 +92,25 @@ extension TableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        fatalError("cellForRowAt() must be implemented")
+        let item = items[indexPath.row]
+        
+        let cell: UITableViewCell!
+        
+        if let text = item as? String {
+            cell = textTableViewCell(text, indexPath: indexPath)
+        } else if let header = item as? Header {
+            cell = headerTableViewCell(header, indexPath: indexPath)
+        } else if let item = item as? Item {
+            cell = itemTableViewCell(item, indexPath: indexPath)
+        } else {
+            fatalError("Cell for object \(item) not implemented")
+        }
+                        
+        return cell
     }
 }
 
@@ -63,7 +121,7 @@ extension TableViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.section == tableView.numberOfSections - 1, indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1 {
-            loadMore()
+            loadMoreItems()
         }
     }
         
@@ -86,6 +144,10 @@ extension TableViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        lastSelectedRow = indexPath
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let item = items[indexPath.row]
+        didSelectItem(item, indexPath: indexPath)
     }
 }

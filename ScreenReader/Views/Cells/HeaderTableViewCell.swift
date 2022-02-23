@@ -22,6 +22,15 @@ class HeaderTableViewCell: UITableViewCell {
         label.font = .openSans(weight: .bold, size: 18, style: .body)
         label.text = text
         
+        constraint(top: top, right: right, bottom: bottom, left: left)
+        
+        accessibilityLabel = text
+        accessibilityTraits = .header
+        
+        selectionStyle = .none
+    }
+    
+    func constraint(top: CGFloat? = nil, right: CGFloat? = nil, bottom: CGFloat? = nil, left: CGFloat? = nil) {
         if let top = top {
             topConstraint.constant = top
         }
@@ -34,10 +43,5 @@ class HeaderTableViewCell: UITableViewCell {
         if let left = left {
             leftConstraint.constant = left
         }
-        
-        accessibilityLabel = text
-        accessibilityTraits = .header
-        
-        selectionStyle = .none
     }
 }
