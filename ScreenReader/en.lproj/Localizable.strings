@@ -77,6 +77,8 @@
 "gestures_shortcuts" = "Shortcuts";
 
 /* Gesture */
+"gesture_area" = "Area to perform gesture";
+"gesture_feedback" = "Wrong, try again";
 "gesture_correct" = "Gesture performed correctly!";
 "gesture_incorrect" = "You performed the gesture wrong %d times. Do you want to stop, skip or continue?";
 "gesture_completed" = "You have successfully performed all gestures!";

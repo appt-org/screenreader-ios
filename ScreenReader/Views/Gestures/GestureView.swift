@@ -28,7 +28,7 @@ class GestureView: UIView {
         isAccessibilityElement = true
         isMultipleTouchEnabled = true
         accessibilityTraits = .allowsDirectInteraction
-        accessibilityLabel = String(format: "%@: %@", gesture.title, gesture.description)
+        accessibilityLabel = gesture.instructions
         
         isOpaque = false
         clearsContextBeforeDrawing = false

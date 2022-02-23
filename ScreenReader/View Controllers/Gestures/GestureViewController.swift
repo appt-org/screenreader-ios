@@ -73,7 +73,7 @@ class GestureViewController: ViewController {
         gestureView.delegate = self
         view.accessibilityElements = [gestureView]
         
-        UIAccessibility.post(notification: .layoutChanged, argument: gestureView)
+        UIAccessibility.post(notification: .screenChanged, argument: gestureView)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -161,11 +161,11 @@ extension GestureViewController: GestureViewDelegate {
         incorrect = true
         errorCount += 1
         
-        let feedback = instructions ? feedback : "Fout"
+        let feedback = instructions ? feedback : "gesture_feedback".localized
         
         // Announce & display feedback
         UIAccessibility.post(notification: .announcement, argument: feedback)
-
+        
         if feedbackLabel.isHidden {
             feedbackLabel.text = nil
             feedbackLabel.isHidden = false
@@ -189,10 +189,10 @@ extension GestureViewController: GestureViewDelegate {
                 .action("stop".localized, style: .destructive) {
                     self.finish()
                 }
-                .action("skip".localized, style: .cancel) {
+                .action("skip".localized, style: .default) {
                     self.next()
                 }
-                .action("continue".localized, style: .default) {
+                .action("continue".localized, style: .cancel) {
                     self.errorLimit = self.errorLimit * 2
                     UIAccessibility.post(notification: .screenChanged, argument: self.gestureView)
                 }.present(in: self)

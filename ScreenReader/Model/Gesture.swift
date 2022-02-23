@@ -67,6 +67,11 @@ enum Gesture: String, Learning, CaseIterable {
         return NSLocalizedString("gesture_"+rawValue+"_description", comment: "")
     }
     
+    /** Instructions */
+    var instructions: String {
+        return String(format: "%@. %@", title, description)
+    }
+    
     /** Explanation */
     var explanation: String {
         return NSLocalizedString("gesture_"+rawValue+"_explanation", comment: "")

@@ -77,6 +77,8 @@
 "gestures_shortcuts" = "Snelkoppelingen";
 
 /* Gesture */
+"gesture_area" = "Gebied om gebaar uit te voeren";
+"gesture_feedback" = "Fout, probeer het opnieuw";
 "gesture_correct" = "Gebaar correct uitgevoerd!";
 "gesture_incorrect" = "Je hebt het gebaar %d keer fout uitgevoerd. Wil je stoppen, overslaan of doorgaan?";
 "gesture_completed" = "Je hebt alle gebaren succesvol uitgevoerd!";
