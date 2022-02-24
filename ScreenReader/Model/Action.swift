@@ -45,7 +45,23 @@ enum Action: String, Learning {
             return VoiceOverPasteView.create(self)
         }
     }
-        
+    
+    var items: [Any] {
+        return [
+            "Met de VoiceOver rotor kun je via koppen navigeren. Dit is handig bij lange pagina's of websites. Zo navigeer je via koppen:",
+            "1. Zet de rotor op 'Kopregels'.",
+            "2. Veeg met één vinger omlaag om naar de volgende kop te gaan.",
+            "Navigeer drie keer via kopregels om de training af te ronden.",
+            Header("Kop 1"),
+            "Als je via kopregels navigeert sla je deze tekst over.",
+            Header("Kop 2"),
+            "Als je via kopregels navigeert sla je deze tekst over.",
+            Header("Kop 3"),
+            "Als je via kopregels navigeert sla je deze tekst over.",
+            Input(placeholder: "XXX", text: "XXX")
+        ]
+    }
+            
     /** Completed? */
     var completed: Bool {
        set {

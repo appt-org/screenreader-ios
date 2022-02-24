@@ -10,12 +10,17 @@ import Foundation
 import UIKit
 import AVKit
 
-class ActionViewController2: TableViewController {
+class ActionViewController2: TextTableViewController {
     
     var action: Action!
+    override var items: [Any] {
+        get {
+            return action.items
+        }
+    }
     
-    private var focusedElements = 0
-    
+    private var focusedElements = [UIAccessibilityElement]()
+    private var focusedViews = [UIView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,13 +48,40 @@ class ActionViewController2: TableViewController {
         }
     }
     
+    // MARK: - Focus
+    
     @objc private func elementFocusedNotification(_ notification: Notification) {
-        focusedElements += 1
-        //actionView.elementFocusedNotification(notification)
+        guard let object = notification.userInfo?[UIAccessibility.focusedElementUserInfoKey] else {
+            return
+        }
+        
+        if let element = object as? UIAccessibilityElement {
+            focusedElements.append(element)
+            onFocusChanged(focusedElements)
+        }
+        
+        if let view = object as? UIView {
+            focusedViews.append(view)
+            onFocusChanged(focusedViews)
+        }
     }
     
+    func onFocusChanged(_ elements: [UIAccessibilityElement]) {
+        // Can be overridden
+    }
+    
+    func onFocusChanged(_ views: [UIView]) {
+        // Can be overridden
+    }
+    
+    // MARK: - Pasteboard
+    
     @objc private func pasteboardChangedNotification(_ notification: Notification){
-        //actionView.pasteboardChangedNotification(notification)
+        onPasteboardChanged(UIPasteboard.general.string)
+    }
+    
+    func onPasteboardChanged(_ content: String?) {
+        // Can be overridden
     }
 }
 

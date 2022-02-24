@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282B702627C7D74300BA3979 /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B702527C7D74300BA3979 /* InputTableViewCell.swift */; };
+		282B702827C7D75000BA3979 /* InputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282B702727C7D75000BA3979 /* InputTableViewCell.xib */; };
+		282B702A27C7E47500BA3979 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B702927C7E47500BA3979 /* Input.swift */; };
 		285345F327C3F38B0030DC10 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 285345F527C3F38B0030DC10 /* Localizable.strings */; };
 		285345F627C3F3920030DC10 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 285345F827C3F3920030DC10 /* Localizable.stringsdict */; };
 		286671BD27C6462900AC1A6E /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286671BC27C6462900AC1A6E /* Learning.swift */; };
@@ -70,14 +73,17 @@
 		28F09DE627BD44F800C46249 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DE527BD44F800C46249 /* Header.swift */; };
 		28F09DE827BD451A00C46249 /* _UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DE727BD451A00C46249 /* _UITableView.swift */; };
 		28F09DEA27BD456C00C46249 /* _UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DE927BD456C00C46249 /* _UIView.swift */; };
-		28F09DED27BD649500C46249 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F09DEB27BD649500C46249 /* TitleTableViewCell.xib */; };
-		28F09DEE27BD649500C46249 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DEC27BD649500C46249 /* TitleTableViewCell.swift */; };
+		28F09DED27BD649500C46249 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F09DEB27BD649500C46249 /* ItemTableViewCell.xib */; };
+		28F09DEE27BD649500C46249 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DEC27BD649500C46249 /* ItemTableViewCell.swift */; };
 		28F09DF027BD64A200C46249 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DEF27BD64A200C46249 /* Topic.swift */; };
 		28F09DF227BD64CA00C46249 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DF127BD64CA00C46249 /* Item.swift */; };
 		28F09DF627BD686400C46249 /* _UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DF527BD686400C46249 /* _UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		282B702527C7D74300BA3979 /* InputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
+		282B702727C7D75000BA3979 /* InputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTableViewCell.xib; sourceTree = "<group>"; };
+		282B702927C7E47500BA3979 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		285345F427C3F38B0030DC10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		285345F727C3F3920030DC10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		285345F927C3F3F00030DC10 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -145,8 +151,8 @@
 		28F09DE527BD44F800C46249 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		28F09DE727BD451A00C46249 /* _UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UITableView.swift; sourceTree = "<group>"; };
 		28F09DE927BD456C00C46249 /* _UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIView.swift; sourceTree = "<group>"; };
-		28F09DEB27BD649500C46249 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
-		28F09DEC27BD649500C46249 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		28F09DEB27BD649500C46249 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		28F09DEC27BD649500C46249 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		28F09DEF27BD64A200C46249 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		28F09DF127BD64CA00C46249 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		28F09DF527BD686400C46249 /* _UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIViewController.swift; sourceTree = "<group>"; };
@@ -338,8 +344,10 @@
 				28F09DD427BD427200C46249 /* HeaderTableViewCell.xib */,
 				28F09DD627BD427200C46249 /* TextTableViewCell.swift */,
 				28F09DD527BD427200C46249 /* TextTableViewCell.xib */,
-				28F09DEC27BD649500C46249 /* TitleTableViewCell.swift */,
-				28F09DEB27BD649500C46249 /* TitleTableViewCell.xib */,
+				28F09DEC27BD649500C46249 /* ItemTableViewCell.swift */,
+				28F09DEB27BD649500C46249 /* ItemTableViewCell.xib */,
+				282B702527C7D74300BA3979 /* InputTableViewCell.swift */,
+				282B702727C7D75000BA3979 /* InputTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -352,6 +360,7 @@
 				287D43FF27BE9F7000B9B997 /* Gesture.swift */,
 				28F09DE527BD44F800C46249 /* Header.swift */,
 				286671BC27C6462900AC1A6E /* Learning.swift */,
+				282B702927C7E47500BA3979 /* Input.swift */,
 				28F09DF127BD64CA00C46249 /* Item.swift */,
 				287D443127BEA14400B9B997 /* Position.swift */,
 				28F09DEF27BD64A200C46249 /* Topic.swift */,
@@ -429,9 +438,10 @@
 				287D441D27BEA11F00B9B997 /* VoiceOverCopyView.xib in Resources */,
 				287D441827BEA11F00B9B997 /* VoiceOverHeadingsView.xib in Resources */,
 				28F09DC027BD39E200C46249 /* OpenSans-Regular.ttf in Resources */,
-				28F09DED27BD649500C46249 /* TitleTableViewCell.xib in Resources */,
+				28F09DED27BD649500C46249 /* ItemTableViewCell.xib in Resources */,
 				285345F327C3F38B0030DC10 /* Localizable.strings in Resources */,
 				287D442027BEA11F00B9B997 /* VoiceOverSelectionView.xib in Resources */,
+				282B702827C7D75000BA3979 /* InputTableViewCell.xib in Resources */,
 				28F09DD927BD427200C46249 /* TextTableViewCell.xib in Resources */,
 				28D1431E27BD287D0000BF92 /* Main.storyboard in Resources */,
 				287D441627BEA11F00B9B997 /* VoiceOverPasteView.xib in Resources */,
@@ -448,6 +458,7 @@
 				287D441A27BEA11F00B9B997 /* VoiceOverPasteView.swift in Sources */,
 				28F09DF227BD64CA00C46249 /* Item.swift in Sources */,
 				28F09DF627BD686400C46249 /* _UIViewController.swift in Sources */,
+				282B702627C7D74300BA3979 /* InputTableViewCell.swift in Sources */,
 				28F09DD127BD417000C46249 /* MoreViewController.swift in Sources */,
 				287D440527BE9FE400B9B997 /* Alert.swift in Sources */,
 				287D441F27BEA11F00B9B997 /* VoiceOverView.swift in Sources */,
@@ -486,6 +497,7 @@
 				287D442D27BEA12E00B9B997 /* GestureView.swift in Sources */,
 				287D441927BEA11F00B9B997 /* VoiceOverSelectionView.swift in Sources */,
 				28F09DE627BD44F800C46249 /* Header.swift in Sources */,
+				282B702A27C7E47500BA3979 /* Input.swift in Sources */,
 				28815FAB27BFF3EB002CC12A /* ScrollViewController.swift in Sources */,
 				28D1431927BD287D0000BF92 /* SceneDelegate.swift in Sources */,
 				28F09DCB27BD414F00C46249 /* GesturesViewController.swift in Sources */,
@@ -495,7 +507,7 @@
 				287D442C27BEA12E00B9B997 /* RotationGestureView.swift in Sources */,
 				28F09DC427BD39F400C46249 /* _UIFont.swift in Sources */,
 				287D442F27BEA12E00B9B997 /* TouchGestureView.swift in Sources */,
-				28F09DEE27BD649500C46249 /* TitleTableViewCell.swift in Sources */,
+				28F09DEE27BD649500C46249 /* ItemTableViewCell.swift in Sources */,
 				28F09DC827BD414100C46249 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,8 +27,9 @@ class TableViewController: ViewController {
         
         // Register cells
         tableView.registerNib(HeaderTableViewCell.self)
+        tableView.registerNib(InputTableViewCell.self)
+        tableView.registerNib(ItemTableViewCell.self)
         tableView.registerNib(TextTableViewCell.self)
-        tableView.registerNib(TitleTableViewCell.self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,21 +65,27 @@ class TableViewController: ViewController {
     
     // MARK: - Cells
     
-    func textTableViewCell(_ text: String, indexPath: IndexPath) -> TextTableViewCell {
-        let cell = tableView.cell(TextTableViewCell.self, at: indexPath)
-        cell.setup(text)
-        return cell
-    }
-    
     func headerTableViewCell(_ header: Header, indexPath: IndexPath) -> HeaderTableViewCell {
         let cell = tableView.cell(HeaderTableViewCell.self, at: indexPath)
         cell.setup(header.text)
         return cell
     }
     
-    func itemTableViewCell(_ item: Item, indexPath: IndexPath) -> TitleTableViewCell {
-        let cell = tableView.cell(TitleTableViewCell.self, at: indexPath)
+    func inputTableViewCell(_ input: Input, indexPath: IndexPath) -> InputTableViewCell {
+        let cell = tableView.cell(InputTableViewCell.self, at: indexPath)
+        cell.setup(input)
+        return cell
+    }
+    
+    func itemTableViewCell(_ item: Item, indexPath: IndexPath) -> ItemTableViewCell {
+        let cell = tableView.cell(ItemTableViewCell.self, at: indexPath)
         cell.setup(item)
+        return cell
+    }
+    
+    func textTableViewCell(_ text: String, indexPath: IndexPath) -> TextTableViewCell {
+        let cell = tableView.cell(TextTableViewCell.self, at: indexPath)
+        cell.setup(text)
         return cell
     }
 }
@@ -102,10 +109,13 @@ extension TableViewController: UITableViewDataSource {
         
         if let text = item as? String {
             cell = textTableViewCell(text, indexPath: indexPath)
-        } else if let header = item as? Header {
-            cell = headerTableViewCell(header, indexPath: indexPath)
+        } else if let input = item as? Input {
+            cell = inputTableViewCell(input, indexPath: indexPath)
         } else if let item = item as? Item {
             cell = itemTableViewCell(item, indexPath: indexPath)
+        } else if let header = item as? Header {
+            cell = headerTableViewCell(header, indexPath: indexPath)
+        
         } else {
             fatalError("Cell for object \(item) not implemented")
         }
