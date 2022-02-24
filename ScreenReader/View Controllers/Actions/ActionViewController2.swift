@@ -58,20 +58,46 @@ class ActionViewController2: TextTableViewController {
         if let element = object as? UIAccessibilityElement {
             focusedElements.append(element)
             onFocusChanged(focusedElements)
-        }
-        
-        if let view = object as? UIView {
+            
+            // Find view on screen
+            guard let coordinate = UIApplication.shared.keyWindow?.convert(element.accessibilityFrame.origin, to: tableView),
+                  let indexPath = tableView.indexPathForRow(at: coordinate),
+                  let cell = tableView.cellForRow(at: indexPath) else {
+                return
+            }
+            
+            // Avoid duplicates
+            if let lastView = focusedViews.last, lastView == cell {
+                return
+            }
+            
+            focusedViews.append(cell)
+            onFocusChanged(focusedViews)
+        } else if let view = object as? UIView {
             focusedViews.append(view)
             onFocusChanged(focusedViews)
         }
     }
     
     func onFocusChanged(_ elements: [UIAccessibilityElement]) {
-        // Can be overridden
+        print("element onFocusChanged: \(elements)")
     }
     
     func onFocusChanged(_ views: [UIView]) {
-        // Can be overridden
+        print("views onFocusChanged: \(views)")
+        
+        if action.onFocusChanged(views) {
+            correct()
+        }
+    }
+    
+    func correct() {
+        self.action.completed = true
+        //Events.log(.actionCompleted, identifier: action.id, value: focusedElements)
+        
+        Alert.toast("action_completed".localized, duration: 3.0, viewController: self) {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     
     // MARK: - Pasteboard

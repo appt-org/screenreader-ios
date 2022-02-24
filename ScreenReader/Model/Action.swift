@@ -46,6 +46,7 @@ enum Action: String, Learning {
         }
     }
     
+    /** Items */
     var items: [Any] {
         return [
             "Met de VoiceOver rotor kun je via koppen navigeren. Dit is handig bij lange pagina's of websites. Zo navigeer je via koppen:",
@@ -60,6 +61,24 @@ enum Action: String, Learning {
             "Als je via kopregels navigeert sla je deze tekst over.",
             Input(placeholder: "XXX", text: "XXX")
         ]
+    }
+    
+    /** On focus changed */
+    func onFocusChanged(_ views: [UIView]) -> Bool {
+        let count = views.count
+
+        guard count >= 3 else {
+            return false
+        }
+        
+        // Check if the last three views are HeaderTableViewCell
+        if views.dropFirst(count-3).allSatisfy({
+            $0 is HeaderTableViewCell
+        }) {
+            return true
+        }
+        
+        return false
     }
             
     /** Completed? */
