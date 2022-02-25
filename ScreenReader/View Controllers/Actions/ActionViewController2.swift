@@ -12,7 +12,7 @@ import AVKit
 
 class ActionViewController2: TextTableViewController {
     
-    var action: Action!
+    var action: Action2!
     override var items: [Any] {
         get {
             return action.items
@@ -79,17 +79,29 @@ class ActionViewController2: TextTableViewController {
         }
     }
     
-    func onFocusChanged(_ elements: [UIAccessibilityElement]) {
-        print("element onFocusChanged: \(elements)")
+    private func onFocusChanged(_ elements: [UIAccessibilityElement]) {
+        if action.onFocusChanged(elements) {
+            correct()
+        }
     }
     
-    func onFocusChanged(_ views: [UIView]) {
-        print("views onFocusChanged: \(views)")
-        
+    private func onFocusChanged(_ views: [UIView]) {
         if action.onFocusChanged(views) {
             correct()
         }
     }
+        
+    // MARK: - Pasteboard
+    
+    @objc private func pasteboardChangedNotification(_ notification: Notification){
+        onPasteboardChanged(UIPasteboard.general.string)
+    }
+    
+    private func onPasteboardChanged(_ content: String?) {
+        
+    }
+    
+    // MARK: - Status
     
     func correct() {
         self.action.completed = true
@@ -99,29 +111,19 @@ class ActionViewController2: TextTableViewController {
             self.navigationController?.popViewController(animated: true)
         }
     }
-    
-    // MARK: - Pasteboard
-    
-    @objc private func pasteboardChangedNotification(_ notification: Notification){
-        onPasteboardChanged(UIPasteboard.general.string)
-    }
-    
-    func onPasteboardChanged(_ content: String?) {
-        // Can be overridden
-    }
 }
 
 // MARK: - Keyboard
 
 extension ActionViewController2 {
     
-    override func keyboardWillShow(frame: CGRect, notification: Notification) {
+    override func keyboardWillShow(height: CGFloat) {
         var contentInset = tableView.contentInset
-        contentInset.bottom = frame.size.height
+        contentInset.bottom = height
         tableView.contentInset = contentInset
     }
-    
-    override func keyboardWillHide(notification: Notification) {
+        
+    override func keyboardWillHide() {
         tableView.contentInset = .zero
         tableView.scrollIndicatorInsets = .zero
     }

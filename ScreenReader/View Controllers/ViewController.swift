@@ -135,11 +135,59 @@ class ViewController: UIViewController {
         }
     }
     
+    // View will appear: register notifications
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        registerKeyboardNotifications()
+        registerStateNotifications()
+        registerAccessibilityNotifications()
+    }
+        
+    // View will disappear: deregister notifications
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        deregisterKeyboardNotifications()
+        deregisterStateNotifications()
+        deregisterAccessibilityNotifications()
+    }
+    
     func shareApp() {
         let shareViewController = UIActivityViewController(activityItems: [Topic.share.website], applicationActivities: [])
         present(shareViewController, animated: true)
     }
 }
+
+// MARK: - Keyboard notifications
+
+extension ViewController {
+    
+    func registerKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    func deregisterKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc private func keyboardWillShow(_ notification: Notification) {
+        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let bottomInset = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
+            let height = keyboardFrame.cgRectValue.height - bottomInset
+            keyboardWillShow(height: height)
+        }
+    }
+    
+    @objc func keyboardWillShow(height: CGFloat) {
+         print("keyboardWillShow, height = \(height)")
+    }
+        
+    @objc func keyboardWillHide() {
+        print("keyboardWillHide")
+    }
+}
+
 
 // MARK: - State notifications
 
@@ -152,6 +200,15 @@ extension ViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(onStateBackground(_:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(onStateResign(_:)), name: UIApplication.willResignActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(onStateTerminate(_:)), name: UIApplication.willTerminateNotification, object: nil)
+    }
+    
+    // State: deregister state notifications
+    private func deregisterStateNotifications() {
+        NotificationCenter.default.removeObserver(self, name: UIApplication.willEnterForegroundNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIApplication.didEnterBackgroundNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIApplication.willResignActiveNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIApplication.willTerminateNotification, object: nil)
     }
     
     // State: entered foreground
@@ -200,35 +257,6 @@ extension ViewController {
     }
 }
 
-// MARK: - Keyboard notifications
-
-extension ViewController {
-    
-    // Keyboard: register notifications
-    private func registerKeyboardNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
-    }
-    
-    // Keyboard: will show
-    @objc private func keyboardWillShow(_ notification: Notification) {
-        guard let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
-        keyboardWillShow(frame: keyboardFrame.cgRectValue, notification: notification)
-    }
-    
-    @objc func keyboardWillShow(frame: CGRect, notification: Notification) {
-        // Can be overridden
-    }
-    
-    // Keyboard: will hide
-    @objc private func keyboardWillHide(_ notification: Notification) {
-        keyboardWillHide(notification: notification)
-    }
-
-    @objc func keyboardWillHide(notification: Notification) {
-        // Can be overridden
-    }
-}
 
 // MARK: - Accessibility notifications
 
@@ -239,6 +267,12 @@ extension ViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(announcementFinished(_:)),name: UIAccessibility.announcementDidFinishNotification, object: nil)
 
         NotificationCenter.default.addObserver(self, selector:#selector(contentSizeCategoryDidChange(notification:)), name: UIContentSizeCategory.didChangeNotification, object: nil)
+    }
+    
+    // Accessibility: deregister notifications
+    private func deregisterAccessibilityNotifications() {
+        NotificationCenter.default.removeObserver(self, name: UIAccessibility.announcementDidFinishNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIContentSizeCategory.didChangeNotification, object: nil)
     }
     
     @objc private func announcementFinished(_ notification: Notification) {

@@ -65,13 +65,13 @@ class ActionViewController: ScrollViewController {
 
 extension ActionViewController {
     
-    override func keyboardWillShow(frame: CGRect, notification: Notification) {
+    override func keyboardWillShow(height: CGFloat) {
         var contentInset = scrollView.contentInset
-        contentInset.bottom = frame.size.height
+        contentInset.bottom = height
         scrollView.contentInset = contentInset
     }
     
-    override func keyboardWillHide(notification: Notification) {
+    override func keyboardWillHide() {
         scrollView.contentInset = .zero
         scrollView.scrollIndicatorInsets = .zero
     }

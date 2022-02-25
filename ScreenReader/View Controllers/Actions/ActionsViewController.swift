@@ -15,6 +15,7 @@ class ActionsViewController: TableViewController {
             return [
                 "actions_description".localized,
                 Header("actions_navigate".localized),
+                HeadingsAction(),
                 Action.headings,
                 Action.links,
                 Header("actions_edit".localized),
@@ -34,7 +35,7 @@ class ActionsViewController: TableViewController {
     }
     
     override func didSelectItem(_ item: Any, indexPath: IndexPath) {
-        guard let action = item as? Action else {
+        guard let action = item as? Action2 else {
             return
         }
         
