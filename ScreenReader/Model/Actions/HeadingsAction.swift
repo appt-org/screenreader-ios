@@ -42,5 +42,4 @@ class HeadingsAction: Action2 {
         
         return false
     }
-    
 }

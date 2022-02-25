@@ -16,12 +16,11 @@ class ActionsViewController: TableViewController {
                 "actions_description".localized,
                 Header("actions_navigate".localized),
                 HeadingsAction(),
-                Action.headings,
-                Action.links,
+                LinksAction(),
                 Header("actions_edit".localized),
-                Action.selection,
-                Action.copy,
-                Action.paste
+                SelectionAction(),
+                CopyAction(),
+                PasteAction()
             ]
         }
     }

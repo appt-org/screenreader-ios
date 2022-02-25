@@ -51,6 +51,10 @@
 		28815FAD27BFF3FB002CC12A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28815FAC27BFF3FB002CC12A /* NavigationController.swift */; };
 		28BBF1D727C8E732002A7125 /* HeadingsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1D627C8E732002A7125 /* HeadingsAction.swift */; };
 		28BBF1DA27C8E7A5002A7125 /* Action2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1D927C8E7A5002A7125 /* Action2.swift */; };
+		28BBF1DC27C8EA35002A7125 /* LinksAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1DB27C8EA35002A7125 /* LinksAction.swift */; };
+		28BBF1DE27C8EA43002A7125 /* SelectionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1DD27C8EA43002A7125 /* SelectionAction.swift */; };
+		28BBF1E027C8EA4A002A7125 /* CopyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1DF27C8EA4A002A7125 /* CopyAction.swift */; };
+		28BBF1E227C8EA54002A7125 /* PasteAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1E127C8EA54002A7125 /* PasteAction.swift */; };
 		28D1431727BD287D0000BF92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1431627BD287D0000BF92 /* AppDelegate.swift */; };
 		28D1431927BD287D0000BF92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1431827BD287D0000BF92 /* SceneDelegate.swift */; };
 		28D1431E27BD287D0000BF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D1431C27BD287D0000BF92 /* Main.storyboard */; };
@@ -129,6 +133,10 @@
 		28815FAC27BFF3FB002CC12A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		28BBF1D627C8E732002A7125 /* HeadingsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingsAction.swift; sourceTree = "<group>"; };
 		28BBF1D927C8E7A5002A7125 /* Action2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action2.swift; sourceTree = "<group>"; };
+		28BBF1DB27C8EA35002A7125 /* LinksAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksAction.swift; sourceTree = "<group>"; };
+		28BBF1DD27C8EA43002A7125 /* SelectionAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionAction.swift; sourceTree = "<group>"; };
+		28BBF1DF27C8EA4A002A7125 /* CopyAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAction.swift; sourceTree = "<group>"; };
+		28BBF1E127C8EA54002A7125 /* PasteAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteAction.swift; sourceTree = "<group>"; };
 		28D1431327BD287D0000BF92 /* ScreenReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D1431627BD287D0000BF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28D1431827BD287D0000BF92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,8 +225,11 @@
 		28BBF1D827C8E739002A7125 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				28BBF1DF27C8EA4A002A7125 /* CopyAction.swift */,
 				28BBF1D627C8E732002A7125 /* HeadingsAction.swift */,
-				28BBF1D927C8E7A5002A7125 /* Action2.swift */,
+				28BBF1DB27C8EA35002A7125 /* LinksAction.swift */,
+				28BBF1E127C8EA54002A7125 /* PasteAction.swift */,
+				28BBF1DD27C8EA43002A7125 /* SelectionAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -369,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				28BBF1D827C8E739002A7125 /* Actions */,
+				28BBF1D927C8E7A5002A7125 /* Action2.swift */,
 				287D443327BEA15600B9B997 /* Action.swift */,
 				287D443D27BEA1A200B9B997 /* Direction.swift */,
 				287D43FF27BE9F7000B9B997 /* Gesture.swift */,
@@ -479,6 +491,7 @@
 				28F09DEA27BD456C00C46249 /* _UIView.swift in Sources */,
 				28815FAD27BFF3FB002CC12A /* NavigationController.swift in Sources */,
 				28F09DE127BD437700C46249 /* _DispatchQueue.swift in Sources */,
+				28BBF1E027C8EA4A002A7125 /* CopyAction.swift in Sources */,
 				287D443E27BEA1A200B9B997 /* Direction.swift in Sources */,
 				287D442B27BEA12E00B9B997 /* SwipeGestureView.swift in Sources */,
 				287D441727BEA11F00B9B997 /* VoiceOverLinksView.swift in Sources */,
@@ -491,6 +504,7 @@
 				28F09DDA27BD427200C46249 /* TextTableViewCell.swift in Sources */,
 				287D440027BE9F7000B9B997 /* Gesture.swift in Sources */,
 				287D442A27BEA12E00B9B997 /* TapGestureView.swift in Sources */,
+				28BBF1DC27C8EA35002A7125 /* LinksAction.swift in Sources */,
 				287D443A27BEA17500B9B997 /* _Direction.swift in Sources */,
 				28815FA927BFF369002CC12A /* ActionViewController.swift in Sources */,
 				287D444227BEA36600B9B997 /* _UIStoryboard.swift in Sources */,
@@ -502,6 +516,7 @@
 				287D443C27BEA18C00B9B997 /* TextField.swift in Sources */,
 				287D443227BEA14400B9B997 /* Position.swift in Sources */,
 				287D440727BEA00B00B9B997 /* _String.swift in Sources */,
+				28BBF1DE27C8EA43002A7125 /* SelectionAction.swift in Sources */,
 				287D443027BEA12E00B9B997 /* EscapeGestureView.swift in Sources */,
 				286671BD27C6462900AC1A6E /* Learning.swift in Sources */,
 				28F09DDD27BD432700C46249 /* TableViewController.swift in Sources */,
@@ -521,6 +536,7 @@
 				28F09DE827BD451A00C46249 /* _UITableView.swift in Sources */,
 				287D443827BEA16700B9B997 /* _CGFloat.swift in Sources */,
 				287D442C27BEA12E00B9B997 /* RotationGestureView.swift in Sources */,
+				28BBF1E227C8EA54002A7125 /* PasteAction.swift in Sources */,
 				28F09DC427BD39F400C46249 /* _UIFont.swift in Sources */,
 				287D442F27BEA12E00B9B997 /* TouchGestureView.swift in Sources */,
 				28F09DEE27BD649500C46249 /* ItemTableViewCell.swift in Sources */,
