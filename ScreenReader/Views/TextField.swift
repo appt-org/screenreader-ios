@@ -10,11 +10,12 @@ import UIKit
 
 protocol TextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: TextField, range: UITextRange?)
+    func textFieldDidPasteText(_ textField: TextField, text: String?)
 }
 
 class TextField: UITextField {
     
-    var selection: TextFieldDelegate?
+    var textFieldDelegate: TextFieldDelegate?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -54,8 +55,20 @@ class TextField: UITextField {
         get {
             return super.selectedTextRange}
         set {
-            selection?.textFieldDidChangeSelection(self, range: newValue)
+            textFieldDelegate?.textFieldDidChangeSelection(self, range: newValue)
             super.selectedTextRange = newValue
         }
+    }
+}
+
+// MARK: - UITextFieldDelegate
+
+extension TextField: UITextFieldDelegate {
+        
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if string.count > 1 {
+            textFieldDelegate?.textFieldDidPasteText(self, text: string)
+        }
+        return true
     }
 }

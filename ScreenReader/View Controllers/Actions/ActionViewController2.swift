@@ -93,12 +93,14 @@ class ActionViewController2: TextTableViewController {
         
     // MARK: - Pasteboard
     
-    @objc private func pasteboardChangedNotification(_ notification: Notification){
+    @objc private func pasteboardChangedNotification(_ notification: Notification) {
         onPasteboardChanged(UIPasteboard.general.string)
     }
     
     private func onPasteboardChanged(_ content: String?) {
-        
+        if action.onPasteboardChanged(content) {
+            correct()
+        }
     }
     
     // MARK: - Status
@@ -109,6 +111,31 @@ class ActionViewController2: TextTableViewController {
         
         Alert.toast("action_completed".localized, duration: 3.0, viewController: self) {
             self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    // MARK: - Cell
+    
+    override func inputTableViewCell(_ input: Input, indexPath: IndexPath) -> InputTableViewCell {
+        let cell = super.inputTableViewCell(input, indexPath: indexPath)
+        cell.delegate = self
+        return cell
+    }
+}
+
+// MARK: - TextFieldDelegate
+
+extension ActionViewController2: TextFieldDelegate {
+    
+    func textFieldDidChangeSelection(_ textField: TextField, range: UITextRange?) {
+        if action.onTextSelected(textField, range: range) {
+            correct()
+        }
+    }
+    
+    func textFieldDidPasteText(_ textField: TextField, text: String?) {
+        if action.onTextPasted(textField, text: text) {
+            correct()
         }
     }
 }

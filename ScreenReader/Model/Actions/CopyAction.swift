@@ -25,4 +25,12 @@ class CopyAction: Action2 {
         "Kopieer tekst uit het onderstaande invoerveld om de training af te ronden.",
         Input(placeholder: "Vul tekst in om te kopiëren", text: "Kopieer deze tekst")
     ]
+    
+    func onPasteboardChanged(_ content: String?) -> Bool {
+        guard let content = content,
+              let input = items.last as? Input else {
+            return false
+        }
+        return input.text.contains(content)
+    }
 }

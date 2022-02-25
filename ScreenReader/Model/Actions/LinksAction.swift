@@ -6,6 +6,8 @@
 //  Copyright © 2022 Stichting Appt & Abra B.V. All rights reserved.
 //
 
+import UIKit
+
 class LinksAction: Action2 {
     
     let identifier = "links"
@@ -22,4 +24,19 @@ class LinksAction: Action2 {
         "Derde link: 06-12345678",
         "Deze tekst sla je over als je navigeert via links.",
     ]
+    
+    func onFocusChanged(_ elements: [UIAccessibilityElement]) -> Bool {
+        let count = elements.count
+        
+        guard count >= 3 else {
+            return false
+        }
+        
+        // Check if the last three elements contain the `link` accessibility trait
+        if elements.dropFirst(count-3).allSatisfy({ $0.accessibilityTraits.contains(.link) }) {
+            return true
+        }
+        
+        return false
+    }
 }

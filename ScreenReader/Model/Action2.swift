@@ -16,7 +16,8 @@ protocol Action2: Learning {
     func onFocusChanged(_ elements: [UIAccessibilityElement]) -> Bool
     func onFocusChanged(_ views: [UIView]) -> Bool
     func onPasteboardChanged(_ content: String?) -> Bool
-    
+    func onTextSelected(_ textField: TextField, range: UITextRange?) -> Bool
+    func onTextPasted(_ textField: TextField, text: String?) -> Bool
 }
 
 extension Action2 {
@@ -45,6 +46,14 @@ extension Action2 {
     }
     
     func onPasteboardChanged(_ content: String?) -> Bool {
+        return false
+    }
+    
+    func onTextSelected(_ textField: TextField, range: UITextRange?) -> Bool {
+        return false
+    }
+    
+    func onTextPasted(_ textField: TextField, text: String?) -> Bool {
         return false
     }
 }

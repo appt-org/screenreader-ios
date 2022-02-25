@@ -22,4 +22,11 @@ class PasteAction: Action2 {
         "Plak tekst in het onderstaande tekstveld om de training af te ronden.",
         Input(placeholder: "Plak hier vanuit je klembord", text: "XXX")
     ]
+        
+    func onTextPasted(_ textField: TextField, text: String?) -> Bool {
+        guard let text = text else {
+            return false
+        }
+        return text.count > 1
+    }
 }

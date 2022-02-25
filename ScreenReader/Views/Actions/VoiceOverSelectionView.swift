@@ -28,7 +28,7 @@ class VoiceOverSelectionView: VoiceOverView {
         
         textField.font = .openSans(weight: .bold, size: 20, style: .body)
         textField.inputView = UIView()
-        textField.selection = self
+        textField.textFieldDelegate = self
     }
 }
 
@@ -44,5 +44,9 @@ extension VoiceOverSelectionView: TextFieldDelegate {
                 delegate?.correct(action)
             }
         }
+    }
+    
+    func textFieldDidPasteText(_ textField: TextField, text: String?) {
+        
     }
 }

@@ -6,6 +6,8 @@
 //  Copyright © 2022 Stichting Appt & Abra B.V. All rights reserved.
 //
 
+import UIKit
+
 class SelectionAction: Action2 {
     
     let identifier = "selection"
@@ -28,4 +30,12 @@ class SelectionAction: Action2 {
         "Selecteer tekst in het onderstaande tekstveld om de training af te ronden.",
         Input(placeholder: "Vul tekst in om te selecteren", text: "Selecteer deze tekst")
     ]
+    
+    func onTextSelected(_ textField: TextField, range: UITextRange?) -> Bool {
+        guard let range = range else {
+            return false
+        }
+        
+        return textField.offset(from: range.start, to: range.end) > 0
+    }
 }
