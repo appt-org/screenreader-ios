@@ -20,7 +20,7 @@ class PasteAction: Action2 {
         "4. Veeg met één vinger omlaag tot 'Plakken' is geselecteerd.",
         "5. Dubbeltik om te plakken.",
         "Plak tekst in het onderstaande tekstveld om de training af te ronden.",
-        Input(placeholder: "Plak hier vanuit je klembord", text: "XXX")
+        Input(placeholder: "Plak hier vanuit je klembord")
     ]
         
     func onTextPasted(_ textField: TextField, text: String?) -> Bool {

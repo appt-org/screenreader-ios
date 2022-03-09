@@ -31,6 +31,6 @@ class CopyAction: Action2 {
               let input = items.last as? Input else {
             return false
         }
-        return input.text.contains(content)
+        return input.text?.contains(content) == true
     }
 }

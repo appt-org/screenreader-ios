@@ -10,10 +10,10 @@ import Foundation
 
 class Input {
     
-    var placeholder: String
-    var text: String
+    var placeholder: String?
+    var text: String?
     
-    init(placeholder: String, text: String) {
+    init(placeholder: String? = nil, text: String? = nil) {
         self.placeholder = placeholder
         self.text = text
     }

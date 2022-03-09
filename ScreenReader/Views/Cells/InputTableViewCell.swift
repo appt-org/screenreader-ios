@@ -12,13 +12,16 @@ class InputTableViewCell: UITableViewCell {
     
     @IBOutlet private var textField: TextField!
     
-    var delegate: TextFieldDelegate?
+    var delegate: TextFieldDelegate? {
+        didSet {
+            textField.textFieldDelegate = delegate
+        }
+    }
     
     func setup(placeholder: String? = nil, text: String? = nil) {
         textField.font = .openSans(weight: .regular, size: 18)
         textField.placeholder = placeholder
         textField.text = text
-        textField.textFieldDelegate = delegate
     }
     
     func setup(_ input: Input) {

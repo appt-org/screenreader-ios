@@ -28,6 +28,8 @@ class TextField: UITextField {
     }
     
     private func setup() {
+        delegate = self
+        
         backgroundColor = .background
         textColor = .foreground
         tintColor = .primary
