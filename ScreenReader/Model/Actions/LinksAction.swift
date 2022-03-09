@@ -16,13 +16,8 @@ class LinksAction: Action2 {
         "Met de VoiceOver rotor kun je via links navigeren. Dit is handig om bijvoorbeeld telefoonnummers te vinden. Zo navigeer je via links:",
         "1. Zet de rotor op 'Links'",
         "2. Veeg met één vinger omlaag om naar de volgende link te gaan.",
-        "Navigeer drie keer via links  om de training af te ronden.",
-        "Eerste link: www.appt.nl",
-        "Deze tekst sla je over als je navigeert via links.",
-        "Tweede link: info@appt.nl",
-        "Deze tekst sla je over als je navigeert via links.",
-        "Derde link: 06-12345678",
-        "Deze tekst sla je over als je navigeert via links.",
+        "Verplaats de focus naar de onderstaande tekst en navigeer drie keer via links om de training af te ronden.",
+        "Eerste link: www.appt.org/eerste-link\nTweede link: www.appt.org/tweede-link\nDerde link: www.appt.org/derde-link"
     ]
     
     func onFocusChanged(_ elements: [UIAccessibilityElement]) -> Bool {

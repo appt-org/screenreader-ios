@@ -56,6 +56,7 @@
 		28BBF1E027C8EA4A002A7125 /* CopyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1DF27C8EA4A002A7125 /* CopyAction.swift */; };
 		28BBF1E227C8EA54002A7125 /* PasteAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1E127C8EA54002A7125 /* PasteAction.swift */; };
 		28C0C6D427D90FFA00506644 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0C6D327D90FFA00506644 /* TabBarController.swift */; };
+		28C0C6D627D9178100506644 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0C6D527D9178100506644 /* TextView.swift */; };
 		28D1431727BD287D0000BF92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1431627BD287D0000BF92 /* AppDelegate.swift */; };
 		28D1431927BD287D0000BF92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1431827BD287D0000BF92 /* SceneDelegate.swift */; };
 		28D1431E27BD287D0000BF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D1431C27BD287D0000BF92 /* Main.storyboard */; };
@@ -139,6 +140,7 @@
 		28BBF1DF27C8EA4A002A7125 /* CopyAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAction.swift; sourceTree = "<group>"; };
 		28BBF1E127C8EA54002A7125 /* PasteAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteAction.swift; sourceTree = "<group>"; };
 		28C0C6D327D90FFA00506644 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		28C0C6D527D9178100506644 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		28D1431327BD287D0000BF92 /* ScreenReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D1431627BD287D0000BF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28D1431827BD287D0000BF92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				287D443B27BEA18C00B9B997 /* TextField.swift */,
+				28C0C6D527D9178100506644 /* TextView.swift */,
 				287D440927BEA0FC00B9B997 /* Actions */,
 				287D440A27BEA10000B9B997 /* Gestures */,
 				28F09DD327BD422900C46249 /* Cells */,
@@ -495,6 +498,7 @@
 				28815FAD27BFF3FB002CC12A /* NavigationController.swift in Sources */,
 				28C0C6D427D90FFA00506644 /* TabBarController.swift in Sources */,
 				28F09DE127BD437700C46249 /* _DispatchQueue.swift in Sources */,
+				28C0C6D627D9178100506644 /* TextView.swift in Sources */,
 				28BBF1E027C8EA4A002A7125 /* CopyAction.swift in Sources */,
 				287D443E27BEA1A200B9B997 /* Direction.swift in Sources */,
 				287D442B27BEA12E00B9B997 /* SwipeGestureView.swift in Sources */,

@@ -10,16 +10,20 @@ import UIKit
 
 class TextTableViewCell: UITableViewCell {
     
-    @IBOutlet private var label: UILabel!
-        
+    @IBOutlet private var textView: TextView!
+    
     @IBOutlet var topConstraint: NSLayoutConstraint!
     @IBOutlet var rightConstraint: NSLayoutConstraint!
     @IBOutlet var bottomConstraint: NSLayoutConstraint!
     @IBOutlet var leftConstraint: NSLayoutConstraint!
     
     func setup(_ text: String, top: CGFloat? = nil, right: CGFloat? = nil, bottom: CGFloat? = nil, left: CGFloat? = nil) {
-        label.font = .openSans(weight: .regular, size: 18, style: .body)
-        label.text = text
+        textView.font = .openSans(weight: .regular, size: 18, style: .body)
+        textView.text = text
+        
+        textView.isScrollEnabled = false
+        textView.isEditable = false
+        textView.dataDetectorTypes = .all
         
         constraint(top: top, right: right, bottom: bottom, left: left)
         

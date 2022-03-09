@@ -26,6 +26,7 @@ class ItemTableViewCell: UITableViewCell {
         titleLabel.textColor = .foreground
         
         accessoryType = .disclosureIndicator
+        tintColor = .primary
         
         shouldGroupAccessibilityChildren = true
         accessibilityLabel = title
