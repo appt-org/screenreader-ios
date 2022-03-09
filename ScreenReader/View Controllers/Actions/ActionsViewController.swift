@@ -39,7 +39,7 @@ class ActionsViewController: TableViewController {
     }
     
     override func didSelectItem(_ item: Any, indexPath: IndexPath) {
-        guard let action = item as? Action2 else {
+        guard let action = item as? Action else {
             return
         }
         

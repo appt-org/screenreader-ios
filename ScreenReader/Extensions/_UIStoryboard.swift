@@ -45,14 +45,8 @@ extension UIStoryboard {
         return viewController(.main, identifier: ActionsViewController.self)
     }
     
-    static func action(_ action: Action) -> ActionViewController {
+    static func action2(_ action: Action) -> ActionViewController {
         let vc = viewController(.main, identifier: ActionViewController.self)
-        vc.action = action
-        return vc
-    }
-    
-    static func action2(_ action: Action2) -> ActionViewController2 {
-        let vc = viewController(.main, identifier: ActionViewController2.self)
         vc.action = action
         return vc
     }

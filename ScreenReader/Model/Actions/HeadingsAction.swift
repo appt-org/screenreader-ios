@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HeadingsAction: Action2 {
+class HeadingsAction: Action {
     
     let identifier = "headings"
     

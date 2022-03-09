@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CopyAction: Action2 {
+class CopyAction: Action {
     
     let identifier = "copy"
     

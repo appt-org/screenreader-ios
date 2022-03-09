@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SelectionAction: Action2 {
+class SelectionAction: Action {
     
     let identifier = "selection"
     

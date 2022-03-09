@@ -322,43 +322,10 @@
             </objects>
             <point key="canvasLocation" x="3059" y="222"/>
         </scene>
-        <!--VoiceOver actie-->
-        <scene sceneID="aF8-48-nQ9">
-            <objects>
-                <viewController storyboardIdentifier="ActionViewController" hidesBottomBarWhenPushed="YES" id="WGY-2n-Trg" customClass="ActionViewController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="riA-jY-VnZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="r2r-GA-xKd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="egK-e9-7tx"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="YIS-Av-M1s"/>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="4eh-PG-uzD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="r2r-GA-xKd" firstAttribute="trailing" secondItem="4eh-PG-uzD" secondAttribute="trailing" id="9fd-KF-grJ"/>
-                            <constraint firstItem="r2r-GA-xKd" firstAttribute="top" secondItem="4eh-PG-uzD" secondAttribute="top" id="U6S-uO-Ifu"/>
-                            <constraint firstAttribute="bottom" secondItem="r2r-GA-xKd" secondAttribute="bottom" id="lM0-83-ljd"/>
-                            <constraint firstItem="r2r-GA-xKd" firstAttribute="leading" secondItem="4eh-PG-uzD" secondAttribute="leading" id="tP5-w4-Myf"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="VoiceOver actie" id="0Y9-hD-skq"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <connections>
-                        <outlet property="scrollView" destination="r2r-GA-xKd" id="D5S-Sf-3ty"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qjD-ub-cgs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3964" y="976"/>
-        </scene>
         <!--Action-->
         <scene sceneID="I9B-KA-hEg">
             <objects>
-                <viewController storyboardIdentifier="ActionViewController2" title="Action" id="r0G-LP-vEa" customClass="ActionViewController2" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActionViewController2" title="Action" id="r0G-LP-vEa" customClass="ActionViewController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7vZ-5w-Nk5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

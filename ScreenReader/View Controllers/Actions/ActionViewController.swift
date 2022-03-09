@@ -1,34 +1,31 @@
 //
-//  VoiceOverActionViewController.swift
-//  Appt
+//  ActionViewController.swift
+//  ScreenReader
 //
-//  Created by Jan Jaap de Groot on 31/08/2020.
-//  Copyright © 2020 Stichting Appt All rights reserved.
+//  Created by Jan Jaap de Groot on 23/02/2022.
+//  Copyright © 2022 Stichting Appt & Abra B.V. All rights reserved.
 //
 
 import Foundation
 import UIKit
 import AVKit
-import Accessibility
 
-class ActionViewController: ScrollViewController {
+class ActionViewController: TextTableViewController {
     
     var action: Action!
-    lazy var actionView: VoiceOverView = {
-        return action.view
-    }()
-    
-    private var focusedElements = 0
-    
-    override func getView() -> UIView {
-        return actionView
+    override var items: [Any] {
+        get {
+            return action.items
+        }
     }
+    
+    private var focusedElements = [UIAccessibilityElement]()
+    private var focusedViews = [UIView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = action.title
-        actionView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,36 +48,64 @@ class ActionViewController: ScrollViewController {
         }
     }
     
+    // MARK: - Focus
+    
     @objc private func elementFocusedNotification(_ notification: Notification) {
-        focusedElements += 1
-        actionView.elementFocusedNotification(notification)
+        guard let object = notification.userInfo?[UIAccessibility.focusedElementUserInfoKey] else {
+            return
+        }
+        
+        if let element = object as? UIAccessibilityElement {
+            focusedElements.append(element)
+            onFocusChanged(focusedElements)
+            
+            // Find view on screen
+            guard let coordinate = UIApplication.shared.keyWindow?.convert(element.accessibilityFrame.origin, to: tableView),
+                  let indexPath = tableView.indexPathForRow(at: coordinate),
+                  let cell = tableView.cellForRow(at: indexPath) else {
+                return
+            }
+            
+            // Avoid duplicates
+            if let lastView = focusedViews.last, lastView == cell {
+                return
+            }
+            
+            focusedViews.append(cell)
+            onFocusChanged(focusedViews)
+        } else if let view = object as? UIView {
+            focusedViews.append(view)
+            onFocusChanged(focusedViews)
+        }
     }
     
-    @objc private func pasteboardChangedNotification(_ notification: Notification){
-        actionView.pasteboardChangedNotification(notification)
-    }
-}
-
-// MARK: - Keyboard
-
-extension ActionViewController {
-    
-    override func keyboardWillShow(height: CGFloat) {
-        var contentInset = scrollView.contentInset
-        contentInset.bottom = height
-        scrollView.contentInset = contentInset
+    private func onFocusChanged(_ elements: [UIAccessibilityElement]) {
+        if action.onFocusChanged(elements) {
+            correct()
+        }
     }
     
-    override func keyboardWillHide() {
-        scrollView.contentInset = .zero
-        scrollView.scrollIndicatorInsets = .zero
+    private func onFocusChanged(_ views: [UIView]) {
+        if action.onFocusChanged(views) {
+            correct()
+        }
     }
-}
-
-// MARK: - VoiceOverViewDelegate
-
-extension ActionViewController: VoiceOverViewDelegate {
-    func correct(_ action: Action) {
+        
+    // MARK: - Pasteboard
+    
+    @objc private func pasteboardChangedNotification(_ notification: Notification) {
+        onPasteboardChanged(UIPasteboard.general.string)
+    }
+    
+    private func onPasteboardChanged(_ content: String?) {
+        if action.onPasteboardChanged(content) {
+            correct()
+        }
+    }
+    
+    // MARK: - Status
+    
+    func correct() {
         self.action.completed = true
         //Events.log(.actionCompleted, identifier: action.id, value: focusedElements)
         
@@ -89,7 +114,44 @@ extension ActionViewController: VoiceOverViewDelegate {
         }
     }
     
-    func incorrect(_ action: Action) {
-        // Ignored
+    // MARK: - Cell
+    
+    override func inputTableViewCell(_ input: Input, indexPath: IndexPath) -> InputTableViewCell {
+        let cell = super.inputTableViewCell(input, indexPath: indexPath)
+        cell.delegate = self
+        return cell
+    }
+}
+
+// MARK: - TextFieldDelegate
+
+extension ActionViewController: TextFieldDelegate {
+    
+    func textFieldDidChangeSelection(_ textField: TextField, range: UITextRange?) {
+        if action.onTextSelected(textField, range: range) {
+            correct()
+        }
+    }
+    
+    func textFieldDidPasteText(_ textField: TextField, text: String?) {
+        if action.onTextPasted(textField, text: text) {
+            correct()
+        }
+    }
+}
+
+// MARK: - Keyboard
+
+extension ActionViewController {
+    
+    override func keyboardWillShow(height: CGFloat) {
+        var contentInset = tableView.contentInset
+        contentInset.bottom = height
+        tableView.contentInset = contentInset
+    }
+        
+    override func keyboardWillHide() {
+        tableView.contentInset = .zero
+        tableView.scrollIndicatorInsets = .zero
     }
 }

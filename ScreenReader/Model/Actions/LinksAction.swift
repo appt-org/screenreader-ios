@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LinksAction: Action2 {
+class LinksAction: Action {
     
     let identifier = "links"
     

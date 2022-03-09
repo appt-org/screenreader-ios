@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PasteAction: Action2 {
+class PasteAction: Action {
     
     let identifier = "paste"
     
