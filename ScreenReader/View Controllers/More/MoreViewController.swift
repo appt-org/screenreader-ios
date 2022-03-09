@@ -24,6 +24,11 @@ class MoreViewController: TableViewController {
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "more_title".localized
+    }
+    
     @IBAction private func onShareTapped(_ sender: Any) {
         shareApp()
     }

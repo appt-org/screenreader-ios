@@ -34,6 +34,11 @@ class HomeViewController: TextTableViewController {
             ]
         }
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "home_title".localized
+    }
 
     @IBAction private func onShareTapped(_ sender: Any) {
         shareApp()

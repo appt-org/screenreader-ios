@@ -22,7 +22,9 @@
 "completed" = "Completed";
 
 /* Home */
+"home_title" = "Home";
 "home_description" = "This ScreenReader app helps you to learn VoiceOver.";
+
 "home_section_1" = "What is VoiceOver?";
 "home_section_1_paragraph_1" = "VoiceOver is an accessibility feature which gives you audible screen descriptions. By using gestures you can navigate between elements on the screen. Each element is announced as it is selected. This allows you to control your device even if you can't see the screen.";
 "home_section_2" = "Learning VoiceOver";
@@ -42,6 +44,7 @@
 "home_section_7_paragraph_1" = "It's possible add a shortcut to toggle VoiceOver on or off. Open the Settings app, select Accessibility, scroll down and select Accessibility Shortcut and finally select VoiceOver in the list. Triple tap the home button or side button to toggle VoiceOver on or off.";
 
 /* More */
+"more_title" = "More";
 "more_description" = "The ScreenReader app is an initiative of the Appt Foundation. The app has been developed by Abra and was financed by the SIDN fund.";
 "more_partners" = "Partners";
 
@@ -60,6 +63,7 @@
 "topic_sidn_fonds_website" = "https://sidnfonds.nl";
 
 /* Gestures */
+"gestures_title" = "Gestures";
 "gestures_description" = "On this screen you can learn VoiceOver gestures one by one. You can practice the gestures via the button at the top right.";
 
 "gestures_practice_title" = "Practice gestures";
@@ -196,6 +200,7 @@
 "gesture_one_finger_interaction_explanation" = "Sometimes it's necessary to create touches outside of VoiceOver. Making this gesture directs your touch directly to the app. This makes it possible, for example, to place a signature. This gesture can also be useful for rearranging elements (drag and drop).";
 
 /* Actions */
+"actions_title" = "Actions";
 "actions_description" = "On this screen you can learn a number of VoiceOver actions. Learning these actions will help you to better operate apps.";
 
 "actions_navigate" = "Navigate";

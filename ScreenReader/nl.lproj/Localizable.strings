@@ -22,7 +22,9 @@
 "completed" = "Afgerond";
 
 /* Home */
+"home_title" = "Home";
 "home_description" = "De ScreenReader app helpt je om VoiceOver te leren.";
+
 "home_section_1" = "Wat is VoiceOver?";
 "home_section_1_paragraph_1" = "VoiceOver is een toegankelijkheidsfunctie waardoor het scherm wordt voorgelezen. Door middel van gebaren kun je navigeren tussen elementen op het scherm. Elk element wordt aangekondigd zodra het is geselecteerd. Hiermee kun je je toestel bedienen, zelfs als je het scherm niet kunt zien.";
 "home_section_2" = "VoiceOver leren";
@@ -42,6 +44,7 @@
 "home_section_7_paragraph_1" = "Het is mogelijk een snelkoppeling toe te voegen om VoiceOver in- of uitschakelen. Open de Instellingen app, selecteer Toegankelijkheid, scroll naar beneden en selecteer Activeringsknop en selecteer vervolgens VoiceOver in de lijst. Tik driedubbel op de thuisknop of zijknop om Voiceover in- of uit te schakelen.";
 
 /* More */
+"more_title" = "Meer";
 "more_description" = "De ScreenReader app is een initiatief van Stichting Appt. De app is ontwikkeld door Abra en gefinancierd door het SIDN fonds.";
 "more_partners" = "Partners";
 
@@ -60,6 +63,7 @@
 "topic_sidn_fonds_website" = "https://sidnfonds.nl";
 
 /* Gestures */
+"gestures_title" = "Gebaren";
 "gestures_description" = "Op dit scherm kun je VoiceOver gebaren één voor één leren. Je kunt de gebaren oefenen via de knop rechtsbovenaan.";
 
 "gestures_practice_title" = "Gebaren oefenen";
@@ -196,6 +200,7 @@
 "gesture_one_finger_interaction_explanation" = "Soms is het nodig om aanrakingen buiten VoiceOver om te maken. Door dit gebaar te maken gaat je aanraking direct naar de app en niet naar VoiceOver. Hierdoor is het bijvoorbeeld mogelijk om een handtekening te zetten. Dit gebaar kan ook handig zijn om elementen opnieuw te rangschikken (drag and drop).";
 
 /* Actions */
+"actions_title" = "Acties";
 "actions_description" = "Op dit scherm kun je een aantal VoiceOver acties leren. Door deze acties te leren kun je apps beter bedienen.";
 
 "actions_navigate" = "Navigeren";

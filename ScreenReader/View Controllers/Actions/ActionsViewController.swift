@@ -24,6 +24,11 @@ class ActionsViewController: TableViewController {
             ]
         }
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "actions_title".localized
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

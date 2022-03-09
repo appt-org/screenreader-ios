@@ -51,6 +51,11 @@ class GesturesViewController: TableViewController {
             ]
         }
     }
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "gestures_title".localized
+    }
     
     @IBAction private func onPracticeTapped(_ sender: Any) {
         Alert.Builder()
