@@ -11,24 +11,25 @@ import UIKit
 class SelectionAction: Action {
     
     let identifier = "selection"
-    
+        
     let items: [Any] = [
-        "De makkelijkste manier om tekst te selecteren is via de 'Tekstselectie' optie. Deze optie moet je zelf toevoegen aan de rotor.",
-        Header("Tekstselectie toevoegen aan rotor"),
-        "1. Open de 'Instellingen' app",
-        "2. Selecteer 'Toegankelijkheid'",
-        "3. Selecteer 'VoiceOver'",
-        "4. Selecteer 'Rotor'",
-        "5. Zet 'Tekstselectie' aan",
-        Header("Tekstselectie gebruiken"),
-        "1. Selecteer het veld waar je tekst wilt selecteren.",
-        "2. Dubbeltik om te starten met bewerken.",
-        "3. Zet de rotor op 'Tekstselectie'",
-        "4. Veeg met één vinger omlaag om de gewenste optie te selecteren",
-        "5. Veeg naar rechts om het volgende onderdeel te selecteren.",
-        "6. Veeg naar links om het vorige onderdeel te selecteren.",
-        "Selecteer tekst in het onderstaande tekstveld om de training af te ronden.",
-        Input(placeholder: "Vul tekst in om te selecteren", text: "Selecteer deze tekst")
+        "action_selection_paragraph_1".localized,
+        Header("action_selection_section_1".localized),
+        "action_selection_section_1_paragraph_1".localized,
+        "action_selection_section_1_paragraph_2".localized,
+        "action_selection_section_1_paragraph_3".localized,
+        "action_selection_section_1_paragraph_4".localized,
+        "action_selection_section_1_paragraph_5".localized,
+        Header("action_selection_section_2".localized),
+        "action_selection_section_2_paragraph_1".localized,
+        "action_selection_section_2_paragraph_2".localized,
+        "action_selection_section_2_paragraph_3".localized,
+        "action_selection_section_2_paragraph_4".localized,
+        "action_selection_section_2_paragraph_5".localized,
+        "action_selection_section_2_paragraph_6".localized,
+        Header("action_selection_section_3".localized),
+        "action_selection_section_3_paragraph_1".localized,
+        Input(placeholder: "action_selection_section_3_placeholder".localized, text: "action_selection_section_3_text".localized)
     ]
     
     func onTextSelected(_ textField: TextField, range: UITextRange?) -> Bool {

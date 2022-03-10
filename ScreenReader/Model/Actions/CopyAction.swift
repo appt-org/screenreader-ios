@@ -13,17 +13,19 @@ class CopyAction: Action {
     let identifier = "copy"
     
     let items: [Any] = [
-        "Via de VoiceOver rotor kun je tekst kopiëren.",
-        "1. Selecteer het veld waar je tekst uit wilt kopiëren.",
-        "2. Dubbeltik om te starten met bewerken.",
-        "3. Zet de rotor op 'Tekstselectie'.",
-        "4. Veeg omlaag tot de optie 'Selecteer alles'.",
-        "5. Veeg naar rechts om alles te selecteren.",
-        "6. Zet de rotor op 'Wijzigen'.",
-        "7. Veeg omlaag tot de optie 'Kopiëren'.",
-        "8. Dubbeltik om de geselecteerde tekst te kopiëren.",
-        "Kopieer tekst uit het onderstaande invoerveld om de training af te ronden.",
-        Input(placeholder: "Vul tekst in om te kopiëren", text: "Kopieer deze tekst")
+        "action_copy_paragraph_1".localized,
+        Header("action_copy_section_1".localized),
+        "action_copy_section_1_paragraph_1".localized,
+        "action_copy_section_1_paragraph_2".localized,
+        "action_copy_section_1_paragraph_3".localized,
+        "action_copy_section_1_paragraph_4".localized,
+        "action_copy_section_1_paragraph_5".localized,
+        "action_copy_section_1_paragraph_6".localized,
+        "action_copy_section_1_paragraph_7".localized,
+        "action_copy_section_1_paragraph_8".localized,
+        Header("action_copy_section_2".localized),
+        "action_copy_section_2_paragraph_1".localized,
+        Input(placeholder: "action_copy_section_2_placeholder".localized, text: "action_copy_section_2_text".localized)
     ]
     
     func onPasteboardChanged(_ content: String?) -> Bool {

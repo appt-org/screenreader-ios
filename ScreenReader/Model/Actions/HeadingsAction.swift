@@ -13,17 +13,17 @@ class HeadingsAction: Action {
     let identifier = "headings"
     
     let items: [Any] = [
-        "Met de VoiceOver rotor kun je via koppen navigeren. Dit is handig bij lange pagina's of websites. Zo navigeer je via koppen:",
-        "1. Zet de rotor op 'Kopregels'.",
-        "2. Veeg met één vinger omlaag om naar de volgende kop te gaan.",
-        "Navigeer drie keer via kopregels om de training af te ronden.",
-        Header("Kop 1"),
-        "Als je via kopregels navigeert sla je deze tekst over.",
-        Header("Kop 2"),
-        "Als je via kopregels navigeert sla je deze tekst over.",
-        Header("Kop 3"),
-        "Als je via kopregels navigeert sla je deze tekst over.",
-        Input(placeholder: "XXX", text: "XXX")
+        "action_headings_paragraph_1".localized,
+        Header("action_headings_section_1".localized),
+        "action_headings_section_1_paragraph_1".localized,
+        "action_headings_section_1_paragraph_2".localized,
+        "action_headings_section_1_paragraph_3".localized,
+        Header("action_headings_header_1".localized),
+        "action_headings_header_1_text".localized,
+        Header("action_headings_header_2".localized),
+        "action_headings_header_2_text".localized,
+        Header("action_headings_header_3".localized),
+        "action_headings_header_3_text".localized,
     ]
     
     func onFocusChanged(_ views: [UIView]) -> Bool {

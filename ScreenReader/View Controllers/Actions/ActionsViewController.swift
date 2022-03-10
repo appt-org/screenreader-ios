@@ -18,9 +18,9 @@ class ActionsViewController: TableViewController {
                 HeadingsAction(),
                 LinksAction(),
                 Header("actions_edit".localized),
-                SelectionAction(),
                 CopyAction(),
-                PasteAction()
+                PasteAction(),
+                SelectionAction(),
             ]
         }
     }

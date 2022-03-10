@@ -185,9 +185,9 @@
 		28BBF1D827C8E739002A7125 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				28BBF1DF27C8EA4A002A7125 /* CopyAction.swift */,
 				28BBF1D627C8E732002A7125 /* HeadingsAction.swift */,
 				28BBF1DB27C8EA35002A7125 /* LinksAction.swift */,
+				28BBF1DF27C8EA4A002A7125 /* CopyAction.swift */,
 				28BBF1E127C8EA54002A7125 /* PasteAction.swift */,
 				28BBF1DD27C8EA43002A7125 /* SelectionAction.swift */,
 			);

@@ -13,11 +13,17 @@ class LinksAction: Action {
     let identifier = "links"
     
     let items: [Any] = [
-        "Met de VoiceOver rotor kun je via links navigeren. Dit is handig om bijvoorbeeld telefoonnummers te vinden. Zo navigeer je via links:",
-        "1. Zet de rotor op 'Links'",
-        "2. Veeg met één vinger omlaag om naar de volgende link te gaan.",
-        "Verplaats de focus naar de onderstaande tekst en navigeer drie keer via links om de training af te ronden.",
-        "Eerste link: www.appt.org/eerste-link\nTweede link: www.appt.org/tweede-link\nDerde link: www.appt.org/derde-link"
+        "action_links_paragraph_1".localized,
+        Header("action_links_section_1".localized),
+        "action_links_section_1_paragraph_1".localized,
+        "action_links_section_1_paragraph_2".localized,
+        "action_links_section_1_paragraph_3".localized,
+        Header("action_links_header_1".localized),
+        "action_links_link_1".localized,
+        Header("action_links_header_2".localized),
+        "action_links_link_2".localized,
+        Header("action_links_header_3".localized),
+        "action_links_link_3".localized,
     ]
     
     func onFocusChanged(_ elements: [UIAccessibilityElement]) -> Bool {

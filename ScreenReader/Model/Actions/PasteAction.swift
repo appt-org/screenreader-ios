@@ -13,16 +13,18 @@ class PasteAction: Action {
     let identifier = "paste"
     
     let items: [Any] = [
-        "Via de VoiceOver rotor kun je tekst plakken.",
-        "1. Selecteer het veld waar je in wilt plakken.",
-        "2. Dubbeltik om te starten met invoeren.",
-        "3. Zet de rotor op 'Wijzigen'.",
-        "4. Veeg met één vinger omlaag tot 'Plakken' is geselecteerd.",
-        "5. Dubbeltik om te plakken.",
-        "Plak tekst in het onderstaande tekstveld om de training af te ronden.",
-        Input(placeholder: "Plak hier vanuit je klembord")
+        "action_paste_paragraph_1".localized,
+        Header("action_paste_section_1".localized),
+        "action_paste_section_1_paragraph_1".localized,
+        "action_paste_section_1_paragraph_2".localized,
+        "action_paste_section_1_paragraph_3".localized,
+        "action_paste_section_1_paragraph_4".localized,
+        "action_paste_section_1_paragraph_5".localized,
+        Header("action_paste_section_2".localized),
+        "action_paste_section_2_paragraph_1".localized,
+        Input(placeholder: "action_paste_section_2_placeholder".localized)
     ]
-        
+    
     func onTextPasted(_ textField: TextField, text: String?) -> Bool {
         guard let text = text else {
             return false
