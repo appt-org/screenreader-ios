@@ -51,16 +51,17 @@
 /* Topic */
 "topic_rating_title" = "Rate the app";
 "topic_share_title" = "Share the app";
+"topic_website_title" = "Visit the website";
 "topic_appt_title" = "Appt Foundation";
 "topic_abra_title" = "Abra";
 "topic_sidn_fonds_title" = "SIDN fund";
-/* topic_rating_website */
 
-"topic_rating_website" = "https://apps.apple.com/us/app/screenreader/id1610318073"; // TODO: Double check id
-"topic_share_website" = "Download the free ScreenReader app at https://screenreader.app and learn how to use the screen reader!";
-"topic_appt_website" = "https://appt.org";
-"topic_abra_website" = "https://abra.nl";
-"topic_sidn_fonds_website" = "https://sidnfonds.nl";
+"topic_rating_url" = "https://apps.apple.com/us/app/screenreader/id1610318073"; // TODO: Double check id
+"topic_share_url" = "Download the free ScreenReader app at https://screenreader.app and learn how to use the screen reader!";
+"topic_website_url" = "https://screenreader.app";
+"topic_appt_url" = "https://appt.org";
+"topic_abra_url" = "https://abra.nl";
+"topic_sidn_fonds_url" = "https://sidnfonds.nl";
 
 /* Gestures */
 "gestures_title" = "Gestures";
@@ -217,6 +218,77 @@
 "action_voiceover_enable" = "VoiceOver must be enabled for this training.";
 "action_interaction_disabled" = "Interaction is disabled";
 "action_completed" = "Training completed successfully!";
+
+/* Copy action */
+"action_copy_paragraph_1" = "You can copy text by using the VoiceOver rotor.";
+"action_copy_section_1" = "Copy by using the rotor";
+"action_copy_section_1_paragraph_1" = "1. Select the field where you want to copy text from.";
+"action_copy_section_1_paragraph_2" = "2. Double tap to start editing.";
+"action_copy_section_1_paragraph_3" = "3. Set the rotor to 'Text selection'.";
+"action_copy_section_1_paragraph_4" = "4. Swipe down until you reach the option 'Select all'.";
+"action_copy_section_1_paragraph_5" = "5. Swipe to the right to select everything.";
+"action_copy_section_1_paragraph_6" = "6. Set the rotor to 'Edit'.";
+"action_copy_section_1_paragraph_7" = "7. Swipe down until you reach the option 'Copy'.";
+"action_copy_section_1_paragraph_8" = "8. Double tap to copy the selected text.";
+"action_copy_section_2" = "Practice copying text";
+"action_copy_section_2_paragraph_1" = "Copy text from the input field below to finish the training.";
+"action_copy_section_2_placeholder" = "Fill in text to copy";
+"action_copy_section_2_text" = "Copy this text";
+
+/* Headings action */
+"action_headings_paragraph_1" = "With the VoiceOver rotor you can navigate by headings. This is useful when you encounter long pages or websites.";
+"action_headings_section_1" = "Set up heading navigation";
+"action_headings_section_1_paragraph_1" = "1. Set the rotor to 'Headings'.";
+"action_headings_section_1_paragraph_2" = "2. Swipe down with one finger to move to the next heading.";
+"action_headings_section_1_paragraph_3" = "Navigate three times by headers to complete the training.";
+"action_headings_header_1" = "Practice heading navigation";
+"action_headings_header_1_text" = "Skip first paragraph.";
+"action_headings_header_2" = "Heading 2";
+"action_headings_header_2_text" = "Skip second paragraph.";
+"action_headings_header_3" = "Heading 3";
+"action_headings_header_3_text" = "Skip third paragraph.";
+
+/* Links action */
+"action_links_paragraph_1" = "With the VoiceOver rotor you can navigate by links. This is useful to find content such as websites and phone numbers.";
+"action_links_section_1" = "Setup link navigation";
+"action_links_section_1_paragraph_1" = "1. Move the focus to text which contains a link.";
+"action_links_section_1_paragraph_2" = "2. Set the rotor to 'Links'.";
+"action_links_section_1_paragraph_3" = "3. Swipe down with one finger to move to the next item.";
+"action_links_section_1_paragraph_4" = "Move the focus to first link below and navigate by links three times to finish the training.";
+"action_links_section_2" = "Practice link navigation";
+"action_links_section_2_paragraph_1" = "First link: www.appt.org/1\nSecond link: www.appt.org/2\nThird link: www.appt.org/3";
+
+/* Paste action */
+"action_paste_paragraph_1" = "You can paste text by using the VoiceOver rotor.";
+"action_paste_section_1" = "Paste text by using the rotor";
+"action_paste_section_1_paragraph_1" = "1. Select the input field where you want to paste text.";
+"action_paste_section_1_paragraph_2" = "2. Double tap to start editing.";
+"action_paste_section_1_paragraph_3" = "3. Set the rotor to 'Editing'.";
+"action_paste_section_1_paragraph_4" = "4. Swipe down with one finger until you reach the option 'Paste'.";
+"action_paste_section_1_paragraph_5" = "5. Double tap to paste.";
+"action_paste_section_2" = "Practice pasting text";
+"action_paste_section_2_paragraph_1" = "Paste text in the input field below to finish the training.";
+"action_paste_section_2_placeholder" = "Paste here from your clipboard";
+
+/* Selection action */
+"action_selection_paragraph_1" = "The easiest way to select text is by using the 'Text selection' option. You have to add this option to the rotor yourself.";
+"action_selection_section_1" = "Adding text selection to the rotor";
+"action_selection_section_1_paragraph_1" = "1. Open the 'Settings' app";
+"action_selection_section_1_paragraph_2" = "2. Select 'Accessibility'";
+"action_selection_section_1_paragraph_3" = "3. Select 'VoiceOver'";
+"action_selection_section_1_paragraph_4" = "4. Select 'Rotor'";
+"action_selection_section_1_paragraph_5" = "5. Enable 'Text selection'";
+"action_selection_section_2" = "Using text selection";
+"action_selection_section_2_paragraph_1" = "1. Select the input field where you want to select text from.";
+"action_selection_section_2_paragraph_2" = "2. Double tap to start editing.";
+"action_selection_section_2_paragraph_3" = "3. Set the rotor to 'Text selection'";
+"action_selection_section_2_paragraph_4" = "4. Swipe down with one finger to select the text you want";
+"action_selection_section_2_paragraph_5" = "5. Swipe to the right to navigate to the next character.";
+"action_selection_section_2_paragraph_6" = "6. Swipe left to select the previous character.";
+"action_selection_section_3" = "Practice text selection";
+"action_selection_section_3_paragraph_1" = "Select text in the input field below to finish the training.";
+"action_selection_section_3_placeholder" = "Fill in text to select";
+"action_selection_section_3_text" = "Select this text";
 
 /* Directions */
 "direction_up" = "up";

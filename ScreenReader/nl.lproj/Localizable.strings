@@ -51,16 +51,17 @@
 /* Topic */
 "topic_rating_title" = "Beoordeel de app";
 "topic_share_title" = "Deel de app";
+"topic_website_title" = "Bezoek de website";
 "topic_appt_title" = "Stichting Appt";
 "topic_abra_title" = "Abra";
 "topic_sidn_fonds_title" = "SIDN fonds";
-/* topic_rating_website */
 
-"topic_rating_website" = "https://apps.apple.com/nl/app/screenreader/id1610318073"; // TODO: Double check id
-"topic_share_website" = "Download de gratis ScreenReader app op https://screenreader.app om te leren hoe je de schermlezer gebruikt!";
-"topic_appt_website" = "https://appt.org";
-"topic_abra_website" = "https://abra.nl";
-"topic_sidn_fonds_website" = "https://sidnfonds.nl";
+"topic_rating_url" = "https://apps.apple.com/nl/app/screenreader/id1610318073"; // TODO: Double check id
+"topic_share_url" = "Download de gratis ScreenReader app op https://screenreader.app om te leren hoe je de schermlezer gebruikt!";
+"topic_website_url" = "Bezoek de website";
+"topic_appt_url" = "https://appt.org";
+"topic_abra_url" = "https://abra.nl";
+"topic_sidn_fonds_url" = "https://sidnfonds.nl";
 
 /* Gestures */
 "gestures_title" = "Gebaren";
@@ -241,24 +242,21 @@
 "action_headings_section_1_paragraph_2" = "2. Veeg met één vinger omlaag om naar de volgende kop te gaan.";
 "action_headings_section_1_paragraph_3" = "Navigeer drie keer via kopregels om de training af te ronden.";
 "action_headings_header_1" = "Kop 1";
-"action_headings_header_1_text" = "Als je via kopregels navigeert sla je deze tekst over.";
+"action_headings_header_1_text" = "Sla eerste alinea over.";
 "action_headings_header_2" = "Kop 2";
-"action_headings_header_2_text" = "Als je via kopregels navigeert sla je deze tekst over.";
+"action_headings_header_2_text" = "Sla tweede alinea over.";
 "action_headings_header_3" = "Kop 3";
-"action_headings_header_3_text" = "Als je via kopregels navigeert sla je deze tekst over.";
+"action_headings_header_3_text" = "Sla derde alinea over.";
 
 /* Links action */
-"action_links_paragraph_1" = "Met de VoiceOver rotor kun je via links navigeren. Dit is handig om bijvoorbeeld telefoonnummers te vinden.";
+"action_links_paragraph_1" = "Met de VoiceOver rotor kun je via links navigeren. Dit is handig om websites en telefoonnummers te vinden.";
 "action_links_section_1" = "Navigeren via links instellen";
-"action_links_section_1_paragraph_1" = "1. Zet de rotor op 'Links'";
-"action_links_section_1_paragraph_2" = "2. Veeg met één vinger omlaag om naar de volgende link te gaan.";
-"action_links_section_1_paragraph_3" = "Verplaats de focus naar de onderstaande tekst en navigeer drie keer via links om de training af te ronden.";
-"action_links_header_1" = "Eerste link";
-"action_links_link_1" = "Eerste link: www.appt.org/eerste-link";
-"action_links_header_2" = "Tweede link";
-"action_links_link_2" = "Tweede link: www.appt.org/tweede-link";
-"action_links_header_3" = "Derde link";
-"action_links_link_3" = "Derde link: www.appt.org/derde-link";
+"action_links_section_1_paragraph_1" = "1. Verplaats de focus naar tekst die een link bevat.";
+"action_links_section_1_paragraph_2" = "2. Zet de rotor op 'Links'.";
+"action_links_section_1_paragraph_3" = "3. Veeg met één vinger omlaag om naar de volgende link te gaan.";
+"action_links_section_1_paragraph_4" = "Navigeer drie keer via links om de training af te ronden.";
+"action_links_section_2" = "Eerste link";
+"action_links_section_2_paragraph_1" = "Eerste link: www.appt.org/1\nTweede link: www.appt.org/2\nDerde link: www.appt.org/3";
 
 /* Paste action */
 "action_paste_paragraph_1" = "Via de VoiceOver rotor kun je tekst plakken.";
