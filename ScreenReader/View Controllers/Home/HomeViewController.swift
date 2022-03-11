@@ -41,6 +41,6 @@ class HomeViewController: TextTableViewController {
     }
 
     @IBAction private func onShareTapped(_ sender: Any) {
-        shareApp()
+        shareApp(sender)
     }
 }

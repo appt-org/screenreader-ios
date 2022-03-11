@@ -219,25 +219,9 @@
 "action_interaction_disabled" = "Interaction is disabled";
 "action_completed" = "Training completed successfully!";
 
-/* Copy action */
-"action_copy_paragraph_1" = "You can copy text by using the VoiceOver rotor.";
-"action_copy_section_1" = "Copy by using the rotor";
-"action_copy_section_1_paragraph_1" = "1. Select the field where you want to copy text from.";
-"action_copy_section_1_paragraph_2" = "2. Double tap to start editing.";
-"action_copy_section_1_paragraph_3" = "3. Set the rotor to 'Text selection'.";
-"action_copy_section_1_paragraph_4" = "4. Swipe down until you reach the option 'Select all'.";
-"action_copy_section_1_paragraph_5" = "5. Swipe to the right to select everything.";
-"action_copy_section_1_paragraph_6" = "6. Set the rotor to 'Edit'.";
-"action_copy_section_1_paragraph_7" = "7. Swipe down until you reach the option 'Copy'.";
-"action_copy_section_1_paragraph_8" = "8. Double tap to copy the selected text.";
-"action_copy_section_2" = "Practice copying text";
-"action_copy_section_2_paragraph_1" = "Copy text from the input field below to finish the training.";
-"action_copy_section_2_placeholder" = "Fill in text to copy";
-"action_copy_section_2_text" = "Copy this text";
-
 /* Headings action */
 "action_headings_paragraph_1" = "With the VoiceOver rotor you can navigate by headings. This is useful when you encounter long pages or websites.";
-"action_headings_section_1" = "Set up heading navigation";
+"action_headings_section_1" = "Navigating by headings by using the rotor";
 "action_headings_section_1_paragraph_1" = "1. Set the rotor to 'Headings'.";
 "action_headings_section_1_paragraph_2" = "2. Swipe down with one finger to move to the next heading.";
 "action_headings_section_1_paragraph_3" = "Navigate three times by headers to complete the training.";
@@ -250,7 +234,7 @@
 
 /* Links action */
 "action_links_paragraph_1" = "With the VoiceOver rotor you can navigate by links. This is useful to find content such as websites and phone numbers.";
-"action_links_section_1" = "Setup link navigation";
+"action_links_section_1" = "Navigating by links by using the rotor";
 "action_links_section_1_paragraph_1" = "1. Move the focus to text which contains a link.";
 "action_links_section_1_paragraph_2" = "2. Set the rotor to 'Links'.";
 "action_links_section_1_paragraph_3" = "3. Swipe down with one finger to move to the next item.";
@@ -258,12 +242,28 @@
 "action_links_section_2" = "Practice link navigation";
 "action_links_section_2_paragraph_1" = "First link: www.appt.org/1\nSecond link: www.appt.org/2\nThird link: www.appt.org/3";
 
+/* Copy action */
+"action_copy_paragraph_1" = "You can copy text by using the VoiceOver rotor.";
+"action_copy_section_1" = "Copying text by using the rotor";
+"action_copy_section_1_paragraph_1" = "1. Select the view where you want to copy text from.";
+"action_copy_section_1_paragraph_2" = "2. Double tap to start editing.";
+"action_copy_section_1_paragraph_3" = "3. Set the rotor to 'Edit'.";
+"action_copy_section_1_paragraph_4" = "4. Swipe down until you reach the option 'Select all'.";
+"action_copy_section_1_paragraph_5" = "5. Double tap select everything.";
+"action_copy_section_1_paragraph_6" = "6. Set the rotor to 'Edit' again.";
+"action_copy_section_1_paragraph_7" = "7. Swipe down until you reach the option 'Copy'.";
+"action_copy_section_1_paragraph_8" = "8. Double tap to copy the selected text.";
+"action_copy_section_2" = "Practice copying text";
+"action_copy_section_2_paragraph_1" = "Copy text from the input field below to finish the training.";
+"action_copy_section_2_placeholder" = "Fill in text to copy";
+"action_copy_section_2_text" = "Copy this text";
+
 /* Paste action */
 "action_paste_paragraph_1" = "You can paste text by using the VoiceOver rotor.";
-"action_paste_section_1" = "Paste text by using the rotor";
+"action_paste_section_1" = "Pasting text by using the rotor";
 "action_paste_section_1_paragraph_1" = "1. Select the input field where you want to paste text.";
 "action_paste_section_1_paragraph_2" = "2. Double tap to start editing.";
-"action_paste_section_1_paragraph_3" = "3. Set the rotor to 'Editing'.";
+"action_paste_section_1_paragraph_3" = "3. Set the rotor to 'Edit'.";
 "action_paste_section_1_paragraph_4" = "4. Swipe down with one finger until you reach the option 'Paste'.";
 "action_paste_section_1_paragraph_5" = "5. Double tap to paste.";
 "action_paste_section_2" = "Practice pasting text";
@@ -278,7 +278,7 @@
 "action_selection_section_1_paragraph_3" = "3. Select 'VoiceOver'";
 "action_selection_section_1_paragraph_4" = "4. Select 'Rotor'";
 "action_selection_section_1_paragraph_5" = "5. Enable 'Text selection'";
-"action_selection_section_2" = "Using text selection";
+"action_selection_section_2" = "Using text selection from the rotor";
 "action_selection_section_2_paragraph_1" = "1. Select the input field where you want to select text from.";
 "action_selection_section_2_paragraph_2" = "2. Double tap to start editing.";
 "action_selection_section_2_paragraph_3" = "3. Set the rotor to 'Text selection'";

@@ -16,6 +16,7 @@ class MoreViewController: TableViewController {
                 "more_description".localized,
                 Topic.rating,
                 Topic.share,
+                Topic.website,
                 Header("more_partners".localized),
                 Topic.appt,
                 Topic.abra,
@@ -30,7 +31,7 @@ class MoreViewController: TableViewController {
     }
     
     @IBAction private func onShareTapped(_ sender: Any) {
-        shareApp()
+        shareApp(sender)
     }
     
     override func didSelectItem(_ item: Any, indexPath: IndexPath) {
@@ -38,12 +39,12 @@ class MoreViewController: TableViewController {
             return
         }
         
-        if topic == .rating, let url = URL(string: topic.website) {
+        if topic == .rating, let url = URL(string: topic.url) {
             UIApplication.shared.open(url, options: [:])
-        } else if topic == .share {
-            shareApp()
+        } else if topic == .share, let cell = tableView.cellForRow(at: indexPath) {
+            shareApp(cell)
         } else {
-            openWebsite(topic.website)
+            openWebsite(topic.url)
         }
     }
 }

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -75,7 +76,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="More" id="rsK-9h-Df5">
-                        <barButtonItem key="rightBarButtonItem" title="Share" image="Share" id="4RP-1A-NIC">
+                        <barButtonItem key="rightBarButtonItem" title="Share" image="square.and.arrow.up" catalog="system" id="4RP-1A-NIC">
                             <connections>
                                 <action selector="onShareTapped:" destination="uJE-AL-778" id="lya-9K-kyq"/>
                             </connections>
@@ -175,7 +176,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Gestures" id="ggn-QW-JUN">
-                        <barButtonItem key="rightBarButtonItem" title="Practice" image="Shuffle" id="wFh-8n-XWc">
+                        <barButtonItem key="rightBarButtonItem" title="Practice" id="wFh-8n-XWc">
+                            <imageReference key="image" image="play.circle" catalog="system" symbolScale="large"/>
                             <connections>
                                 <action selector="onPracticeTapped:" destination="9BD-cw-d7v" id="atX-yG-6Om"/>
                             </connections>
@@ -230,7 +232,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="Vfm-Ly-dtn">
-                        <barButtonItem key="rightBarButtonItem" title="Share" image="Share" id="6ZS-ec-JuI">
+                        <barButtonItem key="rightBarButtonItem" title="Share" image="square.and.arrow.up" catalog="system" id="6ZS-ec-JuI">
                             <connections>
                                 <action selector="onShareTapped:" destination="EYh-CV-eeI" id="vP3-0p-V4x"/>
                             </connections>
@@ -300,7 +302,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Gesture" id="Ddc-hw-7Id">
-                        <barButtonItem key="rightBarButtonItem" title="Help" image="Help" id="XWr-qN-ubl">
+                        <barButtonItem key="rightBarButtonItem" title="Information" image="info.circle" catalog="system" id="XWr-qN-ubl">
                             <connections>
                                 <action selector="onExplanationTapped:" destination="fc3-Jd-Fto" id="7eP-5g-Mzb"/>
                             </connections>
@@ -358,12 +360,12 @@
     <resources>
         <image name="Actions" width="24" height="24"/>
         <image name="Gestures" width="24" height="24"/>
-        <image name="Help" width="24" height="24"/>
         <image name="Home" width="24" height="24"/>
         <image name="More" width="24" height="24"/>
-        <image name="Share" width="24" height="24"/>
-        <image name="Shuffle" width="24" height="24"/>
         <image name="gesture_three_finger_swipe_down" width="154" height="154"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <namedColor name="Background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

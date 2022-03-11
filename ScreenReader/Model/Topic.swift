@@ -12,6 +12,7 @@ enum Topic: String, Item {
 
     case rating
     case share
+    case website
     case appt
     case abra
     case sidnFonds = "sidn_fonds"
@@ -21,8 +22,8 @@ enum Topic: String, Item {
         return NSLocalizedString("topic_"+rawValue+"_title", comment: "")
     }
 
-    /** Website */
-    var website: String {
-        return NSLocalizedString("topic_"+rawValue+"_website", comment: "")
+    /** URL */
+    var url: String {
+        return NSLocalizedString("topic_"+rawValue+"_url", comment: "")
     }
 }

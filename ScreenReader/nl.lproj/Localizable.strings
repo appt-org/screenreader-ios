@@ -58,7 +58,7 @@
 
 "topic_rating_url" = "https://apps.apple.com/nl/app/screenreader/id1610318073"; // TODO: Double check id
 "topic_share_url" = "Download de gratis ScreenReader app op https://screenreader.app om te leren hoe je de schermlezer gebruikt!";
-"topic_website_url" = "Bezoek de website";
+"topic_website_url" = "https://screenreader.app";
 "topic_appt_url" = "https://appt.org";
 "topic_abra_url" = "https://abra.nl";
 "topic_sidn_fonds_url" = "https://sidnfonds.nl";
@@ -219,29 +219,13 @@
 "action_interaction_disabled" = "Interactie is uitgeschakeld";
 "action_completed" = "Training succesvol afgerond!";
 
-/* Copy action */
-"action_copy_paragraph_1" = "Via de VoiceOver rotor kun je tekst kopiëren.";
-"action_copy_section_1" = "Kopiëren via de rotor";
-"action_copy_section_1_paragraph_1" = "1. Selecteer het veld waar je tekst uit wilt kopiëren.";
-"action_copy_section_1_paragraph_2" = "2. Dubbeltik om te starten met bewerken.";
-"action_copy_section_1_paragraph_3" = "3. Zet de rotor op 'Tekstselectie'.";
-"action_copy_section_1_paragraph_4" = "4. Veeg omlaag tot de optie 'Selecteer alles'.";
-"action_copy_section_1_paragraph_5" = "5. Veeg naar rechts om alles te selecteren.";
-"action_copy_section_1_paragraph_6" = "6. Zet de rotor op 'Wijzigen'.";
-"action_copy_section_1_paragraph_7" = "7. Veeg omlaag tot de optie 'Kopiëren'.";
-"action_copy_section_1_paragraph_8" = "8. Dubbeltik om de geselecteerde tekst te kopiëren.";
-"action_copy_section_2" = "Tekst kopiëren oefenen";
-"action_copy_section_2_paragraph_1" = "Kopieer tekst uit het onderstaande invoerveld om de training af te ronden.";
-"action_copy_section_2_placeholder" = "Vul tekst in om te kopiëren";
-"action_copy_section_2_text" = "Kopieer deze tekst";
-
 /* Headings action */
 "action_headings_paragraph_1" = "Met de VoiceOver rotor kun je via koppen navigeren. Dit is handig bij lange pagina's of websites.";
-"action_headings_section_1" = "Navigeren via koppen instellen";
+"action_headings_section_1" = "Navigeren via koppen met behulp van de rotor";
 "action_headings_section_1_paragraph_1" = "1. Zet de rotor op 'Kopregels'.";
 "action_headings_section_1_paragraph_2" = "2. Veeg met één vinger omlaag om naar de volgende kop te gaan.";
 "action_headings_section_1_paragraph_3" = "Navigeer drie keer via kopregels om de training af te ronden.";
-"action_headings_header_1" = "Kop 1";
+"action_headings_header_1" = "Navigeren via koppen over";
 "action_headings_header_1_text" = "Sla eerste alinea over.";
 "action_headings_header_2" = "Kop 2";
 "action_headings_header_2_text" = "Sla tweede alinea over.";
@@ -250,17 +234,33 @@
 
 /* Links action */
 "action_links_paragraph_1" = "Met de VoiceOver rotor kun je via links navigeren. Dit is handig om websites en telefoonnummers te vinden.";
-"action_links_section_1" = "Navigeren via links instellen";
+"action_links_section_1" = "Navigeren via links met behulp van de rotor";
 "action_links_section_1_paragraph_1" = "1. Verplaats de focus naar tekst die een link bevat.";
 "action_links_section_1_paragraph_2" = "2. Zet de rotor op 'Links'.";
 "action_links_section_1_paragraph_3" = "3. Veeg met één vinger omlaag om naar de volgende link te gaan.";
 "action_links_section_1_paragraph_4" = "Navigeer drie keer via links om de training af te ronden.";
-"action_links_section_2" = "Eerste link";
+"action_links_section_2" = "Navigeren via links oefenen";
 "action_links_section_2_paragraph_1" = "Eerste link: www.appt.org/1\nTweede link: www.appt.org/2\nDerde link: www.appt.org/3";
+
+/* Copy action */
+"action_copy_paragraph_1" = "Via de VoiceOver rotor kun je tekst kopiëren.";
+"action_copy_section_1" = "Tekst kopiëren met behulp van de rotor";
+"action_copy_section_1_paragraph_1" = "1. Selecteer het element waar je tekst uit wilt kopiëren.";
+"action_copy_section_1_paragraph_2" = "2. Dubbeltik om te starten met bewerken.";
+"action_copy_section_1_paragraph_3" = "3. Zet de rotor op 'Wijzigen'.";
+"action_copy_section_1_paragraph_4" = "4. Veeg omlaag tot de optie 'Selecteer alles'.";
+"action_copy_section_1_paragraph_5" = "5. Dubbeltik om de tekst te selecteren.";
+"action_copy_section_1_paragraph_6" = "6. Zet de rotor weer op 'Wijzigen'.";
+"action_copy_section_1_paragraph_7" = "7. Veeg omlaag tot de optie 'Kopiëren'.";
+"action_copy_section_1_paragraph_8" = "8. Dubbeltik om de geselecteerde tekst te kopiëren.";
+"action_copy_section_2" = "Tekst kopiëren oefenen";
+"action_copy_section_2_paragraph_1" = "Kopieer tekst uit het onderstaande invoerveld om de training af te ronden.";
+"action_copy_section_2_placeholder" = "Vul tekst in om te kopiëren";
+"action_copy_section_2_text" = "Kopieer deze tekst";
 
 /* Paste action */
 "action_paste_paragraph_1" = "Via de VoiceOver rotor kun je tekst plakken.";
-"action_paste_section_1" = "Plakken via de rotor";
+"action_paste_section_1" = "Tekst plakken met behulp van de rotor";
 "action_paste_section_1_paragraph_1" = "1. Selecteer het veld waar je in wilt plakken.";
 "action_paste_section_1_paragraph_2" = "2. Dubbeltik om te starten met invoeren.";
 "action_paste_section_1_paragraph_3" = "3. Zet de rotor op 'Wijzigen'.";
@@ -272,13 +272,13 @@
 
 /* Selection action */
 "action_selection_paragraph_1" = "De makkelijkste manier om tekst te selecteren is via de 'Tekstselectie' optie. Deze optie moet je zelf toevoegen aan de rotor.";
-"action_selection_section_1" = "Tekstselectie toevoegen aan rotor";
+"action_selection_section_1" = "Tekstselectie toevoegen aan de rotor";
 "action_selection_section_1_paragraph_1" = "1. Open de 'Instellingen' app";
 "action_selection_section_1_paragraph_2" = "2. Selecteer 'Toegankelijkheid'";
 "action_selection_section_1_paragraph_3" = "3. Selecteer 'VoiceOver'";
 "action_selection_section_1_paragraph_4" = "4. Selecteer 'Rotor'";
 "action_selection_section_1_paragraph_5" = "5. Zet 'Tekstselectie' aan";
-"action_selection_section_2" = "Tekstselectie gebruiken";
+"action_selection_section_2" = "Tekstselectie gebruiken via de rotor";
 "action_selection_section_2_paragraph_1" = "1. Selecteer het veld waar je tekst wilt selecteren.";
 "action_selection_section_2_paragraph_2" = "2. Dubbeltik om te starten met bewerken.";
 "action_selection_section_2_paragraph_3" = "3. Zet de rotor op 'Tekstselectie'";

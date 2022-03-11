@@ -151,9 +151,18 @@ class ViewController: UIViewController {
         deregisterAccessibilityNotifications()
     }
     
-    func shareApp() {
-        let shareViewController = UIActivityViewController(activityItems: [Topic.share.website], applicationActivities: [])
-        present(shareViewController, animated: true)
+    func shareApp(_ sender: Any) {
+        let activityViewController = UIActivityViewController(activityItems: [Topic.share.url], applicationActivities: [])
+        
+        if let popover = activityViewController.popoverPresentationController {
+            if let button = sender as? UIBarButtonItem {
+                popover.barButtonItem = button
+            } else if let view = sender as? UIView {
+                popover.sourceView = view
+            }
+        }
+        
+        present(activityViewController, animated: true)
     }
 }
 
