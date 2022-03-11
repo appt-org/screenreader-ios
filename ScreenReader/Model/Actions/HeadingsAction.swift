@@ -34,12 +34,8 @@ class HeadingsAction: Action {
         }
         
         // Check if the last three views are HeaderTableViewCell
-        if views.dropFirst(count-3).allSatisfy({
+        return views.dropFirst(count-3).allSatisfy({
             $0 is HeaderTableViewCell
-        }) {
-            return true
-        }
-        
-        return false
+        })
     }
 }

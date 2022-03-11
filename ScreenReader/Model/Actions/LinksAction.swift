@@ -18,12 +18,9 @@ class LinksAction: Action {
         "action_links_section_1_paragraph_1".localized,
         "action_links_section_1_paragraph_2".localized,
         "action_links_section_1_paragraph_3".localized,
-        Header("action_links_header_1".localized),
-        "action_links_link_1".localized,
-        Header("action_links_header_2".localized),
-        "action_links_link_2".localized,
-        Header("action_links_header_3".localized),
-        "action_links_link_3".localized,
+        "action_links_section_1_paragraph_4".localized,
+        Header("action_links_section_2".localized),
+        "action_links_section_2_paragraph_1".localized
     ]
     
     func onFocusChanged(_ elements: [UIAccessibilityElement]) -> Bool {
@@ -33,11 +30,9 @@ class LinksAction: Action {
             return false
         }
         
-        // Check if the last three elements contain the `link` accessibility trait
-        if elements.dropFirst(count-3).allSatisfy({ $0.accessibilityTraits.contains(.link) }) {
-            return true
-        }
-        
-        return false
+        // Check if the last three elements are link elements
+        return elements.dropFirst(count-3).allSatisfy({
+            String(describing: $0).contains("UIAccessibilityLinkSubelement")
+        })
     }
 }
