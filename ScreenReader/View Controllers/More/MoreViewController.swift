@@ -10,6 +10,8 @@ import UIKit
 
 class MoreViewController: TableViewController {
     
+    @IBOutlet private var shareItem: UIBarButtonItem!
+    
     override var items: [Any] {
         get {
             return [
@@ -28,6 +30,7 @@ class MoreViewController: TableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "more_title".localized
+        shareItem.accessibilityLabel = "share".localized
     }
     
     @IBAction private func onShareTapped(_ sender: Any) {

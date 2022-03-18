@@ -20,6 +20,9 @@
 "skip" = "Skip";
 "back" = "Back";
 "completed" = "Completed";
+"share" = "Share";
+"practice" = "Practice";
+"information" = "Information";
 
 /* Home */
 "home_title" = "Home";

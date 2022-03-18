@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: TextTableViewController {
     
+    @IBOutlet private var shareItem: UIBarButtonItem!
+    
     override var items: [Any] {
         get {
             return [
@@ -38,6 +40,7 @@ class HomeViewController: TextTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "home_title".localized
+        shareItem.accessibilityLabel = "share".localized
     }
 
     @IBAction private func onShareTapped(_ sender: Any) {

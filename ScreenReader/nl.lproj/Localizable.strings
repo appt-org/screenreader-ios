@@ -20,6 +20,9 @@
 "skip" = "Overslaan";
 "back" = "Terug";
 "completed" = "Afgerond";
+"share" = "Delen";
+"practice" = "Oefenen";
+"information" = "Informatie";
 
 /* Home */
 "home_title" = "Home";

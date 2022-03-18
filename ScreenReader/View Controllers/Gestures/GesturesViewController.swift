@@ -10,6 +10,8 @@ import UIKit
 
 class GesturesViewController: TableViewController {
 
+    @IBOutlet private var practiceItem: UIBarButtonItem!
+    
     override var items: [Any] {
         get {
             return [
@@ -55,6 +57,7 @@ class GesturesViewController: TableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "gestures_title".localized
+        practiceItem.accessibilityLabel = "practice".localized
     }
     
     @IBAction private func onPracticeTapped(_ sender: Any) {
