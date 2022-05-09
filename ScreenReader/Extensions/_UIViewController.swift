@@ -25,7 +25,7 @@ extension UIViewController {
         let safariViewController = SFSafariViewController(url: url, configuration: configuration)
         safariViewController.delegate = delegate
         safariViewController.preferredBarTintColor = .background
-        safariViewController.preferredControlTintColor = .foreground
+        safariViewController.preferredControlTintColor = .primary
         safariViewController.modalPresentationCapturesStatusBarAppearance = true
         safariViewController.dismissButtonStyle = .done
         

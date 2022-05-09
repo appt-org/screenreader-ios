@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="13W-0p-7Y6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="13W-0p-7Y6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -75,15 +74,8 @@
                             <constraint firstItem="oNL-xE-UeK" firstAttribute="top" secondItem="raR-1f-G34" secondAttribute="top" id="NFe-Rr-3vo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="More" id="rsK-9h-Df5">
-                        <barButtonItem key="rightBarButtonItem" title="Share" image="Share" id="4RP-1A-NIC">
-                            <connections>
-                                <action selector="onShareTapped:" destination="uJE-AL-778" id="lya-9K-kyq"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="More" id="rsK-9h-Df5"/>
                     <connections>
-                        <outlet property="shareItem" destination="4RP-1A-NIC" id="zHG-a8-1kb"/>
                         <outlet property="tableView" destination="oNL-xE-UeK" id="xB4-ip-8zJ"/>
                     </connections>
                 </viewController>
@@ -177,8 +169,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Gestures" id="ggn-QW-JUN">
-                        <barButtonItem key="rightBarButtonItem" title="Practice" id="wFh-8n-XWc">
-                            <imageReference key="image" image="Shuffle" symbolScale="large"/>
+                        <barButtonItem key="rightBarButtonItem" title="Oefenen" id="wFh-8n-XWc">
                             <connections>
                                 <action selector="onPracticeTapped:" destination="9BD-cw-d7v" id="atX-yG-6Om"/>
                             </connections>
@@ -193,11 +184,11 @@
             </objects>
             <point key="canvasLocation" x="2296" y="222"/>
         </scene>
-        <!--Home-->
+        <!--VoiceOver-->
         <scene sceneID="8qJ-XT-RGG">
             <objects>
                 <navigationController id="bDw-Up-HCM" customClass="NavigationController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="S4N-w0-uQh"/>
+                    <tabBarItem key="tabBarItem" title="VoiceOver" image="VoiceOver" id="S4N-w0-uQh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CYI-lb-mvV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -210,10 +201,10 @@
             </objects>
             <point key="canvasLocation" x="1471" y="-552"/>
         </scene>
-        <!--Home-->
+        <!--VoiceOver-->
         <scene sceneID="0XT-1w-8Hj">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="EYh-CV-eeI" customClass="HomeViewController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VoiceOverViewController" id="EYh-CV-eeI" customClass="VoiceOverViewController" customModule="ScreenReader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QIC-s3-StI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,15 +224,8 @@
                             <constraint firstItem="gmL-FQ-hXk" firstAttribute="trailing" secondItem="o5g-lU-7ed" secondAttribute="trailing" id="f48-8n-nXt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="Vfm-Ly-dtn">
-                        <barButtonItem key="rightBarButtonItem" title="Share" image="Share" id="6ZS-ec-JuI">
-                            <connections>
-                                <action selector="onShareTapped:" destination="EYh-CV-eeI" id="vP3-0p-V4x"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="VoiceOver" id="Vfm-Ly-dtn"/>
                     <connections>
-                        <outlet property="shareItem" destination="6ZS-ec-JuI" id="mqR-fS-1vF"/>
                         <outlet property="tableView" destination="o5g-lU-7ed" id="hgH-5I-pGS"/>
                     </connections>
                 </viewController>
@@ -305,7 +289,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Gesture" id="Ddc-hw-7Id">
-                        <barButtonItem key="rightBarButtonItem" title="Information" image="Help" id="XWr-qN-ubl">
+                        <barButtonItem key="rightBarButtonItem" title="Uitleg" id="XWr-qN-ubl">
                             <connections>
                                 <action selector="onExplanationTapped:" destination="fc3-Jd-Fto" id="7eP-5g-Mzb"/>
                             </connections>
@@ -363,11 +347,8 @@
     <resources>
         <image name="Actions" width="24" height="24"/>
         <image name="Gestures" width="24" height="24"/>
-        <image name="Help" width="24" height="24"/>
-        <image name="Home" width="24" height="24"/>
         <image name="More" width="24" height="24"/>
-        <image name="Share" width="24" height="24"/>
-        <image name="Shuffle" width="24" height="24"/>
+        <image name="VoiceOver" width="24" height="24"/>
         <image name="gesture_three_finger_swipe_down" width="154" height="154"/>
         <namedColor name="Background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

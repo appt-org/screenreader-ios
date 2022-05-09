@@ -22,39 +22,44 @@
 "completed" = "Completed";
 "share" = "Share";
 "practice" = "Practice";
-"information" = "Information";
+"explanation" = "Explanation";
 
-/* Home */
-"home_title" = "Home";
-"home_description" = "This ScreenReader app helps you to learn VoiceOver.";
+/* VoiceOver */
+"voiceover_tab" = "VoiceOver";
+"voiceover_title" = "Learn VoiceOver";
+"voiceover_description" = "This ScreenReader app helps you with learning VoiceOver.";
 
-"home_section_1" = "What is VoiceOver?";
-"home_section_1_paragraph_1" = "VoiceOver is an accessibility feature which gives you audible screen descriptions. By using gestures you can navigate between elements on the screen. Each element is announced as it is selected. This allows you to control your device even if you can't see the screen.";
-"home_section_2" = "Learning VoiceOver";
-"home_section_2_paragraph_1" = "VoiceOver is a crucial aid for visually impaired people to use their device. This app helps you to learn all gestures and common actions. If you are dependent on VoiceOver, use this app to improve your skills. If you are a professional, use the learnings to improve the accessibility of your apps.";
-"home_section_3" = "Learning gestures";
-"home_section_3_paragraph_1" = "Open the Gestures tab to learn gestures. There are three simple gestures to control your device.";
-"home_section_3_paragraph_2" = "1. Swipe left to go to the previous item.";
-"home_section_3_paragraph_3" = "2. Swipe right to go to the next item.";
-"home_section_3_paragraph_4" = "3. Double tap to activate the selected item.";
-"home_section_4" = "Learning actions";
-"home_section_4_paragraph_1" = "Once you have mastered the gestures, open the Actions tab to learn actions. You can learn how to navigate more effectively and how to edit text.";
-"home_section_5" = "Turning on VoiceOver";
-"home_section_5_paragraph_1" = "If you are ready to turn on VoiceOver, ask Siri to \"Turn VoiceOver on\". Or open the Settings app, select Accessibility, select VoiceOver and toggle the switch on.";
-"home_section_6" = "Turning off VoiceOver";
-"home_section_6_paragraph_1" = "You can turn off VoiceOver by asking Siri to \"Turn VoiceOver off\". Or open the Settings app, select Accessibility, select VoiceOver and toggle the switch off. Remember that you need to swipe to navigate and double tap to activate.";
-"home_section_7" = "VoiceOver shortcut";
-"home_section_7_paragraph_1" = "It's possible add a shortcut to toggle VoiceOver on or off. Open the Settings app, select Accessibility, scroll down and select Accessibility Shortcut and finally select VoiceOver in the list. Triple tap the home button or side button to toggle VoiceOver on or off.";
+"voiceover_section_1" = "What is VoiceOver?";
+"voiceover_section_1_paragraph_1" = "VoiceOver is an accessibility feature which gives you audible screen descriptions.";
+"voiceover_section_1_paragraph_2" = "By using gestures you can navigate between elements on the screen. Each element is announced as it is selected.";
+"voiceover_section_1_paragraph_3" = "This allows you to control your device even if you can't see the screen.";
+"voiceover_section_2" = "Learning VoiceOver";
+"voiceover_section_2_paragraph_1" = "VoiceOver is a crucial aid for visually impaired people to use their device. This app helps you to learn all gestures and common actions.  ";
+"voiceover_section_2_paragraph_2" = "Are you dependent on VoiceOver? This app can help you to improve your skills.";
+"voiceover_section_2_paragraph_3" = "Are you an app dveloper? Use the learnings to improve the accessibility of your apps.";
+"voiceover_section_3" = "Turning on VoiceOver";
+"voiceover_section_3_paragraph_1" = "If you are ready to turn on VoiceOver, ask Siri to \"Turn VoiceOver on\".";
+"voiceover_section_3_paragraph_2" = "Or open the Settings app, select Accessibility, select VoiceOver and toggle the switch on.";
+"voiceover_section_3_paragraph_3" = "Note: from this point on, you need to swipe to navigate and double tap to activate.";
+"voiceover_section_4" = "Turning off VoiceOver";
+"voiceover_section_4_paragraph_1" = "You can turn off VoiceOver by asking Siri to \"Turn VoiceOver off\".";
+"voiceover_section_4_paragraph_2" = "Or open the Settings app, select Accessibility, select VoiceOver and toggle the switch off.";
+"voiceover_section_5" = "VoiceOver shortcut";
+"voiceover_section_5_paragraph_1" = "It is possible add a shortcut to toggle VoiceOver on or off. Open the Settings app, select Accessibility, scroll down and select Accessibility Shortcut and finally select VoiceOver in the list.";
+"voiceover_section_5_paragraph_2" = "Open the Settings app, select Accessibility, scroll down and select Accessibility Shortcut and finally select VoiceOver in the list.";
+"voiceover_section_5_paragraph_3" = "Triple tap the home button or side button to toggle VoiceOver on or off.";
 
 /* More */
-"more_title" = "More";
-"more_description" = "The ScreenReader app is an initiative of the Appt Foundation. The app has been developed by Abra and was financed by the SIDN fund.";
+"more_tab" = "More";
+"more_title" = "More information";
+"more_description" = "The ScreenReader app is an initiative of the Appt Foundation. The app has been developed by Abra. The app was made possible by a contribution from the SIDN fund.";
+"more_actions" = "Actions";
 "more_partners" = "Partners";
 
 /* Topic */
-"topic_rating_title" = "Rate the app";
-"topic_share_title" = "Share the app";
-"topic_website_title" = "Visit the website";
+"topic_rating_title" = "Rate app";
+"topic_share_title" = "Share app";
+"topic_website_title" = "Visit website";
 "topic_appt_title" = "Appt Foundation";
 "topic_abra_title" = "Abra";
 "topic_sidn_fonds_title" = "SIDN fund";
@@ -67,8 +72,9 @@
 "topic_sidn_fonds_url" = "https://sidnfonds.nl";
 
 /* Gestures */
-"gestures_title" = "Gestures";
-"gestures_description" = "On this screen you can learn VoiceOver gestures one by one. You can practice the gestures via the button at the top right.";
+"gestures_tab" = "Gestures";
+"gestures_title" = "Learn gestures";
+"gestures_description" = "You can learn all VoiceOver gestures on this screen. Select a gesture to learn how to perform it. You can practice gestures via the \'Practice\'-button.";
 
 "gestures_practice_title" = "Practice gestures";
 "gestures_practice_message" = "Do you want to practice with or without instructions?";
@@ -204,8 +210,9 @@
 "gesture_one_finger_interaction_explanation" = "Sometimes it's necessary to create touches outside of VoiceOver. Making this gesture directs your touch directly to the app. This makes it possible, for example, to place a signature. This gesture can also be useful for rearranging elements (drag and drop).";
 
 /* Actions */
-"actions_title" = "Actions";
-"actions_description" = "On this screen you can learn a number of VoiceOver actions. Learning these actions will help you to better operate apps.";
+"actions_tab" = "Actions";
+"actions_title" = "Learn actions";
+"actions_description" = "You can learn a couple of TalkBack actions on this screen. We recommend that you learn all the gestures first so that you can perform these actions properly.";
 
 "actions_navigate" = "Navigate";
 "actions_edit" = "Edit text";

@@ -22,39 +22,44 @@
 "completed" = "Afgerond";
 "share" = "Delen";
 "practice" = "Oefenen";
-"information" = "Informatie";
+"explanation" = "Uitleg";
 
 /* Home */
-"home_title" = "Home";
-"home_description" = "De ScreenReader app helpt je om VoiceOver te leren.";
+"voiceover_tab" = "VoiceOver";
+"voiceover_title" = "VoiceOver leren";
+"voiceover_description" = "De ScreenReader app helpt je bij het leren van VoiceOver.";
 
-"home_section_1" = "Wat is VoiceOver?";
-"home_section_1_paragraph_1" = "VoiceOver is een toegankelijkheidsfunctie waardoor het scherm wordt voorgelezen. Door middel van gebaren kun je navigeren tussen elementen op het scherm. Elk element wordt aangekondigd zodra het is geselecteerd. Hiermee kun je je toestel bedienen, zelfs als je het scherm niet kunt zien.";
-"home_section_2" = "VoiceOver leren";
-"home_section_2_paragraph_1" = "VoiceOver is een essentieel hulpmiddel voor slechtzienden en blinden om hun toestel te bedienen. Deze app helpt je om alle gebaren en veelvoorkomende acties te leren. Indien je afhankelijk bent van VoiceOver, dan is deze app erg handig om je vaardigheden te verbeteren. Indien je een ontwikkelaar bent, gebruik de kennis die je opdoet dan om de toegankelijkheid van jouw apps te verbeteren.";
-"home_section_3" = "Gebaren leren";
-"home_section_3_paragraph_1" = "Open het tabblad Gebaren om gebaren te leren. Er zijn drie simpele gebaren om je apparaat te besturen.";
-"home_section_3_paragraph_2" = "1. Veeg naar links om naar het vorige element te gaan.";
-"home_section_3_paragraph_3" = "2. Veeg naar rechts om naar het volgende element te gaan.";
-"home_section_3_paragraph_4" = "3. Dubbeltik om het geselecteerde item te activeren.";
-"home_section_4" = "Acties leren";
-"home_section_4_paragraph_1" = "Zodra je de gebaren onder de knie hebt, kun je het tabblad Acties openen om acties te leren. Je kunt leren hoe je beter kunt navigeren en hoe je tekst kunt bewerken.";
-"home_section_5" = "VoiceOver uitzetten";
-"home_section_5_paragraph_1" = "Als je VoiceOver wilt inschakelen, zeg je tegen Siri: \"Zet VoiceOver aan\". Of open de Instellingen app, selecteer Toegankelijkheid, selecteer VoiceOver en zet de schakelaar aan.";
-"home_section_6" = "VoiceOver uitzetten";
-"home_section_6_paragraph_1" = "Je kunt VoiceOver uitschakelen door tegen Siri te zeggen: \"Zet VoiceOver uit\". Of open de Instellingen-app, selecteer Toegankelijkheid, selecteer VoiceOver en zet de schakelaar aan. Vergeet niet dat je vanaf dit moment moet vegen om te navigeren en moet dubbeltikken om te activeren.";
-"home_section_7" = "VoiceOver snelkoppeling";
-"home_section_7_paragraph_1" = "Het is mogelijk een snelkoppeling toe te voegen om VoiceOver in- of uitschakelen. Open de Instellingen app, selecteer Toegankelijkheid, scroll naar beneden en selecteer Activeringsknop en selecteer vervolgens VoiceOver in de lijst. Tik driedubbel op de thuisknop of zijknop om Voiceover in- of uit te schakelen.";
+"voiceover_section_1" = "Wat is VoiceOver?";
+"voiceover_section_1_paragraph_1" = "VoiceOver is een essentieel hulpmiddel voor slechtzienden en blinden om hun toestel te bedienen.";
+"voiceover_section_1_paragraph_2" = "Door middel van gebaren kun je navigeren tussen de elementen op het scherm. Elk element wordt voorgelezen zodra het is geselecteerd.";
+"voiceover_section_1_paragraph_3" = "Het is hierdoor mogelijk om je toestel volledig te bedienen zonder zicht.";
+"voiceover_section_2" = "VoiceOver leren";
+"voiceover_section_2_paragraph_1" = "De ScreenReader app helpt je bij het leren van alle VoiceOver gebaren. Daarnaast kun je een aantal veelvoorkomende acties leren.";
+"voiceover_section_2_paragraph_2" = "Ben je afhankelijk van de schermlezer? Dan is deze app erg handig om je vaardigheden te verbeteren.";
+"voiceover_section_2_paragraph_3" = "Ben je betrokken bij het ontwikkelen van apps? Gebruik de schermlezer dan om de toegankelijkheid te verbeteren.";
+"voiceover_section_3" = "VoiceOver inschakelen";
+"voiceover_section_3_paragraph_1" = "Zeg \"Zet VoiceOver aan\" tegen Siri om VoiceOver in te schakelen.";
+"voiceover_section_3_paragraph_2" = "Of open de 'Instellingen'-app, selecteer 'Toegankelijkheid', selecteer 'VoiceOver' en zet de schakelaar aan.";
+"voiceover_section_3_paragraph_3" = "Let op: vanaf dit moment moet je vegen om te navigeren en dubbeltikken om te activeren.";
+"voiceover_section_4" = "VoiceOver uitschakelen";
+"voiceover_section_4_paragraph_1" = "Zeg \"Zet VoiceOver uit\" tegen Siri om VoiceOver uit te schakelen.";
+"voiceover_section_4_paragraph_2" = "Of open de 'Instellingen'-app, selecteer 'Toegankelijkheid', selecteer 'VoiceOver' en zet de schakelaar uit.";
+"voiceover_section_5" = "VoiceOver snelkoppeling";
+"voiceover_section_5_paragraph_1" = "Het is mogelijk een snelkoppeling toe te voegen om VoiceOver in- of uitschakelen.";
+"voiceover_section_5_paragraph_2" = "Open de 'Instellingen'-app, selecteer 'Toegankelijkheid', scroll naar beneden en selecteer 'Activeringsknop' en selecteer vervolgens 'VoiceOver' in de lijst.";
+"voiceover_section_5_paragraph_3" = "Tik driedubbel op de thuisknop of zijknop om Voiceover in- of uit te schakelen.";
 
 /* More */
-"more_title" = "Meer";
-"more_description" = "De ScreenReader app is een initiatief van Stichting Appt. De app is ontwikkeld door Abra en gefinancierd door het SIDN fonds.";
+"more_tab" = "Meer";
+"more_title" = "Meer informatie";
+"more_description" = "De ScreenReader app is een initiatief van Stichting Appt. De app is ontwikkeld door Abra. De app is mede mogelijk gemaakt door het SIDN fonds.";
+"more_actions" = "Acties";
 "more_partners" = "Partners";
 
 /* Topic */
-"topic_rating_title" = "Beoordeel de app";
-"topic_share_title" = "Deel de app";
-"topic_website_title" = "Bezoek de website";
+"topic_rating_title" = "App beoordelen";
+"topic_share_title" = "App delen";
+"topic_website_title" = "Website bekijken";
 "topic_appt_title" = "Stichting Appt";
 "topic_abra_title" = "Abra";
 "topic_sidn_fonds_title" = "SIDN fonds";
@@ -67,8 +72,9 @@
 "topic_sidn_fonds_url" = "https://sidnfonds.nl";
 
 /* Gestures */
-"gestures_title" = "Gebaren";
-"gestures_description" = "Op dit scherm kun je VoiceOver gebaren één voor één leren. Je kunt de gebaren oefenen via de knop rechtsbovenaan.";
+"gestures_tab" = "Gebaren";
+"gestures_title" = "Gebaren leren";
+"gestures_description" = "Op dit scherm kun je alle VoiceOver gebaren leren. Selecteer een gebaar om te leren hoe je deze uitvoert. Via de \'Oefenen\'-knop kun je gebaren oefenen.";
 
 "gestures_practice_title" = "Gebaren oefenen";
 "gestures_practice_message" = "Wil je oefenen met of zonder instructies?";
@@ -204,8 +210,9 @@
 "gesture_one_finger_interaction_explanation" = "Soms is het nodig om aanrakingen buiten VoiceOver om te maken. Door dit gebaar te maken gaat je aanraking direct naar de app en niet naar VoiceOver. Hierdoor is het bijvoorbeeld mogelijk om een handtekening te zetten. Dit gebaar kan ook handig zijn om elementen opnieuw te rangschikken (drag and drop).";
 
 /* Actions */
-"actions_title" = "Acties";
-"actions_description" = "Op dit scherm kun je een aantal VoiceOver acties leren. Door deze acties te leren kun je apps beter bedienen.";
+"actions_tab" = "Acties";
+"actions_title" = "Acties leren";
+"actions_description" = "Op dit scherm kun je een aantal VoiceOver acties leren. We raden je aan om eerst alle gebaren te leren zodat je deze acties goed kunt uitvoeren.";
 
 "actions_navigate" = "Navigeren";
 "actions_edit" = "Tekst bewerken";

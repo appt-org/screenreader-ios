@@ -62,6 +62,8 @@ class GestureViewController: ViewController {
         imageHeightConstraint.constant = view.frame.height / 3
         view.sendSubviewToBack(imageView)
         
+        explanationItem.title = "explanation".localized
+        
         if !instructions {
             gestureView.accessibilityLabel = gesture.title
             descriptionLabel.isHidden = true

@@ -56,7 +56,7 @@
 		28F09DC127BD39E200C46249 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28F09DBE27BD39E200C46249 /* OpenSans-SemiBold.ttf */; };
 		28F09DC227BD39E200C46249 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28F09DBF27BD39E200C46249 /* OpenSans-Bold.ttf */; };
 		28F09DC427BD39F400C46249 /* _UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DC327BD39F400C46249 /* _UIFont.swift */; };
-		28F09DC827BD414100C46249 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DC727BD414100C46249 /* HomeViewController.swift */; };
+		28F09DC827BD414100C46249 /* VoiceOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DC727BD414100C46249 /* VoiceOverViewController.swift */; };
 		28F09DCB27BD414F00C46249 /* GesturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DCA27BD414F00C46249 /* GesturesViewController.swift */; };
 		28F09DCF27BD416A00C46249 /* ActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DCE27BD416A00C46249 /* ActionsViewController.swift */; };
 		28F09DD127BD417000C46249 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DD027BD417000C46249 /* MoreViewController.swift */; };
@@ -133,7 +133,7 @@
 		28F09DBE27BD39E200C46249 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiBold.ttf"; path = "../../../Downloads/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		28F09DBF27BD39E200C46249 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "../../../Downloads/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		28F09DC327BD39F400C46249 /* _UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIFont.swift; sourceTree = "<group>"; };
-		28F09DC727BD414100C46249 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		28F09DC727BD414100C46249 /* VoiceOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverViewController.swift; sourceTree = "<group>"; };
 		28F09DCA27BD414F00C46249 /* GesturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesViewController.swift; sourceTree = "<group>"; };
 		28F09DCE27BD416A00C46249 /* ActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewController.swift; sourceTree = "<group>"; };
 		28F09DD027BD417000C46249 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
@@ -276,7 +276,7 @@
 				28815FAA27BFF3EB002CC12A /* ScrollViewController.swift */,
 				28F09DDC27BD432700C46249 /* TableViewController.swift */,
 				286671C627C68BE300AC1A6E /* TextTableViewController.swift */,
-				28F09DC627BD413800C46249 /* Home */,
+				28F09DC627BD413800C46249 /* VoiceOver */,
 				28F09DC927BD414500C46249 /* Gestures */,
 				28F09DCC27BD415400C46249 /* Actions */,
 				28F09DCD27BD415900C46249 /* More */,
@@ -284,12 +284,12 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		28F09DC627BD413800C46249 /* Home */ = {
+		28F09DC627BD413800C46249 /* VoiceOver */ = {
 			isa = PBXGroup;
 			children = (
-				28F09DC727BD414100C46249 /* HomeViewController.swift */,
+				28F09DC727BD414100C46249 /* VoiceOverViewController.swift */,
 			);
-			path = Home;
+			path = VoiceOver;
 			sourceTree = "<group>";
 		};
 		28F09DC927BD414500C46249 /* Gestures */ = {
@@ -498,7 +498,7 @@
 				28F09DC427BD39F400C46249 /* _UIFont.swift in Sources */,
 				287D442F27BEA12E00B9B997 /* TouchGestureView.swift in Sources */,
 				28F09DEE27BD649500C46249 /* ItemTableViewCell.swift in Sources */,
-				28F09DC827BD414100C46249 /* HomeViewController.swift in Sources */,
+				28F09DC827BD414100C46249 /* VoiceOverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

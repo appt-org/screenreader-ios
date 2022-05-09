@@ -17,14 +17,23 @@ class TabBarController: UITabBarController {
         if let viewControllers = self.viewControllers {
             for (index, viewController) in viewControllers.enumerated() {
                 switch index {
-                case 0: viewController.title = "home_title".localized
-                    case 1: viewController.title = "gestures_title".localized
-                    case 2: viewController.title = "actions_title".localized
-                    case 3: viewController.title = "more_title".localized
-                    default: break
+                    case 0:
+                        viewController.title = "voiceover_title".localized
+                        viewController.tabBarItem.title = "voiceover_tab".localized
+                    case 1:
+                        viewController.title = "gestures_title".localized
+                        viewController.tabBarItem.title = "gestures_tab".localized
+                    case 2:
+                        viewController.title = "actions_title".localized
+                        viewController.tabBarItem.title = "actions_tab".localized
+                    case 3:
+                        viewController.title = "more_title".localized
+                        viewController.tabBarItem.title = "more_tab".localized
+                    default:
+                        break
                 }
             }
-        }
+        }        
     }
     
     var visibleViewController: UIViewController? {
@@ -50,12 +59,12 @@ class TabBarController: UITabBarController {
 extension TabBarController: UITabBarControllerDelegate {
     
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        print("TabBarController: shouldSelect")
+        //print("TabBarController: shouldSelect")
         return true
     }
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        print("TabBarController: didSelect")
+        //print("TabBarController: didSelect")
     }
 }
 

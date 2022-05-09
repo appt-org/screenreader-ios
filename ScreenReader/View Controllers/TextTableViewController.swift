@@ -19,7 +19,7 @@ class TextTableViewController: TableViewController {
   
     override func headerTableViewCell(_ header: Header, indexPath: IndexPath) -> HeaderTableViewCell {
         let cell = super.headerTableViewCell(header, indexPath: indexPath)
-        cell.constraint(top: 16, bottom: 0)        
+        cell.constraint(top: 24, bottom: 0)
         return cell
     }
     
@@ -31,7 +31,7 @@ class TextTableViewController: TableViewController {
         } else if tableView.lastIndexPath == indexPath {
             cell.constraint(top: 0, bottom: 16)
         } else {
-            cell.constraint(top: 0, bottom: 0)
+            cell.constraint(top: 8, bottom: 0)
         }
         
         return cell
