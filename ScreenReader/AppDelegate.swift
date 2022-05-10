@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
         UIBarButtonItem.appearance().tintColor = .primary
         states.forEach { (state) in
             UIBarButtonItem.appearance().setTitleTextAttributes([
-                .font: UIFont.openSans(weight: .semibold, size: 16, scaled: false)
+                .font: UIFont.openSans(weight: .bold, size: 16, scaled: false)
             ], for: state)
         }
         

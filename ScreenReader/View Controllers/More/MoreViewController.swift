@@ -18,6 +18,7 @@ class MoreViewController: TableViewController {
                 Topic.rating,
                 Topic.share,
                 Topic.website,
+                Topic.source,
                 Header("more_partners".localized),
                 Topic.appt,
                 Topic.abra,

@@ -13,6 +13,7 @@ enum Topic: String, Item {
     case rating
     case share
     case website
+    case source
     case appt
     case abra
     case sidnFonds = "sidn_fonds"

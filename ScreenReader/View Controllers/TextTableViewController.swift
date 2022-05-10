@@ -29,7 +29,7 @@ class TextTableViewController: TableViewController {
         if tableView.firstIndexPath == indexPath {
             cell.constraint(top: 16, bottom: 0)
         } else if tableView.lastIndexPath == indexPath {
-            cell.constraint(top: 0, bottom: 16)
+            cell.constraint(top: 16, bottom: 16)
         } else {
             cell.constraint(top: 8, bottom: 0)
         }

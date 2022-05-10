@@ -30,23 +30,23 @@
 "voiceover_description" = "This ScreenReader app helps you with learning VoiceOver.";
 
 "voiceover_section_1" = "What is VoiceOver?";
-"voiceover_section_1_paragraph_1" = "VoiceOver is an accessibility feature which gives you audible screen descriptions.";
+"voiceover_section_1_paragraph_1" = "VoiceOver is an essential accessibility feature for visually impaired and blind people to control their devices.";
 "voiceover_section_1_paragraph_2" = "By using gestures you can navigate between elements on the screen. Each element is announced as it is selected.";
 "voiceover_section_1_paragraph_3" = "This allows you to control your device even if you can't see the screen.";
 "voiceover_section_2" = "Learning VoiceOver";
-"voiceover_section_2_paragraph_1" = "VoiceOver is a crucial aid for visually impaired people to use their device. This app helps you to learn all gestures and common actions.  ";
+"voiceover_section_2_paragraph_1" = "The ScreenReader app helps you learn all VoiceOver gestures. In addition, you can learn some common actions.";
 "voiceover_section_2_paragraph_2" = "Are you dependent on VoiceOver? This app can help you to improve your skills.";
 "voiceover_section_2_paragraph_3" = "Are you an app dveloper? Use the learnings to improve the accessibility of your apps.";
 "voiceover_section_3" = "Turning on VoiceOver";
-"voiceover_section_3_paragraph_1" = "If you are ready to turn on VoiceOver, ask Siri to \"Turn VoiceOver on\".";
-"voiceover_section_3_paragraph_2" = "Or open the Settings app, select Accessibility, select VoiceOver and toggle the switch on.";
+"voiceover_section_3_paragraph_1" = "If you are ready to turn on VoiceOver, ask Siri to 'Turn VoiceOver on'.";
+"voiceover_section_3_paragraph_2" = "Or open the Settings app, select 'Accessibility', select 'VoiceOver' and toggle the switch on.";
 "voiceover_section_3_paragraph_3" = "Note: from this point on, you need to swipe to navigate and double tap to activate.";
 "voiceover_section_4" = "Turning off VoiceOver";
-"voiceover_section_4_paragraph_1" = "You can turn off VoiceOver by asking Siri to \"Turn VoiceOver off\".";
-"voiceover_section_4_paragraph_2" = "Or open the Settings app, select Accessibility, select VoiceOver and toggle the switch off.";
+"voiceover_section_4_paragraph_1" = "You can turn off VoiceOver by asking Siri to 'Turn VoiceOver off'.";
+"voiceover_section_4_paragraph_2" = "Or open the Settings app, select 'Accessibility', select 'VoiceOver' and toggle the switch off.";
 "voiceover_section_5" = "VoiceOver shortcut";
-"voiceover_section_5_paragraph_1" = "It is possible add a shortcut to toggle VoiceOver on or off. Open the Settings app, select Accessibility, scroll down and select Accessibility Shortcut and finally select VoiceOver in the list.";
-"voiceover_section_5_paragraph_2" = "Open the Settings app, select Accessibility, scroll down and select Accessibility Shortcut and finally select VoiceOver in the list.";
+"voiceover_section_5_paragraph_1" = "It is possible add a shortcut to toggle VoiceOver on or off.";
+"voiceover_section_5_paragraph_2" = "Open the 'Settings' app, select 'Accessibility', scroll down, select 'Accessibility Shortcut' and finally select 'VoiceOver' in the list.";
 "voiceover_section_5_paragraph_3" = "Triple tap the home button or side button to toggle VoiceOver on or off.";
 
 /* More */
@@ -58,17 +58,24 @@
 
 /* Topic */
 "topic_rating_title" = "Rate app";
-"topic_share_title" = "Share app";
-"topic_website_title" = "Visit website";
-"topic_appt_title" = "Appt Foundation";
-"topic_abra_title" = "Abra";
-"topic_sidn_fonds_title" = "SIDN fund";
-
 "topic_rating_url" = "https://apps.apple.com/us/app/screenreader/id1610318073"; // TODO: Double check id
+
+"topic_share_title" = "Share app";
 "topic_share_url" = "Download the free ScreenReader app at https://screenreader.app and learn how to use the screen reader!";
+
+"topic_website_title" = "Visit website";
 "topic_website_url" = "https://screenreader.app";
+
+"topic_source_title" = "View source code";
+"topic_source_url" = "https://github.com/appt-org/screenreader-ios";
+
+"topic_appt_title" = "Appt Foundation";
 "topic_appt_url" = "https://appt.org";
+
+"topic_abra_title" = "Abra";
 "topic_abra_url" = "https://abra.nl";
+
+"topic_sidn_fonds_title" = "SIDN fund";
 "topic_sidn_fonds_url" = "https://sidnfonds.nl";
 
 /* Gestures */

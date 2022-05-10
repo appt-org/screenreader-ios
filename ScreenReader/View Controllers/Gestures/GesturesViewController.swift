@@ -57,12 +57,14 @@ class GesturesViewController: TableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "gestures_title".localized
-        practiceItem.accessibilityLabel = "practice".localized
+        
+        practiceItem.title = "practice".localized
     }
     
     @IBAction private func onPracticeTapped(_ sender: Any) {
         Alert.Builder()
-            .title("gestures_practice_message".localized)
+            .title("gestures_practice_title".localized)
+            .message("gestures_practice_message".localized)
             .action("gestures_practice_positive".localized) {
                 self.practice(true)
             }

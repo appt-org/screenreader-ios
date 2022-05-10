@@ -42,7 +42,7 @@ extension UITableView {
     
     var lastIndexPath: IndexPath? {
         let indexPath = IndexPath(
-            row: numberOfRows(inSection: numberOfSections-1) - 1,
+            row: numberOfRows(inSection: numberOfSections - 1) - 1,
             section: numberOfSections - 1
         )
         if hasRowAtIndexPath(indexPath: indexPath) {
