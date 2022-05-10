@@ -26,8 +26,10 @@ extension UIViewController {
         safariViewController.delegate = delegate
         safariViewController.preferredBarTintColor = .background
         safariViewController.preferredControlTintColor = .primary
-        safariViewController.modalPresentationCapturesStatusBarAppearance = true
         safariViewController.dismissButtonStyle = .done
+        safariViewController.modalPresentationCapturesStatusBarAppearance = true
+        safariViewController.modalPresentationStyle = .pageSheet
+        safariViewController.dismissButtonStyle = .close
         
         present(safariViewController, animated: true)
     }
