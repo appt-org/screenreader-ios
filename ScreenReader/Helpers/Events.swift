@@ -1,0 +1,59 @@
+//
+//  Events.swift
+//  ScreenReader
+//
+//  Created by Jan Jaap de Groot on 13/05/2022.
+//  Copyright © 2020 Stichting Appt All rights reserved.
+//
+
+import Foundation
+import FirebaseAnalytics
+
+class Events {
+    
+    // MARK: - Property
+    
+    enum Property: String {
+        case screenreader
+    }
+    
+    public static func property(_ property: Property, value: String) {
+        Analytics.setUserProperty(value, forName: property.rawValue)
+    }
+    
+    public static func property(_ property: Property, value: Bool) {
+        Events.property(property, value: value ? "1" : "0")
+    }
+    
+    // MARK: - Event
+    
+    enum Category: String {
+        case actionCompleted
+        case gestureCompleted
+    }
+    
+    public static func log(_ category: Category, identifier: String, value: Int? = nil) {
+        print("Log event, category: \(category), identifier: \(identifier), value: \(value ?? -1)")
+        
+        var parameters: [String: Any] = [
+            AnalyticsParameterItemID: identifier
+        ]
+        
+        if let value = value {
+            parameters[AnalyticsParameterValue] = value
+        }
+        
+        Analytics.logEvent(category.rawValue, parameters: parameters)
+    }
+    
+    public static func log(_ category: Category, object: Any) {
+        do {
+            let data = try JSONSerialization.data(withJSONObject: object, options: [.sortedKeys])
+            if let identifier = String(data: data, encoding: .utf8) {
+                Events.log(category, identifier: identifier)
+            }
+        } catch let error {
+            print("Error logging object: \(object) -> \(error)")
+        }
+    }
+}

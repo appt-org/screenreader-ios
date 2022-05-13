@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
@@ -13,6 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Firebase
+        FirebaseApp.configure()
+        Events.property(.screenreader, value: UIAccessibility.isVoiceOverRunning)
+        
+        // Language
         application.accessibilityLanguage = "language".localized
         
         // States

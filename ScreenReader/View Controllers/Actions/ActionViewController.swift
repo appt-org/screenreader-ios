@@ -12,6 +12,8 @@ import AVKit
 
 class ActionViewController: TextTableViewController {
     
+    private let startTime = Date().timeIntervalSince1970
+    
     var action: Action!
     override var items: [Any] {
         get {
@@ -107,7 +109,9 @@ class ActionViewController: TextTableViewController {
     
     func correct() {
         self.action.completed = true
-        //Events.log(.actionCompleted, identifier: action.id, value: focusedElements)
+        
+        let elapsedTime = Int(Date().timeIntervalSince1970 - startTime)
+        Events.log(.actionCompleted, identifier: action.identifier, value: elapsedTime)
         
         Alert.toast("action_completed".localized, duration: 3.0, viewController: self) {
             self.navigationController?.popViewController(animated: true)
