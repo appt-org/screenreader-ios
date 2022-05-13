@@ -111,7 +111,7 @@ class ActionViewController: TextTableViewController {
         self.action.completed = true
         
         let elapsedTime = Int(Date().timeIntervalSince1970 - startTime)
-        Events.log(.actionCompleted, identifier: action.identifier, value: elapsedTime)
+        Events.log(.action_completed, identifier: action.identifier, value: elapsedTime)
         
         Alert.toast("action_completed".localized, duration: 3.0, viewController: self) {
             self.navigationController?.popViewController(animated: true)

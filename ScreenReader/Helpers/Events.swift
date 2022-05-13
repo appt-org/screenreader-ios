@@ -28,8 +28,8 @@ class Events {
     // MARK: - Event
     
     enum Category: String {
-        case actionCompleted
-        case gestureCompleted
+        case action_completed
+        case gesture_completed
     }
     
     public static func log(_ category: Category, identifier: String, value: Int? = nil) {

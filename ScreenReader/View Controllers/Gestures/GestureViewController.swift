@@ -128,7 +128,7 @@ extension GestureViewController: GestureViewDelegate {
         finished = true
         
         self.gesture.completed = true
-        Events.log(.gestureCompleted, identifier: gesture.id, value: errorCount)
+        Events.log(.gesture_completed, identifier: gesture.id, value: errorCount)
         
         // Check if single gesture
         guard let gestures = self.gestures else {
