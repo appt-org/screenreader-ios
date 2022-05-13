@@ -27,7 +27,7 @@
 /* VoiceOver */
 "voiceover_tab" = "VoiceOver";
 "voiceover_title" = "Learn VoiceOver";
-"voiceover_description" = "This ScreenReader app helps you with learning VoiceOver.";
+"voiceover_description" = "The ScreenReader app helps you with learning VoiceOver.";
 
 "voiceover_section_1" = "What is VoiceOver?";
 "voiceover_section_1_paragraph_1" = "VoiceOver is an essential accessibility feature for visually impaired and blind people to control their devices.";
@@ -35,7 +35,7 @@
 "voiceover_section_1_paragraph_3" = "This allows you to control your device even if you can't see the screen.";
 "voiceover_section_2" = "Learning VoiceOver";
 "voiceover_section_2_paragraph_1" = "The ScreenReader app helps you learn all VoiceOver gestures. In addition, you can learn some common actions.";
-"voiceover_section_2_paragraph_2" = "Are you dependent on VoiceOver? This app can help you to improve your skills.";
+"voiceover_section_2_paragraph_2" = "Are you dependent on the screen reader? This app can help you to improve your skills.";
 "voiceover_section_2_paragraph_3" = "Are you an app dveloper? Use the learnings to improve the accessibility of your apps.";
 "voiceover_section_3" = "Turning on VoiceOver";
 "voiceover_section_3_paragraph_1" = "If you are ready to turn on VoiceOver, ask Siri to 'Turn VoiceOver on'.";
@@ -219,7 +219,7 @@
 /* Actions */
 "actions_tab" = "Actions";
 "actions_title" = "Learn actions";
-"actions_description" = "You can learn a couple of TalkBack actions on this screen. We recommend that you learn all the gestures first so that you can perform these actions properly.";
+"actions_description" = "You can learn several VoiceOver actions on this screen. We recommend to first learn all gestures, to make sure you can perform these actions properly.";
 
 "actions_navigate" = "Navigate";
 "actions_edit" = "Edit text";
