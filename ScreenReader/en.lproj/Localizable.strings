@@ -227,7 +227,7 @@
 /* Action */
 "action_headings_title" = "Navigate by headings";
 "action_links_title" = "Navigate by links";
-"action_selection_title" = "Select text";
+"action_select_title" = "Select text";
 "action_copy_title" = "Copy text";
 "action_paste_title" = "Paste text";
 
@@ -288,24 +288,24 @@
 "action_paste_section_2_placeholder" = "Paste here from your clipboard";
 
 /* Selection action */
-"action_selection_paragraph_1" = "The easiest way to select text is by using the 'Text selection' option. You have to add this option to the rotor yourself.";
-"action_selection_section_1" = "Adding text selection to the rotor";
-"action_selection_section_1_paragraph_1" = "1. Open the 'Settings' app";
-"action_selection_section_1_paragraph_2" = "2. Select 'Accessibility'";
-"action_selection_section_1_paragraph_3" = "3. Select 'VoiceOver'";
-"action_selection_section_1_paragraph_4" = "4. Select 'Rotor'";
-"action_selection_section_1_paragraph_5" = "5. Enable 'Text selection'";
-"action_selection_section_2" = "Using text selection from the rotor";
-"action_selection_section_2_paragraph_1" = "1. Select the input field where you want to select text from.";
-"action_selection_section_2_paragraph_2" = "2. Double tap to start editing.";
-"action_selection_section_2_paragraph_3" = "3. Set the rotor to 'Text selection'";
-"action_selection_section_2_paragraph_4" = "4. Swipe down with one finger to select the text you want";
-"action_selection_section_2_paragraph_5" = "5. Swipe to the right to navigate to the next character.";
-"action_selection_section_2_paragraph_6" = "6. Swipe left to select the previous character.";
-"action_selection_section_3" = "Practice text selection";
-"action_selection_section_3_paragraph_1" = "Select text in the input field below to finish the training.";
-"action_selection_section_3_placeholder" = "Fill in text to select";
-"action_selection_section_3_text" = "Select this text";
+"action_select_paragraph_1" = "The easiest way to select text is by using the 'Text selection' option. You have to add this option to the rotor yourself.";
+"action_select_section_1" = "Adding text selection to the rotor";
+"action_select_section_1_paragraph_1" = "1. Open the 'Settings' app";
+"action_select_section_1_paragraph_2" = "2. Select 'Accessibility'";
+"action_select_section_1_paragraph_3" = "3. Select 'VoiceOver'";
+"action_select_section_1_paragraph_4" = "4. Select 'Rotor'";
+"action_select_section_1_paragraph_5" = "5. Enable 'Text selection'";
+"action_select_section_2" = "Using text selection from the rotor";
+"action_select_section_2_paragraph_1" = "1. Select the input field where you want to select text from.";
+"action_select_section_2_paragraph_2" = "2. Double tap to start editing.";
+"action_select_section_2_paragraph_3" = "3. Set the rotor to 'Text selection'";
+"action_select_section_2_paragraph_4" = "4. Swipe down with one finger to select the text you want";
+"action_select_section_2_paragraph_5" = "5. Swipe to the right to navigate to the next character.";
+"action_select_section_2_paragraph_6" = "6. Swipe left to select the previous character.";
+"action_select_section_3" = "Practice text selection";
+"action_select_section_3_paragraph_1" = "Select text in the input field below to finish the training.";
+"action_select_section_3_placeholder" = "Fill in text to select";
+"action_select_section_3_text" = "Select this text";
 
 /* Directions */
 "direction_up" = "up";

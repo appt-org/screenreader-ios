@@ -227,7 +227,7 @@
 /* Action */
 "action_headings_title" = "Navigeren via koppen";
 "action_links_title" = "Navigeren via links";
-"action_selection_title" = "Tekst selecteren";
+"action_select_title" = "Tekst selecteren";
 "action_copy_title" = "Tekst kopiëren";
 "action_paste_title" = "Tekst plakken";
 
@@ -288,24 +288,24 @@
 "action_paste_section_2_placeholder" = "Plak hier vanuit je klembord";
 
 /* Selection action */
-"action_selection_paragraph_1" = "De makkelijkste manier om tekst te selecteren is via de 'Tekstselectie' optie. Deze optie moet je zelf toevoegen aan de rotor.";
-"action_selection_section_1" = "Tekstselectie toevoegen aan de rotor";
-"action_selection_section_1_paragraph_1" = "1. Open de 'Instellingen' app";
-"action_selection_section_1_paragraph_2" = "2. Selecteer 'Toegankelijkheid'";
-"action_selection_section_1_paragraph_3" = "3. Selecteer 'VoiceOver'";
-"action_selection_section_1_paragraph_4" = "4. Selecteer 'Rotor'";
-"action_selection_section_1_paragraph_5" = "5. Zet 'Tekstselectie' aan";
-"action_selection_section_2" = "Tekstselectie gebruiken via de rotor";
-"action_selection_section_2_paragraph_1" = "1. Selecteer het veld waar je tekst wilt selecteren.";
-"action_selection_section_2_paragraph_2" = "2. Dubbeltik om te starten met bewerken.";
-"action_selection_section_2_paragraph_3" = "3. Zet de rotor op 'Tekstselectie'";
-"action_selection_section_2_paragraph_4" = "4. Veeg met één vinger omlaag om de gewenste optie te selecteren";
-"action_selection_section_2_paragraph_5" = "5. Veeg naar rechts om het volgende onderdeel te selecteren.";
-"action_selection_section_2_paragraph_6" = "6. Veeg naar links om het vorige onderdeel te selecteren.";
-"action_selection_section_3" = "Tekstselectie oefenen";
-"action_selection_section_3_paragraph_1" = "Selecteer tekst in het onderstaande tekstveld om de training af te ronden.";
-"action_selection_section_3_placeholder" = "Vul tekst in om te selecteren";
-"action_selection_section_3_text" = "Selecteer deze tekst";
+"action_select_paragraph_1" = "De makkelijkste manier om tekst te selecteren is via de 'Tekstselectie' optie. Deze optie moet je zelf toevoegen aan de rotor.";
+"action_select_section_1" = "Tekstselectie toevoegen aan de rotor";
+"action_select_section_1_paragraph_1" = "1. Open de 'Instellingen' app";
+"action_select_section_1_paragraph_2" = "2. Selecteer 'Toegankelijkheid'";
+"action_select_section_1_paragraph_3" = "3. Selecteer 'VoiceOver'";
+"action_select_section_1_paragraph_4" = "4. Selecteer 'Rotor'";
+"action_select_section_1_paragraph_5" = "5. Zet 'Tekstselectie' aan";
+"action_select_section_2" = "Tekstselectie gebruiken via de rotor";
+"action_select_section_2_paragraph_1" = "1. Selecteer het veld waar je tekst wilt selecteren.";
+"action_select_section_2_paragraph_2" = "2. Dubbeltik om te starten met bewerken.";
+"action_select_section_2_paragraph_3" = "3. Zet de rotor op 'Tekstselectie'";
+"action_select_section_2_paragraph_4" = "4. Veeg met één vinger omlaag om de gewenste optie te selecteren";
+"action_select_section_2_paragraph_5" = "5. Veeg naar rechts om het volgende onderdeel te selecteren.";
+"action_select_section_2_paragraph_6" = "6. Veeg naar links om het vorige onderdeel te selecteren.";
+"action_select_section_3" = "Tekstselectie oefenen";
+"action_select_section_3_paragraph_1" = "Selecteer tekst in het onderstaande tekstveld om de training af te ronden.";
+"action_select_section_3_placeholder" = "Vul tekst in om te selecteren";
+"action_select_section_3_text" = "Selecteer deze tekst";
 
 /* Directions */
 "direction_up" = "omhoog";

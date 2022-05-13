@@ -20,7 +20,7 @@ class ActionsViewController: TableViewController {
                 Header("actions_edit".localized),
                 CopyAction(),
                 PasteAction(),
-                SelectionAction(),
+                SelectAction(),
             ]
         }
     }

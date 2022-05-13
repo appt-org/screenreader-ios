@@ -45,15 +45,4 @@ class Events {
         
         Analytics.logEvent(category.rawValue, parameters: parameters)
     }
-    
-    public static func log(_ category: Category, object: Any) {
-        do {
-            let data = try JSONSerialization.data(withJSONObject: object, options: [.sortedKeys])
-            if let identifier = String(data: data, encoding: .utf8) {
-                Events.log(category, identifier: identifier)
-            }
-        } catch let error {
-            print("Error logging object: \(object) -> \(error)")
-        }
-    }
 }
