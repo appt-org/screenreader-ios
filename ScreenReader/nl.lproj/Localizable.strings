@@ -58,7 +58,7 @@
 
 /* Topic */
 "topic_rating_title" = "App beoordelen";
-"topic_rating_url" = "https://apps.apple.com/nl/app/screenreader/id1610318073"; // TODO: Double check id
+"topic_rating_url" = "https://apps.apple.com/app/screenreader/id1610318073";
 
 "topic_share_title" = "App delen";
 "topic_share_url" = "Download de gratis ScreenReader app op https://screenreader.app om te leren hoe je de schermlezer gebruikt!";

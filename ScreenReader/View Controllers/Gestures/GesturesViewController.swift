@@ -78,11 +78,6 @@ class GesturesViewController: TableViewController {
     private func practice(_ instructions: Bool) {
         let gestures = Gesture.shuffled()
         
-        // Reset completion status
-        gestures.forEach { gesture in
-            UserDefaults.standard.setValue(false, forKey: gesture.id)
-        }
-        
         let vc = UIStoryboard.gestures(gestures, instructions: instructions)
         navigationController?.pushViewController(vc, animated: true)
     }

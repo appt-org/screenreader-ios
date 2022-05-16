@@ -58,7 +58,7 @@
 
 /* Topic */
 "topic_rating_title" = "Rate app";
-"topic_rating_url" = "https://apps.apple.com/us/app/screenreader/id1610318073"; // TODO: Double check id
+"topic_rating_url" = "https://apps.apple.com/app/screenreader/id1610318073";
 
 "topic_share_title" = "Share app";
 "topic_share_url" = "Download the free ScreenReader app at https://screenreader.app and learn how to use the screen reader!";
@@ -88,13 +88,13 @@
 "gestures_practice_positive" = "With instructions";
 "gestures_practice_negative" = "Without instructions";
 
-"gestures_one_finger_swipe" = "Swipe with 1 finger";
-"gestures_two_finger_swipe" = "Swipe with 2 fingers";
-"gestures_three_finger_swipe" = "Swipe with 3 fingers";
-"gestures_one_finger_tap" = "Tap with 1 finger";
-"gestures_two_finger_tap" = "Tap with 2 fingers";
-"gestures_three_finger_tap" = "Tap with 3 fingers";
-"gestures_four_finger_tap" = "Tap with 4 fingers";
+"gestures_one_finger_swipe" = "Swiping with 1 finger";
+"gestures_two_finger_swipe" = "Swiping with 2 fingers";
+"gestures_three_finger_swipe" = "Swiping with 3 fingers";
+"gestures_one_finger_tap" = "Tapping with 1 finger";
+"gestures_two_finger_tap" = "Tapping with 2 fingers";
+"gestures_three_finger_tap" = "Tapping with 3 fingers";
+"gestures_four_finger_tap" = "Tapping with 4 fingers";
 "gestures_shortcuts" = "Shortcuts";
 
 /* Gesture */
