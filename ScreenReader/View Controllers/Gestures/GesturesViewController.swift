@@ -56,7 +56,9 @@ class GesturesViewController: TableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         title = "gestures_title".localized
+        navigationController?.tabBarItem.title = "gestures_tab".localized
         
         practiceItem.title = "practice".localized
     }

@@ -29,7 +29,9 @@ class MoreViewController: TableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         title = "more_title".localized
+        navigationController?.tabBarItem.title = "more_tab".localized
     }
     
     override func didSelectItem(_ item: Any, indexPath: IndexPath) {

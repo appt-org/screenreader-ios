@@ -39,6 +39,8 @@ class VoiceOverViewController: TextTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         title = "voiceover_title".localized
+        navigationController?.tabBarItem.title = "voiceover_tab".localized
     }
 }

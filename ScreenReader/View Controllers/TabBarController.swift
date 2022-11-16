@@ -14,26 +14,32 @@ class TabBarController: UITabBarController {
         super.viewDidLoad()
         delegate = self
         
-        if let viewControllers = self.viewControllers {
-            for (index, viewController) in viewControllers.enumerated() {
-                switch index {
-                    case 0:
-                        viewController.title = "voiceover_title".localized
-                        viewController.tabBarItem.title = "voiceover_tab".localized
-                    case 1:
-                        viewController.title = "gestures_title".localized
-                        viewController.tabBarItem.title = "gestures_tab".localized
-                    case 2:
-                        viewController.title = "actions_title".localized
-                        viewController.tabBarItem.title = "actions_tab".localized
-                    case 3:
-                        viewController.title = "more_title".localized
-                        viewController.tabBarItem.title = "more_tab".localized
-                    default:
-                        break
-                }
+        guard let viewControllers = self.viewControllers else {
+            return
+        }
+        
+        for (index, vc) in viewControllers.enumerated() {
+            guard let navigationController = vc as? UINavigationController,
+                  let viewController = navigationController.topViewController else {
+                return
             }
-        }        
+            switch index {
+                case 0:
+                    viewController.title = "voiceover_title".localized
+                    navigationController.tabBarItem.title = "voiceover_tab".localized
+                case 1:
+                    viewController.title = "gestures_title".localized
+                    navigationController.tabBarItem.title = "gestures_tab".localized
+                case 2:
+                    viewController.title = "actions_title".localized
+                    navigationController.tabBarItem.title = "actions_tab".localized
+                case 3:
+                    viewController.title = "more_title".localized
+                    navigationController.tabBarItem.title = "more_tab".localized
+                default:
+                    break
+            }
+        }
     }
     
     var visibleViewController: UIViewController? {

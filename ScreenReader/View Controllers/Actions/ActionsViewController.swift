@@ -27,7 +27,9 @@ class ActionsViewController: TableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         title = "actions_title".localized
+        navigationController?.tabBarItem.title = "actions_tab".localized
     }
 
     override func viewWillAppear(_ animated: Bool) {
