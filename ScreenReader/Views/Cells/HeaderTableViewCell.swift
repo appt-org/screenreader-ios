@@ -27,6 +27,10 @@ class HeaderTableViewCell: UITableViewCell {
         accessibilityLabel = text
         accessibilityTraits = .header
         
+        if #available(iOS 13.0, *) {
+            accessibilityRespondsToUserInteraction = true
+        }
+        
         selectionStyle = .none
     }
     

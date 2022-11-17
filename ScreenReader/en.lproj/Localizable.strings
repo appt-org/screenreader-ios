@@ -76,7 +76,7 @@
 "topic_abra_url" = "https://abra.nl";
 
 "topic_sidn_fonds_title" = "SIDN fund";
-"topic_sidn_fonds_url" = "https://sidnfonds.nl";
+"topic_sidn_fonds_url" = "https://www.sidnfonds.nl/excerpt";
 
 /* Gestures */
 "gestures_tab" = "Gestures";

@@ -28,6 +28,10 @@ class TextTableViewCell: UITableViewCell {
         constraint(top: top, right: right, bottom: bottom, left: left)
         
         selectionStyle = .none
+        
+        if #available(iOS 13.0, *) {
+            accessibilityRespondsToUserInteraction = true
+        }
     }
     
     func constraint(top: CGFloat? = nil, right: CGFloat? = nil, bottom: CGFloat? = nil, left: CGFloat? = nil) {
