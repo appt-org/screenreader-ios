@@ -75,6 +75,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .background
         
         // UINavigationBar style
         navigationController?.navigationBar.isOpaque = true
