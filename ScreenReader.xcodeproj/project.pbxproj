@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282093A62AA0D89F00382928 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282093A52AA0D89F00382928 /* Preferences.swift */; };
+		282093A82AA0D9D800382928 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282093A72AA0D9D800382928 /* Actions.swift */; };
 		282B702627C7D74300BA3979 /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B702527C7D74300BA3979 /* InputTableViewCell.swift */; };
 		282B702827C7D75000BA3979 /* InputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282B702727C7D75000BA3979 /* InputTableViewCell.xib */; };
 		282B702A27C7E47500BA3979 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B702927C7E47500BA3979 /* Input.swift */; };
@@ -14,7 +16,7 @@
 		285345F627C3F3920030DC10 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 285345F827C3F3920030DC10 /* Localizable.stringsdict */; };
 		2856E96427E4BB0700B3A5EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2856E96627E4BB0700B3A5EA /* InfoPlist.strings */; };
 		2856E96A27E4BBDE00B3A5EA /* InfoPlist.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2856E96C27E4BBDE00B3A5EA /* InfoPlist.stringsdict */; };
-		286671BD27C6462900AC1A6E /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286671BC27C6462900AC1A6E /* Learning.swift */; };
+		286671BD27C6462900AC1A6E /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286671BC27C6462900AC1A6E /* Training.swift */; };
 		286671C527C6829B00AC1A6E /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286671C427C6829B00AC1A6E /* ActionViewController.swift */; };
 		286671C727C68BE300AC1A6E /* TextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286671C627C68BE300AC1A6E /* TextTableViewController.swift */; };
 		287D440027BE9F7000B9B997 /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D43FF27BE9F7000B9B997 /* Gesture.swift */; };
@@ -81,6 +83,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		282093A52AA0D89F00382928 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		282093A72AA0D9D800382928 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		282B702527C7D74300BA3979 /* InputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
 		282B702727C7D75000BA3979 /* InputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTableViewCell.xib; sourceTree = "<group>"; };
 		282B702927C7E47500BA3979 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
@@ -92,7 +96,7 @@
 		2856E96727E4BB0800B3A5EA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2856E96B27E4BBDE00B3A5EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/InfoPlist.stringsdict; sourceTree = "<group>"; };
 		2856E96D27E4BBE000B3A5EA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = nl; path = nl.lproj/InfoPlist.stringsdict; sourceTree = "<group>"; };
-		286671BC27C6462900AC1A6E /* Learning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning.swift; sourceTree = "<group>"; };
+		286671BC27C6462900AC1A6E /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
 		286671C427C6829B00AC1A6E /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		286671C627C68BE300AC1A6E /* TextTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewController.swift; sourceTree = "<group>"; };
 		287D43FF27BE9F7000B9B997 /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 				28BBF1DF27C8EA4A002A7125 /* CopyAction.swift */,
 				28BBF1E127C8EA54002A7125 /* PasteAction.swift */,
 				28BBF1DD27C8EA43002A7125 /* SelectAction.swift */,
+				282093A72AA0D9D800382928 /* Actions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -365,10 +370,11 @@
 				287D443D27BEA1A200B9B997 /* Direction.swift */,
 				287D43FF27BE9F7000B9B997 /* Gesture.swift */,
 				28F09DE527BD44F800C46249 /* Header.swift */,
-				286671BC27C6462900AC1A6E /* Learning.swift */,
 				282B702927C7E47500BA3979 /* Input.swift */,
 				28F09DF127BD64CA00C46249 /* Item.swift */,
+				282093A52AA0D89F00382928 /* Preferences.swift */,
 				287D443127BEA14400B9B997 /* Position.swift */,
+				286671BC27C6462900AC1A6E /* Training.swift */,
 				28F09DEF27BD64A200C46249 /* Topic.swift */,
 			);
 			path = Model;
@@ -542,6 +548,7 @@
 				287D440027BE9F7000B9B997 /* Gesture.swift in Sources */,
 				287D442A27BEA12E00B9B997 /* TapGestureView.swift in Sources */,
 				28BBF1DC27C8EA35002A7125 /* LinksAction.swift in Sources */,
+				282093A62AA0D89F00382928 /* Preferences.swift in Sources */,
 				287D443A27BEA17500B9B997 /* _Direction.swift in Sources */,
 				287D444227BEA36600B9B997 /* _UIStoryboard.swift in Sources */,
 				286671C727C68BE300AC1A6E /* TextTableViewController.swift in Sources */,
@@ -553,7 +560,7 @@
 				287D440727BEA00B00B9B997 /* _String.swift in Sources */,
 				28BBF1DE27C8EA43002A7125 /* SelectAction.swift in Sources */,
 				287D443027BEA12E00B9B997 /* EscapeGestureView.swift in Sources */,
-				286671BD27C6462900AC1A6E /* Learning.swift in Sources */,
+				286671BD27C6462900AC1A6E /* Training.swift in Sources */,
 				28823F7D282EAEED0049F251 /* Events.swift in Sources */,
 				28F09DDD27BD432700C46249 /* TableViewController.swift in Sources */,
 				287D442E27BEA12E00B9B997 /* DirectGestureView.swift in Sources */,
@@ -564,6 +571,7 @@
 				282B702A27C7E47500BA3979 /* Input.swift in Sources */,
 				28815FAB27BFF3EB002CC12A /* ScrollViewController.swift in Sources */,
 				28D1431927BD287D0000BF92 /* SceneDelegate.swift in Sources */,
+				282093A82AA0D9D800382928 /* Actions.swift in Sources */,
 				28BBF1D727C8E732002A7125 /* HeadingsAction.swift in Sources */,
 				28F09DCB27BD414F00C46249 /* GesturesViewController.swift in Sources */,
 				287D442927BEA12E00B9B997 /* LongPressGestureView.swift in Sources */,

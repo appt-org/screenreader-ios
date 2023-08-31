@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum Gesture: String, Learning, CaseIterable {
+enum Gesture: String, Training, CaseIterable {
     
     // One finger swipe
     case oneFingerTouch         = "one_finger_touch"
@@ -161,5 +161,11 @@ enum Gesture: String, Learning, CaseIterable {
         var gestures = allCases
         gestures.shuffle()
         return gestures
+    }
+    
+    static func completed() -> Int {
+        return Gesture.allCases.filter { element in
+            return element.completed
+        }.count
     }
 }

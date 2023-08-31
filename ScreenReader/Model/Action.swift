@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol Action: Learning {
+protocol Action: Training {
     
     var identifier: String { get }
     var items: [Any] { get }
@@ -18,6 +18,7 @@ protocol Action: Learning {
     func onPasteboardChanged(_ content: String?) -> Bool
     func onTextSelected(_ textField: TextField, range: UITextRange?) -> Bool
     func onTextPasted(_ textField: TextField, text: String?) -> Bool
+
 }
 
 extension Action {

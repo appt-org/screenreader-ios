@@ -6,7 +6,9 @@
   Copyright © 2022 Stichting Appt & Abra B.V. All rights reserved.
 */
 
-"language" = "en-US";
+"app_name" = "ScreenReader";
+"app_language" = "en-US";
+"app_review" = "Do you find the ScreenReader app useful? Please leave a review!";
 
 /* General */
 "loading" = "Loading, please wait";

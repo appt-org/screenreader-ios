@@ -35,7 +35,7 @@ class ItemTableViewCell: UITableViewCell {
     func setup(_ item: Item) {
         setup(item.title)
         
-        if let learning = item as? Learning {
+        if let learning = item as? Training {
             accessibilityValue = learning.completed ? "completed".localized : nil
             accessoryType = learning.completed ? .checkmark : .disclosureIndicator
         }

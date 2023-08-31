@@ -115,6 +115,7 @@ class ActionViewController: TextTableViewController {
         
         Alert.toast("action_completed".localized, duration: 3.0, viewController: self) {
             self.navigationController?.popViewController(animated: true)
+            self.requestReview()
         }
     }
     

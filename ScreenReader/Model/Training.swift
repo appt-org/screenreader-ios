@@ -1,5 +1,5 @@
 //
-//  Learning.swift
+//  Training.swift
 //  ScreenReader
 //
 //  Created by Jan Jaap de Groot on 23/02/2022.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-protocol Learning: Item {
+protocol Training: Item {
+    
     var completed: Bool { get set }
+    
 }

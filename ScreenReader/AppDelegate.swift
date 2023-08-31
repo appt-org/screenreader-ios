@@ -19,7 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
         Events.property(.screenreader, value: UIAccessibility.isVoiceOverRunning)
         
         // Language
-        application.accessibilityLanguage = "language".localized
+        application.accessibilityLanguage = "app_language".localized
+        
+        // Review
+        Preferences.isReviewPrompted = false
         
         // States
         let states: [UIControl.State] = [.disabled, .focused, .highlighted, .normal, .selected]
