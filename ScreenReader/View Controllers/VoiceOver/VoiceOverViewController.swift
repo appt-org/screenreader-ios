@@ -32,7 +32,12 @@ class VoiceOverViewController: TextTableViewController {
                 Header("voiceover_section_5".localized),
                 "voiceover_section_5_paragraph_1".localized,
                 "voiceover_section_5_paragraph_2".localized,
-                "voiceover_section_5_paragraph_3".localized
+                "voiceover_section_5_paragraph_3".localized,
+                "voiceover_section_5_paragraph_4".localized,
+                Header("voiceover_section_6".localized),
+                "voiceover_section_6_paragraph_1".localized,
+                "voiceover_section_6_paragraph_2".localized,
+                "voiceover_section_6_paragraph_3".localized
             ]
         }
     }

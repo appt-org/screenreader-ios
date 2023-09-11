@@ -35,21 +35,31 @@
 "voiceover_section_1_paragraph_1" = "VoiceOver is een essentieel hulpmiddel voor slechtzienden en blinden om hun toestel te bedienen.";
 "voiceover_section_1_paragraph_2" = "Door middel van gebaren kun je navigeren tussen de elementen op het scherm. Elk element wordt voorgelezen zodra het is geselecteerd.";
 "voiceover_section_1_paragraph_3" = "Het is hierdoor mogelijk om je toestel volledig te bedienen zonder zicht.";
+
 "voiceover_section_2" = "VoiceOver leren";
 "voiceover_section_2_paragraph_1" = "De ScreenReader app helpt je bij het leren van alle VoiceOver gebaren. Daarnaast kun je een aantal veelvoorkomende acties leren.";
 "voiceover_section_2_paragraph_2" = "Ben je afhankelijk van de schermlezer? Dan is deze app erg handig om je vaardigheden te verbeteren.";
 "voiceover_section_2_paragraph_3" = "Ben je betrokken bij het ontwikkelen van apps? Gebruik de schermlezer dan om de toegankelijkheid te verbeteren.";
+
 "voiceover_section_3" = "VoiceOver inschakelen";
 "voiceover_section_3_paragraph_1" = "Zeg 'Zet VoiceOver aan' tegen Siri om VoiceOver in te schakelen.";
 "voiceover_section_3_paragraph_2" = "Of open de 'Instellingen'-app, selecteer 'Toegankelijkheid', selecteer 'VoiceOver' en zet de schakelaar aan.";
 "voiceover_section_3_paragraph_3" = "Let op: vanaf dit moment moet je vegen om te navigeren en dubbeltikken om te activeren.";
+
 "voiceover_section_4" = "VoiceOver uitschakelen";
 "voiceover_section_4_paragraph_1" = "Zeg 'Zet VoiceOver uit' tegen Siri om VoiceOver uit te schakelen.";
 "voiceover_section_4_paragraph_2" = "Of open de 'Instellingen'-app, selecteer 'Toegankelijkheid', selecteer 'VoiceOver' en zet de schakelaar uit.";
-"voiceover_section_5" = "VoiceOver snelkoppeling";
-"voiceover_section_5_paragraph_1" = "Het is mogelijk een snelkoppeling toe te voegen om VoiceOver in- of uitschakelen.";
-"voiceover_section_5_paragraph_2" = "Open de 'Instellingen'-app, selecteer 'Toegankelijkheid', scroll naar beneden en selecteer 'Activeringsknop' en selecteer vervolgens 'VoiceOver' in de lijst.";
-"voiceover_section_5_paragraph_3" = "Tik driedubbel op de thuisknop of zijknop om Voiceover in- of uit te schakelen.";
+
+"voiceover_section_5" = "VoiceOver gebaren aanpassen";
+"voiceover_section_5_paragraph_1" = "Het is mogelijk om de VoiceOver gebaren aan te passen.";
+"voiceover_section_5_paragraph_2" = "Open de 'Instellingen'-app, selecteer 'Toegankelijkheid', selecteer 'VoiceOver', scroll naar beneden, selecteer Commando's en selecteer tot slot 'Aanraakgebaren'.";
+"voiceover_section_5_paragraph_3" = "Kies een gebaar uit de lijst om het commando aan te passen.";
+"voiceover_section_5_paragraph_4" = "Let op: de ScreenReader app maakt gebruik van de standaard VoiceOver instellingen.";
+
+"voiceover_section_6" = "VoiceOver snelkoppeling toevoegen";
+"voiceover_section_6_paragraph_1" = "Het is mogelijk een snelkoppeling toe te voegen om VoiceOver in- of uitschakelen.";
+"voiceover_section_6_paragraph_2" = "Open de 'Instellingen'-app, selecteer 'Toegankelijkheid', scroll naar beneden, selecteer 'Activeringsknop' en selecteer vervolgens 'VoiceOver' in de lijst.";
+"voiceover_section_6_paragraph_3" = "Tik driedubbel op de thuisknop of zijknop om Voiceover in- of uit te schakelen.";
 
 /* More */
 "more_tab" = "Meer";
