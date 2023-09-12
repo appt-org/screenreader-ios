@@ -52,13 +52,13 @@
 
 "voiceover_section_5" = "VoiceOver gebaren aanpassen";
 "voiceover_section_5_paragraph_1" = "Het is mogelijk om de VoiceOver gebaren aan te passen.";
-"voiceover_section_5_paragraph_2" = "Open de 'Instellingen'-app, selecteer 'Toegankelijkheid', selecteer 'VoiceOver', scroll naar beneden, selecteer Commando's en selecteer tot slot 'Aanraakgebaren'.";
+"voiceover_section_5_paragraph_2" = "Open de 'Instellingen'-app, selecteer 'Toegankelijkheid', selecteer 'VoiceOver', scroll naar beneden, selecteer Commando's en selecteer 'Aanraakgebaren'.";
 "voiceover_section_5_paragraph_3" = "Kies een gebaar uit de lijst om het commando aan te passen.";
 "voiceover_section_5_paragraph_4" = "Let op: de ScreenReader app maakt gebruik van de standaard VoiceOver instellingen.";
 
 "voiceover_section_6" = "VoiceOver snelkoppeling toevoegen";
 "voiceover_section_6_paragraph_1" = "Het is mogelijk een snelkoppeling toe te voegen om VoiceOver in- of uitschakelen.";
-"voiceover_section_6_paragraph_2" = "Open de 'Instellingen'-app, selecteer 'Toegankelijkheid', scroll naar beneden, selecteer 'Activeringsknop' en selecteer vervolgens 'VoiceOver' in de lijst.";
+"voiceover_section_6_paragraph_2" = "Open de 'Instellingen'-app, selecteer 'Toegankelijkheid', scroll naar beneden, selecteer 'Activeringsknop' en selecteer 'VoiceOver' in de lijst.";
 "voiceover_section_6_paragraph_3" = "Tik driedubbel op de thuisknop of zijknop om Voiceover in- of uit te schakelen.";
 
 /* More */
@@ -82,10 +82,10 @@
 "topic_source_url" = "https://github.com/appt-org/screenreader-ios";
 
 "topic_appt_title" = "Stichting Appt";
-"topic_appt_url" = "https://appt.nl";
+"topic_appt_url" = "https://appt.org/nl";
 
 "topic_abra_title" = "Abra";
-"topic_abra_url" = "https://abra.nl";
+"topic_abra_url" = "https://abra.ai";
 
 "topic_sidn_fonds_title" = "SIDN fonds";
 "topic_sidn_fonds_url" = "https://sidnfonds.nl";

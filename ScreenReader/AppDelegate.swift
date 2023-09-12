@@ -62,6 +62,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
                 .font: UIFont.openSans(weight: .semibold, size: 14, scaled: false)
             ], for: state)
         }
+        UITabBarItem.appearance().setTitleTextAttributes([
+            .font: UIFont.openSans(weight: .bold, size: 14, scaled: false)
+        ], for: .selected)
         
         // UISegmentedControl
         UISegmentedControl.appearance().backgroundColor = .background

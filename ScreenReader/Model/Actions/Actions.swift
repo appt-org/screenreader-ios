@@ -14,9 +14,9 @@ class Actions {
         return [
             HeadingsAction(),
             LinksAction(),
+            SelectAction(),
             CopyAction(),
             PasteAction(),
-            SelectAction()
         ]
     }
     
