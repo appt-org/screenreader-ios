@@ -42,6 +42,9 @@
 		28815FAD27BFF3FB002CC12A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28815FAC27BFF3FB002CC12A /* NavigationController.swift */; };
 		28823F7D282EAEED0049F251 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28823F7C282EAEED0049F251 /* Events.swift */; };
 		28823F7F282EB0A60049F251 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28823F7E282EB0A60049F251 /* GoogleService-Info.plist */; };
+		28B251C72F2B7C9800C2AF23 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 28B251C62F2B7C9800C2AF23 /* RswiftLibrary */; };
+		28B251CA2F2B7CB300C2AF23 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 28B251C92F2B7CB300C2AF23 /* FirebaseAnalytics */; };
+		28B251CC2F2B7CB300C2AF23 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 28B251CB2F2B7CB300C2AF23 /* FirebaseCrashlytics */; };
 		28BBF1D727C8E732002A7125 /* HeadingsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1D627C8E732002A7125 /* HeadingsAction.swift */; };
 		28BBF1DA27C8E7A5002A7125 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1D927C8E7A5002A7125 /* Action.swift */; };
 		28BBF1DC27C8EA35002A7125 /* LinksAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1DB27C8EA35002A7125 /* LinksAction.swift */; };
@@ -79,7 +82,6 @@
 		28F09DF027BD64A200C46249 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DEF27BD64A200C46249 /* Topic.swift */; };
 		28F09DF227BD64CA00C46249 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DF127BD64CA00C46249 /* Item.swift */; };
 		28F09DF627BD686400C46249 /* _UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F09DF527BD686400C46249 /* _UIViewController.swift */; };
-		9A4E45B3AA6AA9BB8A1F4E03 /* Pods_ScreenReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649D4EA229EBA9B0E6ADD0E7 /* Pods_ScreenReader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -161,9 +163,6 @@
 		28F09DEF27BD64A200C46249 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		28F09DF127BD64CA00C46249 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		28F09DF527BD686400C46249 /* _UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIViewController.swift; sourceTree = "<group>"; };
-		3BFDD99443CBBEF1BC02062F /* Pods-ScreenReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenReader.release.xcconfig"; path = "Target Support Files/Pods-ScreenReader/Pods-ScreenReader.release.xcconfig"; sourceTree = "<group>"; };
-		649D4EA229EBA9B0E6ADD0E7 /* Pods_ScreenReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7F51DB961A3984B5ADABA4A /* Pods-ScreenReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenReader.debug.xcconfig"; path = "Target Support Files/Pods-ScreenReader/Pods-ScreenReader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +170,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4E45B3AA6AA9BB8A1F4E03 /* Pods_ScreenReader.framework in Frameworks */,
+				28B251CC2F2B7CB300C2AF23 /* FirebaseCrashlytics in Frameworks */,
+				28B251CA2F2B7CB300C2AF23 /* FirebaseAnalytics in Frameworks */,
+				28B251C72F2B7C9800C2AF23 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +222,6 @@
 				28D1431527BD287D0000BF92 /* ScreenReader */,
 				28D1431427BD287D0000BF92 /* Products */,
 				520AA0103B5B7AEA716464A8 /* Pods */,
-				60A56C7FE55AF98903A7FE05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -383,18 +383,8 @@
 		520AA0103B5B7AEA716464A8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F7F51DB961A3984B5ADABA4A /* Pods-ScreenReader.debug.xcconfig */,
-				3BFDD99443CBBEF1BC02062F /* Pods-ScreenReader.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		60A56C7FE55AF98903A7FE05 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				649D4EA229EBA9B0E6ADD0E7 /* Pods_ScreenReader.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,11 +394,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28D1432727BD287E0000BF92 /* Build configuration list for PBXNativeTarget "ScreenReader" */;
 			buildPhases = (
-				8F87B407A4AD53B432884013 /* [CP] Check Pods Manifest.lock */,
 				28D1430F27BD287D0000BF92 /* Sources */,
 				28D1431027BD287D0000BF92 /* Frameworks */,
 				28D1431127BD287D0000BF92 /* Resources */,
-				DE219C120E5C197BFB88DEAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -445,6 +433,10 @@
 				nl,
 			);
 			mainGroup = 28D1430A27BD287D0000BF92;
+			packageReferences = (
+				28B251C52F2B7C9800C2AF23 /* XCRemoteSwiftPackageReference "R.swift" */,
+				28B251C82F2B7CB300C2AF23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 28D1431427BD287D0000BF92 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -478,48 +470,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		8F87B407A4AD53B432884013 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ScreenReader-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DE219C120E5C197BFB88DEAC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScreenReader/Pods-ScreenReader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScreenReader/Pods-ScreenReader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenReader/Pods-ScreenReader-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28D1430F27BD287D0000BF92 /* Sources */ = {
@@ -764,7 +714,6 @@
 		};
 		28D1432827BD287E0000BF92 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7F51DB961A3984B5ADABA4A /* Pods-ScreenReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -795,7 +744,6 @@
 		};
 		28D1432927BD287E0000BF92 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BFDD99443CBBEF1BC02062F /* Pods-ScreenReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -846,6 +794,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28B251C52F2B7C9800C2AF23 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.0;
+			};
+		};
+		28B251C82F2B7CB300C2AF23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28B251C62F2B7C9800C2AF23 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28B251C52F2B7C9800C2AF23 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
+		};
+		28B251C92F2B7CB300C2AF23 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28B251C82F2B7CB300C2AF23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		28B251CB2F2B7CB300C2AF23 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28B251C82F2B7CB300C2AF23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28D1430B27BD287D0000BF92 /* Project object */;
 }
