@@ -10,21 +10,23 @@ import UIKit
 
 enum Gesture: String, Training, CaseIterable {
     
-    // One finger swipe
+    // One finger touch
     case oneFingerTouch         = "one_finger_touch"
-    case oneFingerSwipeRight    = "one_finger_swipe_right"
-    case oneFingerSwipeLeft     = "one_finger_swipe_left"
+    
+    // One finger swipe
     case oneFingerSwipeUp       = "one_finger_swipe_up"
+    case oneFingerSwipeRight    = "one_finger_swipe_right"
     case oneFingerSwipeDown     = "one_finger_swipe_down"
+    case oneFingerSwipeLeft     = "one_finger_swipe_left"
     
     // Two finger swipe
-    case twoFingerSwipeDown     = "two_finger_swipe_down"
     case twoFingerSwipeUp       = "two_finger_swipe_up"
+    case twoFingerSwipeDown     = "two_finger_swipe_down"
     
     // Three finger swipe
     case threeFingerSwipeUp     = "three_finger_swipe_up"
-    case threeFingerSwipeDown   = "three_finger_swipe_down"
     case threeFingerSwipeRight  = "three_finger_swipe_right"
+    case threeFingerSwipeDown   = "three_finger_swipe_down"
     case threeFingerSwipeLeft   = "three_finger_swipe_left"
     
     // One finger tap
@@ -87,15 +89,16 @@ enum Gesture: String, Training, CaseIterable {
         switch self {
         case .oneFingerTouch:
             return TouchGestureView(gesture: self, taps: 1, fingers: 1)
-        case .oneFingerSwipeRight:
-            return SwipeGestureView(gesture: self, direction: .right, fingers: 1)
-        case .oneFingerSwipeLeft:
-            return SwipeGestureView(gesture: self, direction: .left, fingers: 1)
+            
         case .oneFingerSwipeUp:
             return SwipeGestureView(gesture: self, direction: .up, fingers: 1)
+        case .oneFingerSwipeRight:
+            return SwipeGestureView(gesture: self, direction: .right, fingers: 1)
         case .oneFingerSwipeDown:
             return SwipeGestureView(gesture: self, direction: .down, fingers: 1)
-            
+        case .oneFingerSwipeLeft:
+            return SwipeGestureView(gesture: self, direction: .left, fingers: 1)
+                    
         case .twoFingerSwipeUp:
             return SwipeGestureView(gesture: self, direction: .up, fingers: 2)
         case .twoFingerSwipeDown:
@@ -103,10 +106,10 @@ enum Gesture: String, Training, CaseIterable {
             
         case .threeFingerSwipeUp:
             return SwipeGestureView(gesture: self, direction: .up, fingers: 3)
-        case .threeFingerSwipeDown:
-            return SwipeGestureView(gesture: self, direction: .down, fingers: 3)
         case .threeFingerSwipeRight:
             return SwipeGestureView(gesture: self, direction: .right, fingers: 3)
+        case .threeFingerSwipeDown:
+            return SwipeGestureView(gesture: self, direction: .down, fingers: 3)
         case .threeFingerSwipeLeft:
             return SwipeGestureView(gesture: self, direction: .left, fingers: 3)
             

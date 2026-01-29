@@ -147,21 +147,21 @@
 "gesture_two_finger_swipe_down_explanation" = "Dit gebaar kan van pas komen als je de rest van de inhoud wilt laten voorlezen. Tik met 2 vingers op het scherm om het voorlezen te stoppen.";
 
 /* Three finger swipe */
-"gesture_three_finger_swipe_up_title" = "Omhoog scrollen";
+"gesture_three_finger_swipe_up_title" = "Omlaag scrollen";
 "gesture_three_finger_swipe_up_description" = "Veeg met 3 vingers omhoog";
-"gesture_three_finger_swipe_up_explanation" = "Gebruik dit gebaar wanneer je omlaag wilt scrollen.";
+"gesture_three_finger_swipe_up_explanation" = "In lijsten kun je met dit gebaar omlaag scrollen.";
 
-"gesture_three_finger_swipe_down_title" = "Omlaag scrollen";
+"gesture_three_finger_swipe_down_title" = "Omhoog scrollen";
 "gesture_three_finger_swipe_down_description" = "Veeg met 3 vingers omlaag";
-"gesture_three_finger_swipe_down_explanation" = "Gebruik dit gebaar wanneer je omhoog wilt scrollen.";
+"gesture_three_finger_swipe_down_explanation" = "In lijsten kun je met dit gebaar omhoog scrollen.";
 
-"gesture_three_finger_swipe_right_title" = "Naar rechts scrollen";
+"gesture_three_finger_swipe_right_title" = "Naar links scrollen";
 "gesture_three_finger_swipe_right_description" = "Veeg met 3 vingers naar rechts";
-"gesture_three_finger_swipe_right_explanation" = "Gebruik dit gebaar wanneer je naar rechts wilt scrollen.";
+"gesture_three_finger_swipe_right_explanation" = "In lijsten kun je met dit gebaar naar links scrollen. Soms kun je ook naar het vorige scherm navigeren met dit gebaar.";
 
-"gesture_three_finger_swipe_left_title" = "Naar links scrollen";
+"gesture_three_finger_swipe_left_title" = "Naar rechts scrollen";
 "gesture_three_finger_swipe_left_description" = "Veeg met 3 vingers naar links";
-"gesture_three_finger_swipe_left_explanation" = "Gebruik dit gebaar wanneer je naar links wilt scrollen.";
+"gesture_three_finger_swipe_left_explanation" = "In lijsten kun je met dit gebaar naar rechts scrollen. Soms kun je ook naar het volgende scherm navigeren met dit gebaar.";
 
 /* One finger tap */
 "gesture_one_finger_double_tap_title" = "Het geselecteerde onderdeel activeren";

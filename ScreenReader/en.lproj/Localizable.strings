@@ -147,21 +147,21 @@
 "gesture_two_finger_swipe_down_explanation" = "This gesture can come in handy if you want to have the remaining content read aloud. Tap the screen with 2 fingers to stop reading.";
 
 /* Three finger swipe */
-"gesture_three_finger_swipe_up_title" = "Scroll up";
+"gesture_three_finger_swipe_up_title" = "Scroll down";
 "gesture_three_finger_swipe_up_description" = "Swipe up with 3 fingers";
-"gesture_three_finger_swipe_up_explanation" = "Use this gesture when you want to scroll down.";
+"gesture_three_finger_swipe_up_explanation" = "In lists, you can scroll down with this gesture.";
 
-"gesture_three_finger_swipe_down_title" = "Scroll down";
+"gesture_three_finger_swipe_down_title" = "Scroll up";
 "gesture_three_finger_swipe_down_description" = "Swipe down with 3 fingers";
-"gesture_three_finger_swipe_down_explanation" = "Use this gesture to scroll up.";
+"gesture_three_finger_swipe_down_explanation" = "In lists, you can scroll up with this gesture.";
 
-"gesture_three_finger_swipe_right_title" = "Scroll right";
+"gesture_three_finger_swipe_right_title" = "Scroll left";
 "gesture_three_finger_swipe_right_description" = "Swipe right with 3 fingers";
-"gesture_three_finger_swipe_right_explanation" = "Use this gesture to scroll to the right.";
+"gesture_three_finger_swipe_right_explanation" = "In lists, you can use this gesture to scroll to the left. Sometimes you can also navigate to the previous screen with this gesture.";
 
-"gesture_three_finger_swipe_left_title" = "Scroll left";
+"gesture_three_finger_swipe_left_title" = "Scroll right";
 "gesture_three_finger_swipe_left_description" = "Swipe left with 3 fingers";
-"gesture_three_finger_swipe_left_explanation" = "Use this gesture to scroll to the left.";
+"gesture_three_finger_swipe_left_explanation" = "In lists, you can use this gesture to scroll right. Sometimes you can also navigate to the next screen with this gesture.";
 
 /* One finger tap */
 "gesture_one_finger_double_tap_title" = "Activate the selected item";
