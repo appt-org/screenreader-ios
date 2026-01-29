@@ -219,7 +219,6 @@
 			children = (
 				28D1431527BD287D0000BF92 /* ScreenReader */,
 				28D1431427BD287D0000BF92 /* Products */,
-				520AA0103B5B7AEA716464A8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -376,13 +375,6 @@
 				28F09DEF27BD64A200C46249 /* Topic.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		520AA0103B5B7AEA716464A8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
