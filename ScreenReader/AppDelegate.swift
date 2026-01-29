@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
         UINavigationBar.appearance().isOpaque = false
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().barTintColor = .background
-        UINavigationBar.appearance().tintColor = .foreground
+        UINavigationBar.appearance().tintColor = .primary
         UINavigationBar.appearance().titleTextAttributes = [
             .font: UIFont.openSans(weight: .bold, size: 20, scaled: false),
             .foregroundColor: UIColor.foreground

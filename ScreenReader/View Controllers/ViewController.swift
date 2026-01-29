@@ -62,27 +62,15 @@ class ViewController: UIViewController {
             }
         }
     }
-//
-//    private(set) var hidesBottomBar = true
-//    open override var hidesBottomBarWhenPushed: Bool {
-//        get {
-//            return hidesTabBar
-//        }
-//        set {
-//            super.hidesBottomBarWhenPushed = newValue
-//        }
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .background
         
         // UINavigationBar style
-        navigationController?.navigationBar.isOpaque = true
-        navigationController?.navigationBar.isTranslucent = false
-        
         let backButton = UIBarButtonItem(title: "back".localized, style: .plain, target: nil, action: nil)
         backButton.accessibilityLabel = "back".localized
+        backButton.tintColor = .primary
         navigationItem.backBarButtonItem = backButton
         
         if #available(iOS 13.0, *) {

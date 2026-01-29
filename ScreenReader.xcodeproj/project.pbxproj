@@ -42,7 +42,6 @@
 		28815FAD27BFF3FB002CC12A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28815FAC27BFF3FB002CC12A /* NavigationController.swift */; };
 		28823F7D282EAEED0049F251 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28823F7C282EAEED0049F251 /* Events.swift */; };
 		28823F7F282EB0A60049F251 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28823F7E282EB0A60049F251 /* GoogleService-Info.plist */; };
-		28B251C72F2B7C9800C2AF23 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 28B251C62F2B7C9800C2AF23 /* RswiftLibrary */; };
 		28B251CA2F2B7CB300C2AF23 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 28B251C92F2B7CB300C2AF23 /* FirebaseAnalytics */; };
 		28B251CC2F2B7CB300C2AF23 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 28B251CB2F2B7CB300C2AF23 /* FirebaseCrashlytics */; };
 		28BBF1D727C8E732002A7125 /* HeadingsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBF1D627C8E732002A7125 /* HeadingsAction.swift */; };
@@ -172,7 +171,6 @@
 			files = (
 				28B251CC2F2B7CB300C2AF23 /* FirebaseCrashlytics in Frameworks */,
 				28B251CA2F2B7CB300C2AF23 /* FirebaseAnalytics in Frameworks */,
-				28B251C72F2B7C9800C2AF23 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +432,6 @@
 			);
 			mainGroup = 28D1430A27BD287D0000BF92;
 			packageReferences = (
-				28B251C52F2B7C9800C2AF23 /* XCRemoteSwiftPackageReference "R.swift" */,
 				28B251C82F2B7CB300C2AF23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 28D1431427BD287D0000BF92 /* Products */;
@@ -796,14 +793,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		28B251C52F2B7C9800C2AF23 /* XCRemoteSwiftPackageReference "R.swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.8.0;
-			};
-		};
 		28B251C82F2B7CB300C2AF23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -815,11 +804,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		28B251C62F2B7C9800C2AF23 /* RswiftLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28B251C52F2B7C9800C2AF23 /* XCRemoteSwiftPackageReference "R.swift" */;
-			productName = RswiftLibrary;
-		};
 		28B251C92F2B7CB300C2AF23 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 28B251C82F2B7CB300C2AF23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
