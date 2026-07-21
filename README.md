@@ -6,9 +6,9 @@ Source code of the ScreenReader app for iOS.
 
 ## Compiling
 
-The app has been built with Xcode. Run `pod install` to install the dependencies.
+The app has been built with Xcode and uses the Swift Package Manager to manage its packages.
 
-The `google-services.json` file is excluded from Github. Provide your own file to build the app.
+The `GoogleService-Info.plist` file is excluded from this repository. Provide your own file to build the app.
 
 ## Screenshots
 
